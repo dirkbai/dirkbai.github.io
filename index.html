@@ -13,22 +13,28 @@
       <div class="tinted-image">
         <div class="welcome_hl">
           <img class="dotted-line" src="img/dotted.svg" alt="dottet-line">
-          <h1>WELCOME TO MY PORTFOLIO</h1>
+          <h1>WELCOME TO DIRK'S PORTFOLIO</h1>
           <img class="arrow-down animated bounce" src="img/arrow_down.svg" alt="arrow_down">
         </div>
       </div>
-      <nav class="main-nav">
-        <ul>
+    </header>
+    <div class="main-nav" id="main-nav">
+      <nav class="overlay" id="myNav">   <!-- The overlay -->
+          <a href="javascript:void(0)" class="closebtn" >&times;</a>   <!-- Button to close the overlay navigation -->
+        <ul class="overlay-content">   <!-- Overlay content -->
           <li><a href="#">Me</a></li>
           <li><a href="#">Work</a></li>
           <li><a href="#">CV</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-    </header>
-    <main class="main-content">
+        <button  id="overlay-nav" type="button" name="button">open</button> <!-- Use any element to open/show the overlay navigation menu -->
 
-    </main>
+    </div>
+    <div class="main-content">
+
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

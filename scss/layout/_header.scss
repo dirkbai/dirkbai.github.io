@@ -13,14 +13,14 @@
   justify-content: center;
   color: white;
   font-family: $roboto_con;
-  padding-top: 3rem;
+  padding-top: 5rem;
   .dotted-line{
     width: 4rem;
   }
 
   h1 {
     width: 100%;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 300;
     text-align: center;
     margin: 0.5rem 0 0 0;
@@ -76,7 +76,99 @@
   	40% {transform: translateY(-30px);}
   	60% {transform: translateY(-15px);}
   }
+}
 
 
 
+.main-nav,
+.main-content{
+    position: relative;
+}
+
+.main-nav-scrolled{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-nav {
+  display: flex;
+  width: 100%;
+  height: $nav_small;
+  margin-bottom: -$nav_small;
+  background-color: white;
+  font-family: $roboto_con;
+  z-index: 150;
+  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4);
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  li {
+    margin: 0 1rem;
+  }
+
+  a{
+    color: $dark-gray;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $dark-blue;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.nav_height_top{
+  margin-top: $nav_small;
 }

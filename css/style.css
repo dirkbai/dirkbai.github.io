@@ -1,30 +1,14 @@
 header {
   position: fixed;
+  height: 87vh;
   top: 0; }
 
-.main-nav,
-.main-content {
-  position: relative; }
-
-.main-nav {
-  display: flex;
-  width: 100%;
-  height: 4rem;
-  background-color: white;
-  font-family: "Roboto Condensed", sans-serif; }
-  .main-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-  .main-nav li {
-    margin: 0 1rem; }
-  .main-nav a {
-    color: #000D16;
-    text-decoration: none;
-    font-size: 1.5rem; }
+body {
+  padding-top: 87vh; }
 
 .main-content {
   height: 80rem;
+  padding-top: 13vh;
   background-color: green; }
 
 .tinted-image {
@@ -39,12 +23,12 @@ header {
   justify-content: center;
   color: white;
   font-family: "Roboto Condensed", sans-serif;
-  padding-top: 3rem; }
+  padding-top: 5rem; }
   .welcome_hl .dotted-line {
     width: 4rem; }
   .welcome_hl h1 {
     width: 100%;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 300;
     text-align: center;
     margin: 0.5rem 0 0 0; }
@@ -97,5 +81,82 @@ header {
     transform: translateY(-30px); }
   60% {
     transform: translateY(-15px); } }
+.main-nav,
+.main-content {
+  position: relative; }
+
+.main-nav-scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.main-nav {
+  display: flex;
+  width: 100%;
+  height: 13vh;
+  margin-bottom: -13vh;
+  background-color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 150;
+  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4); }
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .main-nav li {
+    margin: 0 1rem; }
+  .main-nav a {
+    color: #000D16;
+    text-decoration: none;
+    font-size: 1.5rem; }
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #08193D;
+  overflow-y: hidden;
+  transition: 0.5s; }
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s; }
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1; }
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px; }
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto; }
+
+  .overlay a {
+    font-size: 20px; }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+.nav_height_top {
+  margin-top: 13vh; }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,40 +12,17 @@ $graid-sec-blue  : rgba(15, 51, 125, 1);
 
 $roboto_con : 'Roboto Condensed', sans-serif;
 
+$nav_small : 13vh;
+
 //
 // -----------
 
 header{
   position: fixed;
+  height: 87vh;
   top: 0;
 }
 
-.main-nav,
-.main-content{
-    position: relative;
-}
-
-.main-nav {
-  display: flex;
-  width: 100%;
-  height: 4rem;
-  background-color: white;
-  font-family: $roboto_con;
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  li {
-    margin: 0 1rem;
-  }
-
-  a{
-    color: $dark-gray;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-
+body {
+  padding-top: 87vh;
 }
