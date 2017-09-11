@@ -15,6 +15,11 @@ var mainNav = document.getElementById("main-nav");
 //  }
 // });
 
+
+
+
+//---------------------------------------- Sticky Nav
+
 document.addEventListener('scroll', function() {
  if( $(this).scrollTop() > hdr ) {
    mn.addClass(mns);
@@ -44,4 +49,20 @@ overlyStart.addEventListener('click', function () {
 /* Close */
 myNav.addEventListener('click', function () {
     document.getElementById("myNav").style.height = "0%";
+});
+
+
+//---------------------------------------- Carousel
+
+$(document).ready(function(){
+  $('.carousel').slick({
+    autoplay: true,
+    accessibility: true,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
 });

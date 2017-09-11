@@ -1,4 +1,14 @@
 
+.carousel{
+  width: 375px;
+  height: 667px;
+}
+
+.logo_4header{
+  width: auto;
+  height: 100vh;
+  background-color: orange;
+}
 
 .tinted-image {
   width: auto;
@@ -77,9 +87,6 @@
   	60% {transform: translateY(-15px);}
   }
 }
-
-
-
 .main-nav,
 .main-content{
     position: relative;
@@ -93,6 +100,9 @@
 
 .main-nav {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: $nav_small;
   margin-bottom: -$nav_small;
@@ -126,7 +136,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: $dark-blue;
+    background-color: $graid-dark-gray;
     overflow-y: hidden;
     transition: 0.5s;
 }
@@ -171,4 +181,23 @@
 
 .nav_height_top{
   margin-top: $nav_small;
+}
+
+.logo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo_kopf{
+  height: 75%;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: .4rem;
+}
+
+.logo_text{
+  height: 45%;
+  width: auto;
+  padding-top: .8rem;
 }
