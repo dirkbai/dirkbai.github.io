@@ -78,7 +78,8 @@ button {
   color: #174DBD; }
 
 .carousel {
-  width: 100vw; }
+  width: 100vw;
+  height: 87vh; }
 
 .logo_4header {
   width: 100%;
