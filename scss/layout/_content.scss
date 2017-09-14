@@ -1,5 +1,66 @@
 .main-content {
-  height: 80rem;
   padding-top: 13vh;
   background-color: green;
+}
+
+.this_is_me{
+  display: flex;
+  flex-direction: column;
+}
+
+.picture_me{
+  height: 35vh;
+  width: 100%;
+  background: gray;
+}
+
+.active_space {
+    width: 100%;
+    color: white;
+    font-family: $roboto_con;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 300;
+    background: $dark-blue;
+    transition: height 0.3s ease-out;
+    padding-bottom: 3rem;
+}
+
+.show_text {
+  display: flex;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.hide_text {
+  display: none;
+  margin: 0 1.5rem;
+}
+
+.work_heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: $nav_small;
+  background-color: white;
+  font-family: $roboto_con;
+  color: $main-blue;
+  position: relative;
+  z-index: 100;
+  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4);
+}
+
+.second_title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: $nav_small;
+  margin: 0;
+  padding-left: 1.5rem;
+  background-color: white;
+  font-family: $roboto_con;
+  color: $main-blue;
 }

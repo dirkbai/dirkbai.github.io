@@ -7,6 +7,9 @@ var overlyStart = document.getElementById("overlay-nav");
 
 var mainNav = document.getElementById("main-nav");
 
+var thisMe = document.getElementById('this_is_me_text');
+var thisMeHide = document.getElementById('this_is_me_hide_text');
+
 // $('window').scroll(function(){
 //  if( $(this).scrollTop() > 50 ) {
 //    mn.addClass("main-nav-scrolled");
@@ -61,8 +64,21 @@ $(document).ready(function(){
     arrows: false,
     dots: false,
     infinite: true,
-    speed: 300,
+    autoplaySpeed: 7500,
+    speed: 3000,
     slidesToShow: 1,
-    adaptiveHeight: true
+    // adaptiveHeight: true
   });
+});
+
+
+
+//---------------------------------------- Multiline toggle
+
+thisMe.addEventListener('click', function() {
+  if (thisMeHide.style.display == "none") {
+    thisMeHide.style.display = "flex";
+  } else {
+      thisMeHide.style.display = "none";
+  }
 });

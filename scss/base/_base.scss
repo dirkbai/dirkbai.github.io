@@ -27,3 +27,21 @@ header{
 body {
   padding-top: 87vh;
 }
+
+h2 {
+  display: flex;
+  font-size: 2rem;
+  margin: 1.5rem;
+}
+
+// .active_space{
+//   height: 40vh;
+//   width: 100%;
+//   background: darkgray;
+//   transition: flex-grow .5s ease-out;
+//
+//   &:hover,
+//   &:focus {
+//     flex-grow: 2;
+//     }
+//   }
