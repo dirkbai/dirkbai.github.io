@@ -30,8 +30,23 @@ body {
 
 h2 {
   display: flex;
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin: 1.5rem;
+}
+
+h3 {
+    display: flex;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.placeholder_size_main{
+  height: 40vh;
+}
+
+.placeholder_size_sec{
+  height: 20vh;
 }
 
 // .active_space{

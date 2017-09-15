@@ -53,14 +53,46 @@
 
 .second_title{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   width: 100%;
   height: $nav_small;
   margin: 0;
   padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
   background-color: white;
   font-family: $roboto_con;
   color: $main-blue;
+
+  span {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+  }
 }
+
+.inactive_space {
+    width: 50%;
+    color: white;
+    font-family: $roboto_con;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 300;
+    background: gray;
+    transition: height 0.3s ease-out;
+}
+
+.images_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#element1 {
+  background-color: orange;
+}
+
+// #element2 {
+//   background-color: red;
+// }

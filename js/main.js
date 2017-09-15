@@ -10,6 +10,9 @@ var mainNav = document.getElementById("main-nav");
 var thisMe = document.getElementById('this_is_me_text');
 var thisMeHide = document.getElementById('this_is_me_hide_text');
 
+var treeInactive = document.querySelectorAll('.treehouse_inactive');
+var treeSwap = document.getElementById('treehouse_swap');
+
 // $('window').scroll(function(){
 //  if( $(this).scrollTop() > 50 ) {
 //    mn.addClass("main-nav-scrolled");
@@ -82,3 +85,28 @@ thisMe.addEventListener('click', function() {
       thisMeHide.style.display = "none";
   }
 });
+
+
+
+
+//---------------------------------------- switch Position
+
+
+for (var i = 0; i < treeInactive.length; i++) {
+  treeInactive[i].index = i;
+  treeInactive[i].addEventListener("click", function(e){
+     for (var i = 0; i < treeInactive.length; i++) {
+       var activate = event.target;
+        activate.parentNode.insertBefore(activate,activate.parentNode.firstChild);
+        treeInactive[i].className = "inactive_space placeholder_size_sec treehouse_inactive";
+        activate.parentNode.firstChild.className = "active_space placeholder_size_main  treehouse_inactive";
+     }
+  });
+}
+
+// elOne.addEventListener('click', function(){
+//   elOne.parentNode.insertBefore(elOne,elOne.parentNode.firstChild);
+//   elOne.className = "active_space placeholder_size_main";
+//   elTwo.className = "inactive_space placeholder_size_sec";
+//     // $("#element1").before($("#element2"));
+// });
