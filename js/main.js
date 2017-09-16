@@ -99,7 +99,8 @@ for (var i = 0; i < treeInactive.length; i++) {
        var activate = event.target;
         activate.parentNode.insertBefore(activate,activate.parentNode.firstChild);
         treeInactive[i].className = "inactive_space placeholder_size_sec treehouse_inactive";
-        activate.parentNode.firstChild.className = "active_space placeholder_size_main  treehouse_inactive";
+        activate.parentNode.firstChild.className = "active_space placeholder_size_main";
+        activate.parentNode.firstChild.setAttribute("id", "div_active");
      }
   });
 }
