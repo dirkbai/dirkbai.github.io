@@ -7,11 +7,13 @@ var overlyStart = document.getElementById("overlay-nav");
 
 var mainNav = document.getElementById("main-nav");
 
-var thisMe = document.getElementById('this_is_me_text');
-var thisMeHide = document.getElementById('this_is_me_hide_text');
+var hideText = document.querySelectorAll('.hide_text');
+var revialText = document.querySelectorAll('.revial_Text');
 
 var treeInactive = document.querySelectorAll('.treehouse_inactive');
 var treeSwap = document.getElementById('treehouse_swap');
+
+
 
 // $('window').scroll(function(){
 //  if( $(this).scrollTop() > 50 ) {
@@ -78,13 +80,44 @@ $(document).ready(function(){
 
 //---------------------------------------- Multiline toggle
 
-thisMe.addEventListener('click', function() {
-  if (thisMeHide.style.display == "none") {
-    thisMeHide.style.display = "flex";
-  } else {
-      thisMeHide.style.display = "none";
-  }
-});
+// revialText.addEventListener('click', function() {
+//   if (thisMeHide.style.display == "none") {
+//     thisMeHide.style.display = "flex";
+//   } else {
+//       thisMeHide.style.display = "none";
+//   }
+// });
+
+for (var i = 0; i < revialText.length; i++) {
+  revialText[i].index = i;
+  revialText[i].addEventListener("click", function(e){
+    for (var i = 0; i < revialText.length; i++) {
+      var textact = event.target;
+      var textPar = textact.parentNode;
+      var textSib = textPar.children;
+      textSib[1].style.display = "flex";
+      // if (textSib[1].style.display === "none") {
+      //   textSib[1].style.display = "flex";
+      //   } else {
+      //   textSib[1].style.display = "none";
+      //   }
+    }
+  });
+}
+
+for (var i = 0; i < hideText.length; i++) {
+  hideText[i].index = i;
+  hideText[i].addEventListener("click", function(e){
+    // for (var i = 0; i < hideText.length; i++) {
+      var textact = event.target;
+      // var textPar = textact.parentNode;
+      // var textSib = textPar.children;
+      if (textact.style.display === "flex") {
+        textact.style.display = "none";
+        }
+    // }
+  });
+}
 
 
 
@@ -95,19 +128,36 @@ thisMe.addEventListener('click', function() {
 for (var i = 0; i < treeInactive.length; i++) {
   treeInactive[i].index = i;
   treeInactive[i].addEventListener("click", function(e){
+    var activate = event.target;
+    var activatePar = activate.parentNode;
+    var siblingsMe = activatePar.children;
      for (var i = 0; i < treeInactive.length; i++) {
-       var activate = event.target;
-        activate.parentNode.insertBefore(activate,activate.parentNode.firstChild);
-        treeInactive[i].className = "inactive_space placeholder_size_sec treehouse_inactive";
-        activate.parentNode.firstChild.className = "active_space placeholder_size_main";
-        activate.parentNode.firstChild.setAttribute("id", "div_active");
+        var allChildren = activatePar.parentNode.children;
+        var treeChildren = treeInactive[i].children;
+        var number = i+1;
+        var indexString = number.toString();
+        activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
+        treeInactive[i].setAttribute("class", ["inactive_space treehouse_inactive col"]+[indexString]);
+        activatePar.parentNode.firstChild.className = "active_space";
+        treeChildren[0].style.display = "flex";
+        treeChildren[1].style.display = "none";
+        treeChildren[2].style.display = "none";
+        treeChildren[3].style.display = "none";
      }
+
+     for(var r=0; r<siblingsMe.length; r++) {
+      siblingsMe[r].style.display = "flex";
+      }
+      activate.style.display = "none";
+      siblingsMe[3].style.display = "none";
+
+
   });
 }
 
 // elOne.addEventListener('click', function(){
 //   elOne.parentNode.insertBefore(elOne,elOne.parentNode.firstChild);
-//   elOne.className = "active_space placeholder_size_main";
+//   elOne.className = "active_space placeholder_sizea_main";
 //   elTwo.className = "inactive_space placeholder_size_sec";
 //     // $("#element1").before($("#element2"));
 // });
