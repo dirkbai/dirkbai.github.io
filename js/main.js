@@ -124,6 +124,8 @@ for (var i = 0; i < hideText.length; i++) {
 
 //---------------------------------------- switch Position
 
+var actSP = document.getElementById('test_sp');
+var actSpCh = actSP.children;
 
 for (var i = 0; i < treeInactive.length; i++) {
   treeInactive[i].index = i;
@@ -144,6 +146,11 @@ for (var i = 0; i < treeInactive.length; i++) {
         treeChildren[2].style.display = "none";
         treeChildren[3].style.display = "none";
      }
+
+    //  actSpCh[0].style.display = "flex";
+    //  actSpCh[1].style.display = "none";
+    //  actSpCh[2].style.display = "none";
+    //  actSpCh[3].style.display = "none";
 
      for(var r=0; r<siblingsMe.length; r++) {
       siblingsMe[r].style.display = "flex";

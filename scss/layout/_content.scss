@@ -121,6 +121,9 @@ background: $gray;
 
 
 .inactive_space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     color: white;
     font-family: $roboto_con;
@@ -136,7 +139,7 @@ background: $gray;
     img {
       width: 100%;
       height: 100%;
-      opacity: .1;
+      opacity: .04;
       margin: 0;
       padding: 0;
       filter: grayscale(100%);
@@ -153,6 +156,20 @@ background: $gray;
       filter: none;
     }
 
+}
+
+.btnTitle{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: absolute;
+      width: auto;
+      height: auto;
+      padding: 1.5rem;
+      margin: 0;
+      text-align: center;
+      font-weight: 400;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .images_wrapper {
