@@ -142,9 +142,10 @@ for (var i = 0; i < treeInactive.length; i++) {
         treeInactive[i].setAttribute("class", ["inactive_space treehouse_inactive col"]+[indexString]);
         activatePar.parentNode.firstChild.className = "active_space";
         treeChildren[0].style.display = "flex";
-        treeChildren[1].style.display = "none";
+        treeChildren[1].style.display = "flex";
         treeChildren[2].style.display = "none";
         treeChildren[3].style.display = "none";
+        // treeChildren[4].style.display = "none";
      }
 
     //  actSpCh[0].style.display = "flex";
@@ -156,7 +157,8 @@ for (var i = 0; i < treeInactive.length; i++) {
       siblingsMe[r].style.display = "flex";
       }
       activate.style.display = "none";
-      siblingsMe[3].style.display = "none";
+      siblingsMe[0].style.display = "none";
+      siblingsMe[4].style.display = "none";
 
 
   });
