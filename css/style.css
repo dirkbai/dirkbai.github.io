@@ -99,14 +99,14 @@ button {
   align-items: left;
   width: 100%;
   margin: 0;
-  background-color: #363740;
+  background: #363740;
   font-family: "Roboto Condensed", sans-serif;
   color: white; }
   .second_title h3 {
     margin: 1.5rem 1.5rem 0 1.5rem; }
   .second_title span {
     font-size: 1.4rem;
-    margin: 1.5rem 0 3rem 1.5rem; }
+    margin: 1.5rem 1.5rem 3rem 1.5rem; }
 
 .col1 {
   background: #174DBD; }
@@ -156,19 +156,23 @@ button {
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
-  width: auto;
+  width: 30%;
   height: auto;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 0;
   text-align: center;
   font-weight: 400;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
 
-.images_wrapper {
+.images_wrapper,
+.inactive_wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .images_wrapper a,
+  .inactive_wrapper a {
+    color: #174DBD; }
 
 .carousel {
   width: 100vw;
