@@ -180,16 +180,93 @@ button {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif; }
 
-skills_pro {
+.skills_pro,
+.skills_interm {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 100%;
-  background-color: lightgray; }
+  width: 100%; }
+  .skills_pro .skills_psd,
+  .skills_pro .skills_ai,
+  .skills_pro .skills_id,
+  .skills_pro .skills_html,
+  .skills_pro .skills_css,
+  .skills_pro .skills_js,
+  .skills_interm .skills_psd,
+  .skills_interm .skills_ai,
+  .skills_interm .skills_id,
+  .skills_interm .skills_html,
+  .skills_interm .skills_css,
+  .skills_interm .skills_js {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 5.5rem;
+    margin: 1.5rem;
+    width: 55%;
+    height: 4rem;
+    color: white;
+    background-color: #174DBD; }
+    .skills_pro .skills_psd p,
+    .skills_pro .skills_ai p,
+    .skills_pro .skills_id p,
+    .skills_pro .skills_html p,
+    .skills_pro .skills_css p,
+    .skills_pro .skills_js p,
+    .skills_interm .skills_psd p,
+    .skills_interm .skills_ai p,
+    .skills_interm .skills_id p,
+    .skills_interm .skills_html p,
+    .skills_interm .skills_css p,
+    .skills_interm .skills_js p {
+      font-size: 1rem;
+      font-weight: 400; }
+  .skills_pro .skills_ai,
+  .skills_interm .skills_ai {
+    background-color: orange; }
+  .skills_pro .skills_id,
+  .skills_interm .skills_id {
+    background-color: violet; }
+  .skills_pro .skills_html,
+  .skills_interm .skills_html {
+    width: 35%;
+    background-color: green; }
+  .skills_pro .skills_css,
+  .skills_interm .skills_css {
+    width: 43%;
+    background-color: orange; }
+  .skills_pro .skills_js,
+  .skills_interm .skills_js {
+    width: 35%;
+    background-color: orange; }
+  .skills_pro .skills_logos,
+  .skills_interm .skills_logos {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: inherit; }
+    .skills_pro .skills_logos .psd_logo,
+    .skills_interm .skills_logos .psd_logo {
+      height: 5rem;
+      width: 5rem;
+      margin: 1rem;
+      padding: 0; }
+    .skills_pro .skills_logos .psd_logo img,
+    .skills_interm .skills_logos .psd_logo img {
+      width: 5rem;
+      height: auto;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
 
 .carousel {
   width: 100vw;

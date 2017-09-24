@@ -193,14 +193,89 @@ background: $gray;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  font-family: $roboto_con;
 }
 
-skills_pro{
+.skills_pro,
+.skills_interm {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: lightgray;
+  // height: 50vh;
+  // background-color: lightgray;
+
+  .skills_psd,
+  .skills_ai,
+  .skills_id,
+  .skills_html,
+  .skills_css,
+  .skills_js  {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 5.5rem;
+    margin: 1.5rem;
+    width: 55%;
+    height: 4rem;
+    color: white;
+    background-color: $main-blue;
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      }
+    }
+
+  .skills_ai{
+    background-color: orange;
+    }
+
+    .skills_id{
+      background-color: violet;
+      }
+
+    .skills_html{
+        width: 35%;
+        background-color: green;
+      }
+
+    .skills_css{
+        width: 43%;
+        background-color: orange;
+      }
+
+    .skills_js{
+        width: 35%;
+        background-color: orange;
+      }
+
+    .skills_logos{
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: inherit;
+
+      .psd_logo{
+        height: 5rem;
+        width: 5rem;
+        margin: 1rem;
+        padding: 0;
+      }
+
+      .psd_logo img{
+        width: 5rem;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+      }
+    }
+
 }
