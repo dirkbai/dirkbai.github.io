@@ -375,12 +375,12 @@
     </header>
     <div class="main-nav" id="main-nav">
       <nav class="overlay" role="navigation" id="myNav">   <!-- The overlay -->
-          <a href="javascript:void(0)" class="closebtn" >&times;</a>   <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" id="close_Nav">&times;</a>   <!-- Button to close the overlay navigation -->
         <ul class="overlay-content">   <!-- Overlay content -->
-          <li><a href="#">Me</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">CV</a></li>
-            <li><a href="#">Contact</a></li>
+          <li><a href="#me">Me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
         <div class="logo">
@@ -392,18 +392,18 @@
 
     </div>
     <main class="main-content" role="main">
-      <article class="this_is_me" role="article">
+      <article class="this_is_me" id="me" role="article">
         <div class="picture_me">
         </div>
         <div class="active_space" id="this_is_me_text">
-            <p id="intro_text" class="revial_Text">my Name is Dirk Baigent, I'm a Designer based in Austria with Kiwi roots. Design is my passion but my path was unconfentional to say the least  >> </p><span class="hide_text">It took me 15 years of my life to findout what I'm passionet about and that was Graphic and Design. I tried to get an apprenteship as a Mediadesigner with help of gouverment programms. But as the industrie was and still is, it was a very popular job with very few jobs availble</span>
+            <p id="intro_text" class="revial_Text">my Name is Dirk Baigent, I'm a Designer based in Austria with Kiwi roots. Design is my passion but my path was unconfentional to say the least  >> </p><span class="hide_text">It took me 15 years of my life to findout what I'm passionet about and that was Graphic and Design. I tried to get an apprenteship as a Mediadesigner with help of gouverment programms. But as the industrie was and still is, it was a very popular job with very few jobs availble. So after my Parents payed for some other courses with graphic design I tried my hand as self employed Graphic Designer. I mainly did Christian T-shirts and Band merch, this was fun at the time. But when my realationship with my Girlfriend got serious I descided that it was time for a real job. I worked on my Portfolio and after many many rejections I finaly got a job at an advertising agency and the rest was history ;-). Enjoy my Portfolio. P.S. no templates used for this site!</span>
         </div>
       </article>
       <article class="work_space">
         <div class="work_heading">
-          <h2>WORK</h2>
+          <h2 id="work">WORK</h2>
         </div>
-        <div class="second_title">
+          <div class="second_title">
           <h3>
             Team Treehouse
           </h3>
@@ -514,21 +514,21 @@
               <p class="btnTitle">Schärdinger</p>
               <img src="img\Print\Schaerdinger_tn.jpg" alt="Schärdinger">
               <img src="img\Print\Schaerdinger.jpg" alt="Schärdinger" class="hide_it">
-              <p  class="revial_Text"><a href="#"><b>Schärdinger</b></a><br>Designed @ Vorauer.friends I put this one in out of a bit of >></p>
+              <p  class="hide_text"><a href="#"><b>Schärdinger</b></a><br>Designed @ Vorauer.friends I put this one in out of a bit of >></p>
               <span class="hide_text">nostaligia. One of my first bigger Projects at an advertising agency way back when.</span>
             </div>
             <div class="inactive_space print_inactive col3">
               <p class="btnTitle">40 years Hartlauer</p>
               <img src="img\Print\Hartlauer_Festschr_tn.jpg" alt="40 years Hartlauer">
               <img src="img\Print\Hartlauer_Festschr.jpg" alt="40 years Hartlauer" class="hide_it">
-              <p  class="revial_Text"><a href="#"><b>40 years Hartlauer ...</b></a><br>... and putting them in to 200x pages, was >></p>
+              <p  class="hide_text"><a href="#"><b>40 years Hartlauer ...</b></a><br>... and putting them in to 200x pages, was >></p>
               <span class="hide_text">challengeing and above all let me learn how tu structure my workflow</span>
             </div>
             <div class="inactive_space print_inactive col4">
               <p class="btnTitle">Hartlauer Catalog</p>
               <img src="img\Print\Hartlauer_cat_tn.jpg" alt="Hartlauer_cat">
               <img src="img\Print\Hartlauer_cat.jpg" alt="Hartlauer_cat" class="hide_it">
-              <p  class="revial_Text"><a href="#"><b>Hartlauer Catalog</b></a><br> For 2 years I did 2 of >></p>
+              <p  class="hide_text"><a href="#"><b>Hartlauer Catalog</b></a><br> For 2 years I did 2 of >></p>
               <span class="hide_text">Those every month, the got sent to every houshold in Austria. I learned allot in that time about workflow, self-organisation and last minute changes :-).</span>
             </div>
           </div>
@@ -541,40 +541,45 @@
           <div class="images_wrapper">
             <div class="active_space fun_inactive">
               <p class="btnTitle" style="display: none;">Lisa Picture</p>
-              <img src="img\Fun\Lisa.jpg" alt="Lisa Picture" class="hide_it">
-              <img src="img\Fun\Lisa_tn.jpg" alt="Lisa Picture">
-              <p  class="revial_Text"><a href="#"><b>Lisa Picture</b></a><br>This was a present for my >></p>
+              <img src="img\Fun\Lisa_tn.jpg" alt="Lisa Picture" class="hide_it">
+              <img src="img\Fun\Lisa.jpg" alt="Lisa Picture">
+              <p  class="hide_text"><a href="#"><b>Lisa Picture</b></a><br>This was a present for my >></p>
               <span class="hide_text">Wife, I took my favorite Holiday picture and vectorised it.</span>
             </div>
             <div class="inactive_space fun_inactive col1">
               <p class="btnTitle">Rugby Austria</p>
               <img src="img\Fun\Rugby_AUT_tn.jpg" alt="Rugby Austria">
               <img src="img\Fun\Rugby_AUT.jpg" alt="Rugby Austria" class="hide_it">
-              <p  class="revial_Text"><a href="#"><b>Lisa Picture</b></a><br>This was a present for my >></p>
-              <span class="hide_text">Hidden Text ::::::</span>
+              <p  class="hide_text"><a href="#"><b>Rugby Austria Poster</b></a><br>as you might have noticed Rugby ...</p>
+              <span class="hide_text">is my other passion, and I love it when I can combine both passiones</span>
             </div>
-            <div class="inactive_space print_inactive col2">
-              <p class="btnTitle">Schärdinger</p>
-              <img src="img\Print\Schaerdinger_tn.jpg" alt="Schärdinger">
-              <img src="img\Print\Schaerdinger.jpg" alt="Schärdinger" class="hide_it">
-              <p class="hide_text">Apart from from my portfolio this project was definetly </p>
-              <span class="hide_text">Hidden Text ::::::</span>
+            <div class="inactive_space fun_inactive col2">
+              <p class="btnTitle">Steel City</p>
+              <img src="img\Fun\Steelcity_tn.jpg" alt="Steel City">
+              <img src="img\Fun\Steelcity.jpg" alt="Steel City" class="hide_it">
+              <p  class="hide_text"><a href="#"><b>Steel City</b></a><br>I'm very proud of my Rugby Club and I wanted ....</p>
+              <span class="hide_text"> to give my mates and my self something to Represent. This was also a great oportunity to get in to Screenprinting</span>
             </div>
-            <div class="inactive_space print_inactive col3">
-              <p class="btnTitle">40 years Hartlauer</p>
-              <img src="img\Print\Hartlauer_Festschr_tn.jpg" alt="40 years Hartlauer">
-              <img src="img\Print\Hartlauer_Festschr.jpg" alt="40 years Hartlauer" class="hide_it">
-              <p class="hide_text">Apart from from my portfolio this project was definetly </p>
-              <span class="hide_text">Hidden Text ::::::</span>
+            <div class="inactive_space fun_inactive col3">
+              <p class="btnTitle">Egg Chaser</p>
+              <img src="img\Fun\egg-chaser-logo_tn.jpg" alt="Egg Chaser">
+              <img src="img\Fun\egg-chaser-logo.jpg" alt="Egg Chaser" class="hide_it">
+              <p  class="hide_text"><a href="#"><b>Egg Chaser Podcast</b></a><br>I reagularly listen to this Podcast and they put out a request>></p>
+              <span class="hide_text">to the listeners to design a rugby crest, I though my hat in the ring the design is packed with insiders and was allot of fun to make.</span>
             </div>
-            <div class="inactive_space print_inactive col4">
-              <p class="btnTitle">Hartlauer Catalog</p>
-              <img src="img\Print\Hartlauer_cat_tn.jpg" alt="Hartlauer_cat">
-              <img src="img\Print\Hartlauer_cat.jpg" alt="Hartlauer_cat" class="hide_it">
-              <p class="hide_text">Apart from from my portfolio this project was definetly </p>
-              <span class="hide_text">Hidden Text ::::::</span>
+            <div class="inactive_space fun_inactive col4">
+              <p class="btnTitle">Beach Rugby</p>
+              <img src="img\Fun\beach_rugby_tn.jpg" alt="Beach Rugby">
+              <img src="img\Fun\beach_rugby.jpg" alt="Beach Rugby" class="hide_it">
+              <p  class="hide_text"><a href="#"><b>Beach Rubgy Poster</b></a><br>This was a fun >></p>
+              <span class="hide_text">Design for an event that never happend but maybe some day.</span>
             </div>
           </div>
+      </article>
+      <article class="work_space">
+        <div class="work_heading">
+          <h2 id="skills">SKILLS</h2>
+        </div>
       </article>
     </main>
     <script type="text/javascript"  src="js/jquery-3.2.1.min.js"></script>
