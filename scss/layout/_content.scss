@@ -196,6 +196,11 @@ background: $gray;
   font-family: $roboto_con;
 }
 
+.skills_interm{
+  margin-bottom: 2rem;
+}
+
+
 .skills_pro,
 .skills_interm {
   display: flex;
@@ -204,6 +209,7 @@ background: $gray;
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
+  margin-top: 2rem;
   // height: 50vh;
   // background-color: lightgray;
 
@@ -220,16 +226,17 @@ background: $gray;
     flex-wrap: nowrap;
     padding-left: 5.5rem;
     margin: 1.5rem;
-    width: 55%;
+    width: 58%;
     height: 4rem;
     color: white;
     background: linear-gradient(45deg, #0f337d 0%,#2cd4fa 100%);
 
     p {
-      font-size: 1rem;
+      font-size: 1.4rem;
       font-weight: 400;
       }
     }
+
 
   .skills_ai{
     background: linear-gradient(45deg, #a73f00 0%,#f37020 100%);
@@ -240,17 +247,17 @@ background: $gray;
       }
 
     .skills_html{
-        width: 35%;
+        width: 43%;
     background: linear-gradient(45deg, #e54d26 0%,#f29979 100%);
       }
 
     .skills_css{
-        width: 43%;
+        width: 48%;
         background: linear-gradient(45deg, #105ac1 0%,#7da9e8 100%);
       }
 
     .skills_js{
-        width: 35%;
+        width: 40%;
         background: linear-gradient(45deg, #eab42a 0%, #efd826 100%);
       }
 

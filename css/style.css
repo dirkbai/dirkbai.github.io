@@ -183,6 +183,9 @@ button {
   width: 100%;
   font-family: "Roboto Condensed", sans-serif; }
 
+.skills_interm {
+  margin-bottom: 2rem; }
+
 .skills_pro,
 .skills_interm {
   display: flex;
@@ -190,7 +193,8 @@ button {
   align-items: start;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 100%; }
+  width: 100%;
+  margin-top: 2rem; }
   .skills_pro .skills_psd,
   .skills_pro .skills_ai,
   .skills_pro .skills_id,
@@ -210,7 +214,7 @@ button {
     flex-wrap: nowrap;
     padding-left: 5.5rem;
     margin: 1.5rem;
-    width: 55%;
+    width: 58%;
     height: 4rem;
     color: white;
     background: linear-gradient(45deg, #0f337d 0%, #2cd4fa 100%); }
@@ -226,7 +230,7 @@ button {
     .skills_interm .skills_html p,
     .skills_interm .skills_css p,
     .skills_interm .skills_js p {
-      font-size: 1rem;
+      font-size: 1.4rem;
       font-weight: 400; }
   .skills_pro .skills_ai,
   .skills_interm .skills_ai {
@@ -236,15 +240,15 @@ button {
     background: linear-gradient(45deg, #c80057 0%, #ff5ca3 100%); }
   .skills_pro .skills_html,
   .skills_interm .skills_html {
-    width: 35%;
+    width: 43%;
     background: linear-gradient(45deg, #e54d26 0%, #f29979 100%); }
   .skills_pro .skills_css,
   .skills_interm .skills_css {
-    width: 43%;
+    width: 48%;
     background: linear-gradient(45deg, #105ac1 0%, #7da9e8 100%); }
   .skills_pro .skills_js,
   .skills_interm .skills_js {
-    width: 35%;
+    width: 40%;
     background: linear-gradient(45deg, #eab42a 0%, #efd826 100%); }
   .skills_pro .skills_logos,
   .skills_interm .skills_logos {
@@ -292,6 +296,43 @@ button {
       height: 5rem;
       background: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: white;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif; }
+
+.contact {
+  color: white;
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: #0F337D; }
+  .contact h3 {
+    color: white;
+    margin: 3rem 0 2rem 1.5rem; }
+  .contact p {
+    color: #6A6D70;
+    margin: 1.5rem; }
+  .contact a {
+    color: white; }
+
+.soMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem 1.5rem 3rem; }
+  .soMe img {
+    width: 33%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
+  .soMe #behance {
+    margin-right: 2rem; }
 
 .carousel {
   width: 100vw;

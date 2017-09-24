@@ -358,6 +358,15 @@ Chart.defaults.global.legend.display = false;
 // });
 
 
+//---------------------------- Charts
+
+//
+// $('#example').mouseover(function() {
+// $("#example").stop().animate({width: 250}, 200 );   //Bigger
+// }).mouseout(function(){
+// $("#example").stop().animate({width: 200}, 200 );   //Smaller
+// });
+
 
 // elOne.addEventListener('click', function(){
 //   elOne.parentNode.insertBefore(elOne,elOne.parentNode.firstChild);
