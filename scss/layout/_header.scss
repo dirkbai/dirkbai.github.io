@@ -231,9 +231,18 @@
 }
 
 .logo{
-  height: 100%;
+  height: 75%;
   display: flex;
   align-items: center;
+
+  a {
+    display: flex;
+  }
+  img {
+      height: 12.5vh;
+      margin-top: .5vh;
+      margin-left: 1rem;
+  }
 }
 
 .logo_kopf{
