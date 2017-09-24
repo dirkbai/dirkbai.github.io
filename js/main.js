@@ -360,6 +360,15 @@ Chart.defaults.global.legend.display = false;
 
 //---------------------------- Charts
 
+
+var waypoint = new Waypoint({
+  element: document.getElementById('skills'),
+  handler: function(direction) {
+    console.log('Scrolled to waypoint!')
+  }
+})
+
+
 //
 // $('#example').mouseover(function() {
 // $("#example").stop().animate({width: 250}, 200 );   //Bigger
