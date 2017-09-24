@@ -4,7 +4,8 @@ var mn = $(".main-nav");
 
 var myNav = document.getElementById("myNav");
 var overlyStart = document.getElementById("overlay-nav");
-
+var closeNav = document.getElementById('close_Nav');
+var navLi = document.querySelectorAll('.navLi');
 var mainNav = document.getElementById("main-nav");
 
 var hideText = document.querySelectorAll('.hide_text');
@@ -51,17 +52,42 @@ document.addEventListener('scroll', function() {
 //  myNav.className = "overlay nav_height_top";
 // }
 
-/* Open */
-overlyStart.addEventListener('click', function () {
-     document.getElementById("myNav").style.height = "100%";
- });
 
+
+/* Open */
+// overlyStart.addEventListener('click', function () {
+//       document.getElementById("myNav").style.height = "100%";
+//  });
+
+ overlyStart.addEventListener('click', function () {
+     if (document.getElementById("myNav").style.height = "0%") {
+       document.getElementById("myNav").style.height = "100%";
+     } else if (document.getElementById("myNav").style.height = "100%") {
+       document.getElementById("myNav").style.height = "0%";
+     }
+  });
 
 
 /* Close */
-myNav.addEventListener('click', function () {
+closeNav.addEventListener('click', function () {
     document.getElementById("myNav").style.height = "0%";
 });
+
+// workNav.addEventListener('click', function () {
+//     document.getElementById("myNav").style.height = "0%";
+// });
+
+for (var i = 0; i < navLi.length; i++) {
+  navLi[i].index = i;
+  navLi[i].addEventListener("click", function(e){
+    var activate = event.target;
+     for (var i = 0; i < navLi.length; i++) {
+           document.getElementById("myNav").style.height = "0%";
+     }
+  });
+}
+
+
 
 
 //---------------------------------------- Carousel
@@ -72,10 +98,10 @@ $(document).ready(function(){
     accessibility: true,
     arrows: false,
     dots: false,
-    infinite: true,
+    infinite: false,
     autoplaySpeed: 7500,
     speed: 3000,
-    slidesToShow: 1,
+    slidesToShow: 1
     // adaptiveHeight: true
   });
 });
@@ -130,7 +156,7 @@ for (var i = 0; i < hideText.length; i++) {
 
 
 
-//------------------ switch Position Treehouse
+//------------------------------------------------- switch Position Treehouse
 
 var actSP = document.getElementById('test_sp');
 var actSpCh = actSP.children;
@@ -174,7 +200,7 @@ for (var i = 0; i < treeInactive.length; i++) {
 
 
 
-//------------------ switch Position Logos
+//---------------------------------------------------- switch Position Logos
 
 for (var i = 0; i < logosInactive.length; i++) {
   logosInactive[i].index = i;
@@ -215,7 +241,7 @@ for (var i = 0; i < logosInactive.length; i++) {
 
 
 
-//------------------ switch Position Print
+//--------------------------------------------------- switch Position Print
 
 for (var i = 0; i < printInactive.length; i++) {
   printInactive[i].index = i;
@@ -252,7 +278,7 @@ for (var i = 0; i < printInactive.length; i++) {
   });
 }
 
-//------------------ switch Position Fun
+//-------------------------------------------------------- switch Position Fun
 
 for (var i = 0; i < funInactive.length; i++) {
   funInactive[i].index = i;
@@ -288,6 +314,49 @@ for (var i = 0; i < funInactive.length; i++) {
       siblingsMe[4].style.display = "none";
   });
 }
+
+
+//-------------------------------------------------------- Charts
+
+Chart.defaults.global.legend.display = false;
+
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ["Red", "Blue", "Yellow"],
+        datasets: [{
+            data: [12, 19, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+            borderWidth: 0
+
+        }]
+    },
+    options: {
+      scales: {
+          xAxes: [{
+              gridLines: {
+                  display: false
+              }
+          }],
+          yAxes: [{
+              gridLines: {
+                  display: false
+              }
+          }]
+      }
+    }
+});
+
 
 
 // elOne.addEventListener('click', function(){
