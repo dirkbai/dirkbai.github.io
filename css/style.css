@@ -213,7 +213,7 @@ button {
     width: 55%;
     height: 4rem;
     color: white;
-    background-color: #174DBD; }
+    background: linear-gradient(45deg, #0f337d 0%, #2cd4fa 100%); }
     .skills_pro .skills_psd p,
     .skills_pro .skills_ai p,
     .skills_pro .skills_id p,
@@ -230,10 +230,10 @@ button {
       font-weight: 400; }
   .skills_pro .skills_ai,
   .skills_interm .skills_ai {
-    background-color: orange; }
+    background: linear-gradient(45deg, #a73f00 0%, #f37020 100%); }
   .skills_pro .skills_id,
   .skills_interm .skills_id {
-    background-color: violet; }
+    background: linear-gradient(45deg, #c80057 0%, #ff5ca3 100%); }
   .skills_pro .skills_html,
   .skills_interm .skills_html {
     width: 35%;
@@ -257,15 +257,32 @@ button {
     width: 100%;
     height: inherit; }
     .skills_pro .skills_logos .psd_logo,
-    .skills_interm .skills_logos .psd_logo {
+    .skills_pro .skills_logos .ai_logo,
+    .skills_pro .skills_logos .ind_logo,
+    .skills_pro .skills_logos .html_logo,
+    .skills_interm .skills_logos .psd_logo,
+    .skills_interm .skills_logos .ai_logo,
+    .skills_interm .skills_logos .ind_logo,
+    .skills_interm .skills_logos .html_logo {
       height: 5rem;
       width: 5rem;
       margin: 1rem;
       padding: 0; }
     .skills_pro .skills_logos .psd_logo img,
-    .skills_interm .skills_logos .psd_logo img {
+    .skills_pro .skills_logos .ai_logo img,
+    .skills_pro .skills_logos .ind_logo img,
+    .skills_interm .skills_logos .psd_logo img,
+    .skills_interm .skills_logos .ai_logo img,
+    .skills_interm .skills_logos .ind_logo img {
       width: 5rem;
       height: auto;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
+    .skills_pro .skills_logos .html_logo svg,
+    .skills_interm .skills_logos .html_logo svg {
+      height: 5rem;
+      width: auto; }
+    .skills_pro .skills_logos #html_svg,
+    .skills_interm .skills_logos #html_svg {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
 
 .carousel {

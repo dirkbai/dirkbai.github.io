@@ -223,7 +223,7 @@ background: $gray;
     width: 55%;
     height: 4rem;
     color: white;
-    background-color: $main-blue;
+    background: linear-gradient(45deg, #0f337d 0%,#2cd4fa 100%);
 
     p {
       font-size: 1rem;
@@ -232,11 +232,11 @@ background: $gray;
     }
 
   .skills_ai{
-    background-color: orange;
+    background: linear-gradient(45deg, #a73f00 0%,#f37020 100%);
     }
 
     .skills_id{
-      background-color: violet;
+    background: linear-gradient(45deg, #c80057 0%,#ff5ca3 100%);
       }
 
     .skills_html{
@@ -264,17 +264,31 @@ background: $gray;
       width: 100%;
       height: inherit;
 
-      .psd_logo{
+      .psd_logo,
+      .ai_logo,
+      .ind_logo,
+      .html_logo{
         height: 5rem;
         width: 5rem;
         margin: 1rem;
         padding: 0;
       }
 
-      .psd_logo img{
+      .psd_logo img,
+      .ai_logo img,
+      .ind_logo img{
         width: 5rem;
         height: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+      }
+
+
+      .html_logo svg{
+        height: 5rem;
+        width: auto;
+      }
+      #html_svg{
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
       }
     }
 
