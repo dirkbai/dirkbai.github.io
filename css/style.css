@@ -237,15 +237,15 @@ button {
   .skills_pro .skills_html,
   .skills_interm .skills_html {
     width: 35%;
-    background-color: green; }
+    background: linear-gradient(45deg, #e54d26 0%, #f29979 100%); }
   .skills_pro .skills_css,
   .skills_interm .skills_css {
     width: 43%;
-    background-color: orange; }
+    background: linear-gradient(45deg, #105ac1 0%, #7da9e8 100%); }
   .skills_pro .skills_js,
   .skills_interm .skills_js {
     width: 35%;
-    background-color: orange; }
+    background: linear-gradient(45deg, #eab42a 0%, #efd826 100%); }
   .skills_pro .skills_logos,
   .skills_interm .skills_logos {
     position: absolute;
@@ -260,10 +260,14 @@ button {
     .skills_pro .skills_logos .ai_logo,
     .skills_pro .skills_logos .ind_logo,
     .skills_pro .skills_logos .html_logo,
+    .skills_pro .skills_logos .css_logo,
+    .skills_pro .skills_logos .java_logo,
     .skills_interm .skills_logos .psd_logo,
     .skills_interm .skills_logos .ai_logo,
     .skills_interm .skills_logos .ind_logo,
-    .skills_interm .skills_logos .html_logo {
+    .skills_interm .skills_logos .html_logo,
+    .skills_interm .skills_logos .css_logo,
+    .skills_interm .skills_logos .java_logo {
       height: 5rem;
       width: 5rem;
       margin: 1rem;
@@ -277,12 +281,16 @@ button {
       width: 5rem;
       height: auto;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
-    .skills_pro .skills_logos .html_logo svg,
-    .skills_interm .skills_logos .html_logo svg {
+    .skills_pro .skills_logos .html_logo img,
+    .skills_pro .skills_logos .css_logo img,
+    .skills_pro .skills_logos .java_logo img,
+    .skills_interm .skills_logos .html_logo img,
+    .skills_interm .skills_logos .css_logo img,
+    .skills_interm .skills_logos .java_logo img {
+      display: flex;
+      width: 5rem;
       height: 5rem;
-      width: auto; }
-    .skills_pro .skills_logos #html_svg,
-    .skills_interm .skills_logos #html_svg {
+      background: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
 
 .carousel {

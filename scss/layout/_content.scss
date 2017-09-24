@@ -241,17 +241,17 @@ background: $gray;
 
     .skills_html{
         width: 35%;
-        background-color: green;
+    background: linear-gradient(45deg, #e54d26 0%,#f29979 100%);
       }
 
     .skills_css{
         width: 43%;
-        background-color: orange;
+        background: linear-gradient(45deg, #105ac1 0%,#7da9e8 100%);
       }
 
     .skills_js{
         width: 35%;
-        background-color: orange;
+        background: linear-gradient(45deg, #eab42a 0%, #efd826 100%);
       }
 
     .skills_logos{
@@ -267,7 +267,9 @@ background: $gray;
       .psd_logo,
       .ai_logo,
       .ind_logo,
-      .html_logo{
+      .html_logo,
+      .css_logo,
+      .java_logo{
         height: 5rem;
         width: 5rem;
         margin: 1rem;
@@ -282,13 +284,14 @@ background: $gray;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
       }
 
-
-      .html_logo svg{
+      .html_logo img,
+      .css_logo img,
+      .java_logo img{
+        display: flex;
+        width: 5rem;
         height: 5rem;
-        width: auto;
-      }
-      #html_svg{
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        background: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
       }
     }
 
