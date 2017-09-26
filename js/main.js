@@ -350,7 +350,7 @@ for (var i = 0; i < button.length; i++) {
   button[i].addEventListener("click", function(e){
        var actButton = event.target;
        $("html, body").animate({
-         scrollTop: $("#div5").offset().top -mnh}, 1000);
+         scrollTop: $("#tree").offset().top -mnh}, 1000);
       for (var i = 0; i < entry.length; i++) {
           entry[i].setAttribute('class', 'entry');
           var numbers = i+1;

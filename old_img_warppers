@@ -1,0 +1,37 @@
+<div class="images_wrapper">
+  <div class="active_space treehouse_inactive" id="test_sp">
+    <p class="btnTitle" style="display: none;">Project 9</p>
+    <img src="img\Treehouse\Project_9_tn.jpg" alt="Project_9" class="hide_it">
+    <img src="img\Treehouse\Project_9.jpg" srcset="img\Treehouse\Project_9.jpg 420w, img\Treehouse\Project_9_L.jpg 768w" alt="Project_9">
+    <p  class="revial_Text"><a href="#"><b>Project 9 Web App Dashborad</b></a><br>Apart from from my portfolio this project was definetly  >></p>
+    <span class="hide_text">the most challenging. The briefing was a Screenshot and severall javascript specifications</span>
+  </div>
+    <div class="inactive_space treehouse_inactive col1"  id="test">
+      <p class="btnTitle">Project 2</p>
+      <img src="img\Treehouse\Project_2_tn.jpg" alt="Project_2">
+      <img src="img\Treehouse\Project_2.jpg" alt="Project_2" class="hide_it">
+      <p class="hide_text"><a href="#"><b>Project 2 Responsive Onepage</b></a><br>Only the 2nd Project and you got >></p>
+      <span class="hide_text">chucked in to the deepend after learning the basics of css we had to creat an entire responsive onepage</span>
+    </div>
+    <div class="inactive_space treehouse_inactive col2">
+      <p class="btnTitle">Project 3</p>
+      <img src="img\Treehouse\Project_3_tn.jpg" alt="Project_3">
+      <img src="img\Treehouse\Project_3.jpg" alt="Project_3" class="hide_it">
+      <p class="hide_text"><a href="#"><b>Project 3 Formelement</b></a><br>Getting to know all the >></p>
+      <span class="hide_text">special rules for cearting a form</span>
+    </div>
+    <div class="inactive_space treehouse_inactive col3">
+      <p class="btnTitle">Project 4</p>
+      <img src="img\Treehouse\Project_4_tn.jpg" alt="Project_4">
+      <img src="img\Treehouse\Project_4.jpg" alt="Project_4" class="hide_it">
+      <p class="hide_text"><a href="#"><b>Project 4 Interactive Photogallery</b></a><br>Apart from from my portfolio this project was definetly </p>
+      <span class="hide_text">Hidden Text ::::::</span>
+    </div>
+    <div class="inactive_space treehouse_inactive col4">
+      <p class="btnTitle">Project 7</p>
+      <img src="img\Treehouse\Project_7_tn.jpg" alt="Project_7">
+      <img src="img\Treehouse\Project_7.jpg" alt="Project_7" class="hide_it">
+      <p class="hide_text"><a href="#"><b>Project 7 Interactive Video</b></a><br>Apart from from my portfolio this project was definetly </p>
+      <span class="hide_text">Hidden Text ::::::</span>
+    </div>
+</div>
