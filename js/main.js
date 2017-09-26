@@ -1,4 +1,5 @@
 var mn = $(".main-nav");
+    mnh = $(".main-nav").height();
     mns = "main-nav-scrolled";
     hdr = $('header').height();
 
@@ -118,35 +119,59 @@ $(document).ready(function(){
 //   }
 // });
 
+// for (var i = 0; i < revialText.length; i++) {
+//   revialText[i].index = i;
+//   revialText[i].addEventListener("click", function(e){
+//     for (var i = 0; i < revialText.length; i++) {
+//       var textact = event.target;
+//       var textPar = textact.parentNode;
+//       var textSib = textPar.children;
+//       textSib[1].style.display = "flex";
+//       // if (textSib[1].style.display === "none") {
+//       //   textSib[1].style.display = "flex";
+//       //   } else {
+//       //   textSib[1].style.display = "none";
+//       //   }
+//     }
+//   });
+// }
+//
+// for (var i = 0; i < hideText.length; i++) {
+//   hideText[i].index = i;
+//   hideText[i].addEventListener("click", function(e){
+//     // for (var i = 0; i < hideText.length; i++) {
+//       var textact = event.target;
+//       // var textPar = textact.parentNode;
+//       // var textSib = textPar.children;
+//       if (textact.style.display === "flex") {
+//         textact.style.display = "none";
+//         }
+//     // }
+//   });
+// }
+
 for (var i = 0; i < revialText.length; i++) {
   revialText[i].index = i;
   revialText[i].addEventListener("click", function(e){
-    for (var i = 0; i < revialText.length; i++) {
-      var textact = event.target;
-      var textPar = textact.parentNode;
-      var textSib = textPar.children;
-      textSib[1].style.display = "flex";
-      // if (textSib[1].style.display === "none") {
-      //   textSib[1].style.display = "flex";
-      //   } else {
-      //   textSib[1].style.display = "none";
-      //   }
-    }
-  });
+       var actText = event.target;
+       if (hideText[this.index].style.display = "none") {
+         hideText[this.index].style.display = "flex";
+       } else if (hideText[this.index].style.display = "flex") {
+         hideText[this.index].style.display = "none";
+       }
+
+     });
 }
 
 for (var i = 0; i < hideText.length; i++) {
   hideText[i].index = i;
   hideText[i].addEventListener("click", function(e){
-    // for (var i = 0; i < hideText.length; i++) {
-      var textact = event.target;
-      // var textPar = textact.parentNode;
-      // var textSib = textPar.children;
-      if (textact.style.display === "flex") {
-        textact.style.display = "none";
-        }
-    // }
-  });
+       var actText = event.target;
+       if (hideText[this.index].style.display = "flex") {
+         hideText[this.index].style.display = "none";
+       }
+
+     });
 }
 
 
@@ -324,14 +349,16 @@ for (var i = 0; i < button.length; i++) {
   button[i].index = i;
   button[i].addEventListener("click", function(e){
        var actButton = event.target;
+       $("html, body").animate({
+         scrollTop: $("#div5").offset().top -mnh}, 1000);
       for (var i = 0; i < entry.length; i++) {
           entry[i].setAttribute('class', 'entry');
           var numbers = i+1;
-          var indexStrings = number.toString();
+          // var indexStrings = number.toString();
            button[i].setAttribute('class', 'button col'+[numbers]);
       }
        entry[this.index].setAttribute('class', 'entry active_space active');
-       actButton.setAttribute('class', 'button col' + [this.index] + ' hide');
+       actButton.parentNode.setAttribute('class', 'button col' + [this.index] + ' hide');
      });
 }
 
