@@ -16,6 +16,9 @@ h3 {
   font-weight: 400;
   font-size: 1.8rem;
   margin-top: 1.5rem; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 2.2rem; } }
 
 .placeholder_size_main {
   height: 40vh; }
@@ -63,8 +66,8 @@ button {
     .active_space {
       font-size: 1.8rem;
       line-height: 2.3rem;
-      padding-top: 6rem;
-      padding-bottom: 10rem; } }
+      padding-top: 0rem;
+      padding-bottom: 6rem; } }
   .active_space .hide_it {
     display: none; }
   .active_space img {
@@ -119,14 +122,14 @@ button {
     @media (min-width: 768px) {
       .second_title h3 {
         font-size: 2.2rem;
-        margin: 4rem 1.5rem 0 1.5rem; } }
+        margin: 6rem 1.5rem 0 1.5rem; } }
   .second_title span {
     font-size: 1.4rem;
     margin: 1.5rem 1.5rem 3rem 1.5rem; }
     @media (min-width: 768px) {
       .second_title span {
         font-size: 1.8rem;
-        margin: 1.5rem 1.5rem 4rem 1.5rem; } }
+        margin: 1.5rem 1.5rem 6rem 1.5rem; } }
 
 .col1 {
   background: #174DBD; }
@@ -156,7 +159,8 @@ button {
   transition: height 0.3s ease-out; }
   @media (min-width: 768px) {
     .inactive_space {
-      width: 25%; } }
+      width: 25%;
+      font-size: 1.8rem; } }
   .inactive_space .hide_it {
     display: none; }
   .inactive_space img {
@@ -184,7 +188,8 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
   @media (min-width: 768px) {
     .btnTitle {
-      width: 15%; } }
+      width: 15%;
+      line-height: 2.3rem; } }
 
 .images_wrapper,
 .inactive_wrapper {
@@ -319,6 +324,53 @@ button {
       background: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
 
+.presentation {
+  display: flex; }
+
+.entry {
+  display: none; }
+
+.active {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 300;
+  transition: height 0.3s ease-out;
+  padding-bottom: 3rem; }
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  height: auto;
+  padding: 4rem 0rem;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer; }
+
+.hide {
+  display: none; }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -332,7 +384,7 @@ footer {
 .contact {
   color: white;
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   background-color: #0F337D; }
   .contact h3 {
     color: white;

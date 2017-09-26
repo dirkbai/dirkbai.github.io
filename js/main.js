@@ -10,11 +10,11 @@ var mainNav = document.getElementById("main-nav");
 
 var hideText = document.querySelectorAll('.hide_text');
 var revialText = document.querySelectorAll('.revial_Text');
-
-var treeInactive = document.querySelectorAll('.treehouse_inactive');
-var logosInactive = document.querySelectorAll('.logos_inactive');
-var printInactive = document.querySelectorAll('.print_inactive');
-var funInactive = document.querySelectorAll('.fun_inactive');
+//
+// var treeInactive = document.querySelectorAll('.treehouse_inactive');
+// var logosInactive = document.querySelectorAll('.logos_inactive');
+// var printInactive = document.querySelectorAll('.print_inactive');
+// var funInactive = document.querySelectorAll('.fun_inactive');
 
 // var treeSwap = document.getElementById('treehouse_swap');
 
@@ -157,168 +157,188 @@ for (var i = 0; i < hideText.length; i++) {
 
 
 //------------------------------------------------- switch Position Treehouse
+//
+// var actSP = document.getElementById('test_sp');
+// var actSpCh = actSP.children;
+//
+// for (var i = 0; i < treeInactive.length; i++) {
+//   treeInactive[i].index = i;
+//   treeInactive[i].addEventListener("click", function(e){
+//     var activate = event.target;
+//     var activatePar = activate.parentNode;
+//     var siblingsMe = activatePar.children;
+//      for (var i = 0; i < treeInactive.length; i++) {
+//         // var allChildren = activatePar.parentNode.children;
+//         var treeChildren = treeInactive[i].children;
+//         var number = i+1;
+//         var indexString = number.toString();
+//         activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
+//         treeInactive[i].setAttribute("class", ["inactive_space treehouse_inactive col"]+[indexString]);
+//         activatePar.parentNode.firstChild.className = "active_space";
+//         treeChildren[0].style.display = "flex";
+//         treeChildren[1].style.display = "flex";
+//         treeChildren[2].style.display = "none";
+//         treeChildren[3].style.display = "none";
+//         // treeChildren[4].style.display = "none";
+//      }
+//
+//     //  actSpCh[0].style.display = "flex";
+//     //  actSpCh[1].style.display = "none";
+//     //  actSpCh[2].style.display = "none";
+//     //  actSpCh[3].style.display = "none";
+//
+//      for(var r=0; r<siblingsMe.length; r++) {
+//       siblingsMe[r].style.display = "flex";
+//       }
+//       activate.style.display = "none";
+//       siblingsMe[0].style.display = "none";
+//       siblingsMe[4].style.display = "none";
+//   });
+// }
+//
+//
+//
+//
+//
+// //---------------------------------------------------- switch Position Logos
+//
+// for (var i = 0; i < logosInactive.length; i++) {
+//   logosInactive[i].index = i;
+//   logosInactive[i].addEventListener("click", function(e){
+//     var activate = event.target;
+//     var activatePar = activate.parentNode;
+//     var siblingsMe = activatePar.children;
+//      for (var i = 0; i < logosInactive.length; i++) {
+//         // var allChildren = activatePar.parentNode.children;
+//         var logoChildren = logosInactive[i].children;
+//         var number = i+1;
+//         var indexString = number.toString();
+//         activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
+//         logosInactive[i].setAttribute("class", ["inactive_space logo_inactive col"]+[indexString]);
+//         activatePar.parentNode.firstChild.className = "active_space";
+//         logoChildren[0].style.display = "flex";
+//         logoChildren[1].style.display = "flex";
+//         logoChildren[2].style.display = "none";
+//         logoChildren[3].style.display = "none";
+//         // treeChildren[4].style.display = "none";
+//      }
+//
+//     //  actSpCh[0].style.display = "flex";
+//     //  actSpCh[1].style.display = "none";
+//     //  actSpCh[2].style.display = "none";
+//     //  actSpCh[3].style.display = "none";
+//
+//      for(var r=0; r<siblingsMe.length; r++) {
+//       siblingsMe[r].style.display = "flex";
+//       }
+//       activate.style.display = "none";
+//       siblingsMe[0].style.display = "none";
+//       siblingsMe[4].style.display = "none";
+//   });
+// }
+//
+//
+//
+//
+//
+// //--------------------------------------------------- switch Position Print
+//
+// for (var i = 0; i < printInactive.length; i++) {
+//   printInactive[i].index = i;
+//   printInactive[i].addEventListener("click", function(e){
+//     var activate = event.target;
+//     var activatePar = activate.parentNode;
+//     var siblingsMe = activatePar.children;
+//      for (var i = 0; i < printInactive.length; i++) {
+//         // var allChildren = activatePar.parentNode.children;
+//         var printChildren = printInactive[i].children;
+//         var number = i+1;
+//         var indexString = number.toString();
+//         activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
+//         printInactive[i].setAttribute("class", ["inactive_space print_inactive col"]+[indexString]);
+//         activatePar.parentNode.firstChild.className = "active_space";
+//         printChildren[0].style.display = "flex";
+//         printChildren[1].style.display = "flex";
+//         printChildren[2].style.display = "none";
+//         printChildren[3].style.display = "none";
+//         // treeChildren[4].style.display = "none";
+//      }
+//
+//     //  actSpCh[0].style.display = "flex";
+//     //  actSpCh[1].style.display = "none";
+//     //  actSpCh[2].style.display = "none";
+//     //  actSpCh[3].style.display = "none";
+//
+//      for(var r=0; r<siblingsMe.length; r++) {
+//       siblingsMe[r].style.display = "flex";
+//       }
+//       activate.style.display = "none";
+//       siblingsMe[0].style.display = "none";
+//       siblingsMe[4].style.display = "none";
+//   });
+// }
+//
+// //-------------------------------------------------------- switch Position Fun
+//
+// for (var i = 0; i < funInactive.length; i++) {
+//   funInactive[i].index = i;
+//   funInactive[i].addEventListener("click", function(e){
+//     var activate = event.target;
+//     var activatePar = activate.parentNode;
+//     var siblingsMe = activatePar.children;
+//      for (var i = 0; i < funInactive.length; i++) {
+//         // var allChildren = activatePar.parentNode.children;
+//         var funChildren = funInactive[i].children;
+//         var number = i+1;
+//         var indexString = number.toString();
+//         activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
+//         funInactive[i].setAttribute("class", ["inactive_space fun_inactive col"]+[indexString]);
+//         activatePar.parentNode.firstChild.className = "active_space";
+//         funChildren[0].style.display = "flex";
+//         funChildren[1].style.display = "flex";
+//         funChildren[2].style.display = "none";
+//         funChildren[3].style.display = "none";
+//         // treeChildren[4].style.display = "none";
+//      }
+//
+//     //  actSpCh[0].style.display = "flex";
+//     //  actSpCh[1].style.display = "none";
+//     //  actSpCh[2].style.display = "none";
+//     //  actSpCh[3].style.display = "none";
+//
+//      for(var r=0; r<siblingsMe.length; r++) {
+//       siblingsMe[r].style.display = "flex";
+//       }
+//       activate.style.display = "none";
+//       siblingsMe[0].style.display = "none";
+//       siblingsMe[4].style.display = "none";
+//   });
+// }
+//
 
-var actSP = document.getElementById('test_sp');
-var actSpCh = actSP.children;
+var entry = document.getElementsByClassName('entry');
 
-for (var i = 0; i < treeInactive.length; i++) {
-  treeInactive[i].index = i;
-  treeInactive[i].addEventListener("click", function(e){
-    var activate = event.target;
-    var activatePar = activate.parentNode;
-    var siblingsMe = activatePar.children;
-     for (var i = 0; i < treeInactive.length; i++) {
-        // var allChildren = activatePar.parentNode.children;
-        var treeChildren = treeInactive[i].children;
-        var number = i+1;
-        var indexString = number.toString();
-        activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
-        treeInactive[i].setAttribute("class", ["inactive_space treehouse_inactive col"]+[indexString]);
-        activatePar.parentNode.firstChild.className = "active_space";
-        treeChildren[0].style.display = "flex";
-        treeChildren[1].style.display = "flex";
-        treeChildren[2].style.display = "none";
-        treeChildren[3].style.display = "none";
-        // treeChildren[4].style.display = "none";
-     }
+var button = document.getElementsByClassName('button');
 
-    //  actSpCh[0].style.display = "flex";
-    //  actSpCh[1].style.display = "none";
-    //  actSpCh[2].style.display = "none";
-    //  actSpCh[3].style.display = "none";
-
-     for(var r=0; r<siblingsMe.length; r++) {
-      siblingsMe[r].style.display = "flex";
+for (var i = 0; i < button.length; i++) {
+  button[i].index = i;
+  button[i].addEventListener("click", function(e){
+       var actButton = event.target;
+      for (var i = 0; i < entry.length; i++) {
+          entry[i].setAttribute('class', 'entry');
+          var numbers = i+1;
+          var indexStrings = number.toString();
+           button[i].setAttribute('class', 'button col'+[numbers]);
       }
-      activate.style.display = "none";
-      siblingsMe[0].style.display = "none";
-      siblingsMe[4].style.display = "none";
-  });
-}
-
-
-
-
-
-//---------------------------------------------------- switch Position Logos
-
-for (var i = 0; i < logosInactive.length; i++) {
-  logosInactive[i].index = i;
-  logosInactive[i].addEventListener("click", function(e){
-    var activate = event.target;
-    var activatePar = activate.parentNode;
-    var siblingsMe = activatePar.children;
-     for (var i = 0; i < logosInactive.length; i++) {
-        // var allChildren = activatePar.parentNode.children;
-        var logoChildren = logosInactive[i].children;
-        var number = i+1;
-        var indexString = number.toString();
-        activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
-        logosInactive[i].setAttribute("class", ["inactive_space logo_inactive col"]+[indexString]);
-        activatePar.parentNode.firstChild.className = "active_space";
-        logoChildren[0].style.display = "flex";
-        logoChildren[1].style.display = "flex";
-        logoChildren[2].style.display = "none";
-        logoChildren[3].style.display = "none";
-        // treeChildren[4].style.display = "none";
-     }
-
-    //  actSpCh[0].style.display = "flex";
-    //  actSpCh[1].style.display = "none";
-    //  actSpCh[2].style.display = "none";
-    //  actSpCh[3].style.display = "none";
-
-     for(var r=0; r<siblingsMe.length; r++) {
-      siblingsMe[r].style.display = "flex";
-      }
-      activate.style.display = "none";
-      siblingsMe[0].style.display = "none";
-      siblingsMe[4].style.display = "none";
-  });
-}
-
-
-
-
-
-//--------------------------------------------------- switch Position Print
-
-for (var i = 0; i < printInactive.length; i++) {
-  printInactive[i].index = i;
-  printInactive[i].addEventListener("click", function(e){
-    var activate = event.target;
-    var activatePar = activate.parentNode;
-    var siblingsMe = activatePar.children;
-     for (var i = 0; i < printInactive.length; i++) {
-        // var allChildren = activatePar.parentNode.children;
-        var printChildren = printInactive[i].children;
-        var number = i+1;
-        var indexString = number.toString();
-        activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
-        printInactive[i].setAttribute("class", ["inactive_space print_inactive col"]+[indexString]);
-        activatePar.parentNode.firstChild.className = "active_space";
-        printChildren[0].style.display = "flex";
-        printChildren[1].style.display = "flex";
-        printChildren[2].style.display = "none";
-        printChildren[3].style.display = "none";
-        // treeChildren[4].style.display = "none";
-     }
-
-    //  actSpCh[0].style.display = "flex";
-    //  actSpCh[1].style.display = "none";
-    //  actSpCh[2].style.display = "none";
-    //  actSpCh[3].style.display = "none";
-
-     for(var r=0; r<siblingsMe.length; r++) {
-      siblingsMe[r].style.display = "flex";
-      }
-      activate.style.display = "none";
-      siblingsMe[0].style.display = "none";
-      siblingsMe[4].style.display = "none";
-  });
-}
-
-//-------------------------------------------------------- switch Position Fun
-
-for (var i = 0; i < funInactive.length; i++) {
-  funInactive[i].index = i;
-  funInactive[i].addEventListener("click", function(e){
-    var activate = event.target;
-    var activatePar = activate.parentNode;
-    var siblingsMe = activatePar.children;
-     for (var i = 0; i < funInactive.length; i++) {
-        // var allChildren = activatePar.parentNode.children;
-        var funChildren = funInactive[i].children;
-        var number = i+1;
-        var indexString = number.toString();
-        activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
-        funInactive[i].setAttribute("class", ["inactive_space fun_inactive col"]+[indexString]);
-        activatePar.parentNode.firstChild.className = "active_space";
-        funChildren[0].style.display = "flex";
-        funChildren[1].style.display = "flex";
-        funChildren[2].style.display = "none";
-        funChildren[3].style.display = "none";
-        // treeChildren[4].style.display = "none";
-     }
-
-    //  actSpCh[0].style.display = "flex";
-    //  actSpCh[1].style.display = "none";
-    //  actSpCh[2].style.display = "none";
-    //  actSpCh[3].style.display = "none";
-
-     for(var r=0; r<siblingsMe.length; r++) {
-      siblingsMe[r].style.display = "flex";
-      }
-      activate.style.display = "none";
-      siblingsMe[0].style.display = "none";
-      siblingsMe[4].style.display = "none";
-  });
+       entry[this.index].setAttribute('class', 'entry active_space active');
+       actButton.setAttribute('class', 'button col' + [this.index] + ' hide');
+     });
 }
 
 
 //-------------------------------------------------------- Charts
-
-Chart.defaults.global.legend.display = false;
+//
+// Chart.defaults.global.legend.display = false;
 
 // var ctx = document.getElementById("myChart").getContext('2d');
 // var myChart = new Chart(ctx, {
