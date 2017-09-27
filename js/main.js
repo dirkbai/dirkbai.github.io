@@ -363,6 +363,77 @@ for (var i = 0; i < button.length; i++) {
 }
 
 
+
+var entryL = document.getElementsByClassName('entryL');
+
+var buttonL = document.getElementsByClassName('buttonL');
+
+for (var i = 0; i < buttonL.length; i++) {
+  buttonL[i].index = i;
+  buttonL[i].addEventListener("click", function(e){
+       var actButton = event.target;
+       $("html, body").animate({
+         scrollTop: $("#logo").offset().top -mnh}, 1000);
+      for (var i = 0; i < entryL.length; i++) {
+          entryL[i].setAttribute('class', 'entryL');
+          var numbers = i+1;
+          // var indexStrings = number.toString();
+           buttonL[i].setAttribute('class', 'buttonL col'+[numbers]);
+      }
+       entryL[this.index].setAttribute('class', 'entryL active_space active');
+       actButton.parentNode.setAttribute('class', 'buttonL col' + [this.index] + ' hide');
+     });
+}
+
+
+var entryP = document.getElementsByClassName('entryP');
+
+var buttonP = document.getElementsByClassName('buttonP');
+
+for (var i = 0; i < buttonP.length; i++) {
+  buttonP[i].index = i;
+  buttonP[i].addEventListener("click", function(e){
+       var actButton = event.target;
+       $("html, body").animate({
+         scrollTop: $("#print").offset().top -mnh}, 1000);
+      for (var i = 0; i < entryP.length; i++) {
+          entryP[i].setAttribute('class', 'entryP');
+          var numbers = i+1;
+          // var indexStrings = number.toString();
+           buttonP[i].setAttribute('class', 'buttonP col'+[numbers]);
+      }
+       entryP[this.index].setAttribute('class', 'entryP active_space active');
+       actButton.parentNode.setAttribute('class', 'buttonP col' + [this.index] + ' hide');
+     });
+}
+
+
+
+
+
+
+var entryF = document.getElementsByClassName('entryF');
+
+var buttonF = document.getElementsByClassName('buttonF');
+
+for (var i = 0; i < buttonF.length; i++) {
+  buttonF[i].index = i;
+  buttonF[i].addEventListener("click", function(e){
+       var actButton = event.target;
+       $("html, body").animate({
+         scrollTop: $("#fun").offset().top -mnh}, 1000);
+      for (var i = 0; i < entryF.length; i++) {
+          entryF[i].setAttribute('class', 'entryF');
+          var numbers = i+1;
+          // var indexStrings = number.toString();
+           buttonF[i].setAttribute('class', 'buttonF col'+[numbers]);
+      }
+       entryF[this.index].setAttribute('class', 'entryF active_space active');
+       actButton.parentNode.setAttribute('class', 'buttonF col' + [this.index] + ' hide');
+     });
+}
+
+
 //-------------------------------------------------------- Charts
 //
 // Chart.defaults.global.legend.display = false;

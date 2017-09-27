@@ -327,7 +327,11 @@ button {
 .presentation {
   display: flex; }
 
-.entry {
+.entry,
+.entryL,
+.entryP,
+.entryF {
+  color: #174DBD;
   display: none; }
 
 .active {
@@ -351,7 +355,10 @@ button {
   font-weight: 300;
   transition: height 0.3s ease-out; }
 
-.button {
+.button,
+.buttonL,
+.buttonP,
+.buttonF {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -366,7 +373,10 @@ button {
   text-align: center;
   font-weight: 400;
   cursor: pointer; }
-  .button img {
+  .button img,
+  .buttonL img,
+  .buttonP img,
+  .buttonF img {
     width: 100%;
     height: 100%;
     opacity: .07;
@@ -392,7 +402,7 @@ footer {
 .contact {
   color: white;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   background-color: #0F337D; }
   .contact h3 {
     color: white;
