@@ -1,0 +1,85 @@
+
+//
+// ----------- Colors
+
+$main-blue    : #174DBD;
+$sec-blue     : #0F337D;
+$dark-blue    : #08193D;
+$dark-gray    : #363740;
+$gray         : #6A6D70;
+
+$graid-dark-gray : rgba(0, 13, 22, .9);
+$graid-main-blue : rgba(23, 77, 189, .4);
+$graid-sec-blue  : rgba(15, 51, 125, 1);
+
+$roboto_con : 'Roboto Condensed', sans-serif;
+
+$nav_small : 13vh;
+
+
+$br-tablet  : '(min-width: 768px)';
+$br-screen  : '(min-width: 1024px)';
+
+//
+// -----------
+
+header{
+  // max-width: 1200px;
+  position: fixed;
+  height: 87vh;
+  top: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 87vh;
+}
+
+h2 {
+  display: flex;
+  font-size: 2.3rem;
+  margin: 1.5rem;
+
+  @media #{$br-tablet}{
+    font-size: 2.2rem;
+    margin: 4rem;
+  }
+
+  @media #{$br-screen}{
+      margin: 6rem;
+  }
+
+}
+
+h3 {
+    display: flex;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    @media #{$br-tablet}{
+    font-size: 2.2rem;
+    }
+}
+
+.placeholder_size_main{
+  height: 40vh;
+}
+
+.placeholder_size_sec{
+  height: 20vh;
+}
+
+// .active_space{
+//   height: 40vh;
+//   width: 100%;
+//   background: darkgray;
+//   transition: flex-grow .5s ease-out;
+//
+//   &:hover,
+//   &:focus {
+//     flex-grow: 2;
+//     }
+//   }
