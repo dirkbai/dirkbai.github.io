@@ -55,15 +55,18 @@ footer{
     margin: 1.5rem 4rem 6rem;
     }
 
-  img {
+  a {
     width: 33%;
     height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-
     @media #{$br-tablet}{
-      width: 15%;
-    }
+          width: 20%;
+        }
+  }
 
+  img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   }
 
   #behance{

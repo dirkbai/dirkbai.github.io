@@ -9,29 +9,11 @@ var closeNav = document.getElementById('close_Nav');
 var navLi = document.querySelectorAll('.navLi');
 var mainNav = document.getElementById("main-nav");
 var ulLarge = document.getElementById("nav_size_L");
+var navLi = document.getElementsByClassName('navLi');
 
 var hideText = document.querySelectorAll('.hide_text');
 var revialText = document.querySelectorAll('.revial_Text');
 
-
-
-//
-// var treeInactive = document.querySelectorAll('.treehouse_inactive');
-// var logosInactive = document.querySelectorAll('.logos_inactive');
-// var printInactive = document.querySelectorAll('.print_inactive');
-// var funInactive = document.querySelectorAll('.fun_inactive');
-
-// var treeSwap = document.getElementById('treehouse_swap');
-
-
-
-// $('window').scroll(function(){
-//  if( $(this).scrollTop() > 50 ) {
-//    mn.addClass("main-nav-scrolled");
-//  } else {
-//    mn.removeClass("main-nav-scrolled");
-//  }
-// });
 
 
 //---------------------------------------- Nav Media query
@@ -42,31 +24,19 @@ var revialText = document.querySelectorAll('.revial_Text');
 $(document).ready(function(){
   if (window.matchMedia("(min-width: 1024px)").matches) {
       // The browser window is at least 480px wide
-        overlyStart.style.display = "none";
+        $(overlyStart).addClass( "hide" );
   }
   else {
-      ulLarge.style.display = "none";
+      $(ulLarge).addClass( "hide" );
       // The browser window is less than 480px wide
   }
 
 });
 
 
-// function (mql) {
-//     if (mediaQueryList.matches) {
-//       console.log("test");
-//         // The browser window is at least 480px wide
-//           overlyStart.style.display = "none";
-//     }
-//     else {
-//         // The browser window is less than 480px wide
-//     }
-// };
-
 
 //---------------------------------------- Nav Scroll to
 
-var navLi = document.getElementsByClassName('navLi');
 
 for (var i = 0; i < navLi.length; i++) {
   navLi[i].addEventListener("click", function(e){
@@ -96,41 +66,33 @@ for (var i = 0; i < myLogo.length; i++) {
 document.addEventListener('scroll', function() {
  if( $(this).scrollTop() > hdr ) {
    mn.addClass(mns);
-  myNav.className = "overlay nav_height_top";
+  myNav.className = "overlay showMe nav_height_top";
  } else {
    mn.removeClass(mns);
-   myNav.className = "overlay";
+   myNav.className = "overlay showMe";
  }
 });
 
 
 //---------------------------------------- Nav Overlay
 
-// if (mainNav.className === "main-nav") {
-//   myNav.className = "overlay nav_height_btm";
-// } else if(mainNav.className === "main-nav main-nav-scrolled") {
-//  myNav.className = "overlay nav_height_top";
-// }
-
-
-
-/* Open */
-// overlyStart.addEventListener('click', function () {
-//       document.getElementById("myNav").style.height = "100%";
-//  });
 
  overlyStart.addEventListener('click', function () {
-     if (document.getElementById("myNav").style.height == "0%") {
-       document.getElementById("myNav").style.height = "100%";
-     } else {
-       document.getElementById("myNav").style.height = "0%";
-     }
+     if (document.getElementById("myNav").className == "overlay showMe") {
+       document.getElementById("myNav").classList.add("active_text");
+     } else if (document.getElementById("myNav").className == "overlay showMe nav_height_top"){
+      document.getElementById("myNav").classList.add("active_text");
+    } else {
+      document.getElementById("myNav").classList.remove("active_text");
+    }
   });
+
+
 
 
 /* Close */
 closeNav.addEventListener('click', function () {
-    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").classList.remove("active_text");
 });
 
 // workNav.addEventListener('click', function () {
@@ -142,7 +104,7 @@ for (var i = 0; i < navLi.length; i++) {
   navLi[i].addEventListener("click", function(e){
     var activate = event.target;
      for (var i = 0; i < navLi.length; i++) {
-           document.getElementById("myNav").style.height = "0%";
+           document.getElementById("myNav").classList.remove("active_text");
      }
   });
 }
@@ -163,19 +125,6 @@ $(document).ready(function(){
     dots: false,
     autoplaySpeed: 6500,
     speed: 3000,
-    // slidesToShow: 1,
-    // infinite: false,
-    // onAfterChange: function(){
-    //     //check the length of total items in .slide container
-    //     //if that number is the same with the number of the last slider
-    //     //Then pause the slider
-    //     if( item_length == slider.slickCurrentSlide() ){
-    //       slider.slickPause();
-    //         // slider.slickSetOption("autoplay",false,false)
-    //     };
-    // }
-
-    // adaptiveHeight: true
   });
 });
 
@@ -187,19 +136,6 @@ $('.carousel').on('afterChange', function(event, slick, currentSlide, nextSlide)
 
 //---------------------------------------- Multiline toggle
 
-//
-
-
-// var waypoint = new Waypoint({
-//   element: document.getElementById('skills'),
-//   handler: function(direction) {
-//     var bar_animation = document.getElementsByClassName('bar_animation');
-//     for (var i = 0; i < bar_animation.length; i++) {
-//       bar_animation[i].classList.add("active");
-//     }
-//   },
-//   offset: '75%'
-// })
 
 var arrowText = document.querySelectorAll('.arrow_text');
 
@@ -224,6 +160,7 @@ for (var i = 0; i < hideText.length; i++) {
   hideText[i].addEventListener("click", function(e){
 
        hideText[this.index].classList.remove("active_text");
+       arrowText[this.index].classList.remove("hide");
      });
 }
 

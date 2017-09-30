@@ -99,6 +99,7 @@ button {
       .active_space img {
         width: 75%; } }
   .active_space p {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     color: #174DBD;
@@ -563,13 +564,16 @@ footer {
   @media (min-width: 768px) {
     .soMe {
       margin: 1.5rem 4rem 6rem; } }
-  .soMe img {
+  .soMe a {
     width: 33%;
+    height: auto; }
+    @media (min-width: 768px) {
+      .soMe a {
+        width: 20%; } }
+  .soMe img {
+    width: 100%;
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
-    @media (min-width: 768px) {
-      .soMe img {
-        width: 15%; } }
   .soMe #behance {
     margin-right: 2rem; }
 
@@ -731,7 +735,7 @@ footer {
     font-size: 1.5rem; }
 
 .overlay {
-  height: 0%;
+  height: 100%;
   width: 100%;
   position: fixed;
   z-index: 1;
