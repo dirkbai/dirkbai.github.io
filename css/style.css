@@ -114,13 +114,14 @@ button {
     margin: 0; }
 
 #intro_text {
+  display: inline-block;
   color: white;
   cursor: pointer;
   font-size: 2.3rem;
   line-height: 3rem; }
   @media (min-width: 768px) {
     #intro_text {
-      margin-top: 6rem;
+      margin: 6rem 5rem 2rem 6rem;
       font-size: 3rem;
       line-height: 3.5rem; } }
   @media (min-width: 1024px) {
@@ -141,9 +142,21 @@ button {
       color: white;
       margin: 0rem 5.5rem 7rem 5.5rem; } }
 
-.show_text {
-  display: flex;
-  margin: 0 1.5rem; }
+.showMe {
+  max-height: 0%;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden; }
+  .showMe.active_text {
+    max-height: 100%;
+    transition: max-height 0.5s ease-in; }
+
+.arrow_text {
+  display: inline; }
+  .arrow_text .hide {
+    display: none; }
+
+.revial_Text {
+  display: inline; }
 
 .hide_text {
   cursor: pointer;
@@ -301,8 +314,8 @@ button {
     transform: scaleX(0);
     transition: all 2000ms;
     transform-origin: left; }
-    .skills_pro .bar_animation.active,
-    .skills_interm .bar_animation.active {
+    .skills_pro .bar_animation.active_bar,
+    .skills_interm .bar_animation.active_bar {
       transform: scaleX(1); }
   .skills_pro .skills_psd,
   .skills_pro .skills_ai,

@@ -41,7 +41,6 @@ var revialText = document.querySelectorAll('.revial_Text');
 
 $(document).ready(function(){
   if (window.matchMedia("(min-width: 1024px)").matches) {
-    console.log("test");
       // The browser window is at least 480px wide
         overlyStart.style.display = "none";
   }
@@ -191,16 +190,18 @@ $('.carousel').on('afterChange', function(event, slick, currentSlide, nextSlide)
 //
 
 
-var waypoint = new Waypoint({
-  element: document.getElementById('skills'),
-  handler: function(direction) {
-    var bar_animation = document.getElementsByClassName('bar_animation');
-    for (var i = 0; i < bar_animation.length; i++) {
-      bar_animation[i].classList.add("active");
-    }
-  },
-  offset: '75%'
-})
+// var waypoint = new Waypoint({
+//   element: document.getElementById('skills'),
+//   handler: function(direction) {
+//     var bar_animation = document.getElementsByClassName('bar_animation');
+//     for (var i = 0; i < bar_animation.length; i++) {
+//       bar_animation[i].classList.add("active");
+//     }
+//   },
+//   offset: '75%'
+// })
+
+var arrowText = document.querySelectorAll('.arrow_text');
 
 for (var i = 0; i < revialText.length; i++) {
   revialText[i].index = i;
@@ -208,24 +209,40 @@ for (var i = 0; i < revialText.length; i++) {
        var actText = event.target;
       //  var hiddenText = hideText[this.index];
        var panel = this.nextElementSibling;
-       if (panel.style.maxHeight){
-         panel.style.maxHeight = null;
+       if (panel.className === "hide_text showMe"){
+         panel.classList.add("active_text");
+         arrowText[this.index].classList.add("hide");
        } else {
-         panel.style.maxHeight = panel.scrollHeight + "px";
+         panel.classList.remove("active_text");
        }
 
      });
 }
 
-// for (var i = 0; i < hideText.length; i++) {
-//   hideText[i].index = i;
-//   hideText[i].addEventListener("click", function(e){
+for (var i = 0; i < hideText.length; i++) {
+  hideText[i].index = i;
+  hideText[i].addEventListener("click", function(e){
+
+       hideText[this.index].classList.remove("active_text");
+     });
+}
+
+// for (var i = 0; i < revialText.length; i++) {
+//   revialText[i].index = i;
+//   revialText[i].addEventListener("click", function(e){
 //        var actText = event.target;
-//        if (hideText[this.index].style.display = "flex") {
-//          hideText[this.index].style.display = "none";
+//       //  var hiddenText = hideText[this.index];
+//        var panel = this.nextElementSibling;
+//        if (panel.style.maxHeight){
+//          panel.style.maxHeight = null;
+//        } else {
+//          panel.style.maxHeight = panel.scrollHeight + "px";
 //        }
+//
 //      });
 // }
+
+
 
 // var acc = document.getElementsByClassName("accordion");
 // var i;
@@ -551,7 +568,7 @@ var waypoint = new Waypoint({
   handler: function(direction) {
     var bar_animation = document.getElementsByClassName('bar_animation');
     for (var i = 0; i < bar_animation.length; i++) {
-      bar_animation[i].classList.add("active");
+      bar_animation[i].classList.add("active_bar");
     }
   },
   offset: '75%'
