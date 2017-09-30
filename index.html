@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header>
@@ -386,6 +387,14 @@
         <div class="logo">
           <a href="#carousel_top"><img src="img\DB_Logo.jpg" alt="DB-Logo" class="DB Logo"></a>
         </div>
+        <nav id="nav_size_L">
+          <ul id="ul_size_L">
+            <li><a href="#me" class="navLi">Me</a></li>
+            <li><a href="#work" class="navLi">Work</a></li>
+            <li><a href="#skills" class="navLi">Skills</a></li>
+            <li><a href="#contact" class="navLi">Contact</a></li>
+          </ul>
+        </nav>
         <button  id="overlay-nav" type="button" name="button">  <img src="img/menu_icon.svg" alt="menu_icon"></button> <!-- Use any element to open/show the overlay navigation menu -->
 
 
@@ -393,10 +402,18 @@
     <main class="main-content" role="main">
       <article class="this_is_me" id="me" role="article">
         <div class="picture_me">
-
         </div>
-        <div class="active_space" id="this_is_me_text">
-            <p id="intro_text" class="revial_Text">my Name is Dirk Baigent, I'm a Designer based in Austria with Kiwi roots. Design is my passion but my path was unconfentional to say the least  >> </p><span class="hide_text">It took me 15 years of my life to findout what I'm passionet about and that was Graphic and Design. I tried to get an apprenteship as a Mediadesigner with help of gouverment programms. But as the industrie was and still is, it was a very popular job with very few jobs availble. So after my Parents payed for some other courses with graphic design I tried my hand as self employed Graphic Designer. I mainly did Christian T-shirts and Band merch, this was fun at the time. But when my realationship with my Girlfriend got serious I descided that it was time for a real job. I worked on my Portfolio and after many many rejections I finaly got a job at an advertising agency and the rest was history ;-). Enjoy my Portfolio. P.S. no templates used for this site!</span>
+        <div class="active_space">
+            <p id="intro_text" class="revial_Text"> "Find what you love and you will never work a day in your life" >> </p>
+            <div class="hide_text">
+              <p id="intro_text_hide">
+                Hi - my Name is Dirk Baigent. I'm a graphic designer based in Austria with Kiwi roots. It took me most of my school years to find out what I love and am passionate about - design. My career path was unconventional to say the least.
+
+                I tried to get an apprenticeship as a media designer with help of some government youth employment programmes.  But in this industry, jobs are much desired but hardly available.   After my parents paid for some other courses with graphic design and a lot of learning by doing I tried my hand as self-employed graphic designer.  I mainly did christian t-shirts and band merch.  This was fun at the time but when my relationship with my girlfriend got serious I decided that it was time for a real job. I polished my portfolio and after many rejections I finally got a job at an advertising agency and the rest is history ;-). Enjoy my portfolio.
+
+                P.S.:  No templates used for this site.
+              </p>
+            </div>
         </div>
       </article>
 
@@ -409,34 +426,56 @@
             <h3>
               Team Treehouse
             </h3>
-            <span>Here you can view my favourtie Projects of the Front End Web Development Course</span>
+            <span>Here you can view my favourite projects from the "Front End Web Development" course</span>
           </div>
           <div class="images_wrapper">
             <div class="presentation" id="tree">
                 <div class="entry active_space active">
-                  <img src="img\Treehouse\Project_9.jpg" alt="Project_9">
-                  <p  class="revial_Text"><a href="#"><b>Project 9 Web App Dashborad</b></a><br>Apart from from my portfolio this project was definetly  >></p>
-                  <span class="hide_text">the most challenging. The briefing was a Screenshot and severall javascript specifications</span>
+                  <img
+                  srcset="img\Treehouse\Project_9_L.jpg 1300w,
+                          img\Treehouse\Project_9_M.jpg 900w,
+                          img\Treehouse\Project_9.jpg 500w"
+                  src="img\Treehouse\Project_9.jpg" alt="Project_9">
+                  <p  class="revial_Text"><a href="DB_9th_Project_web_app_dashboard\index.html"><b>Project 9 Web App Dashborad</b></a><br>Apart from from my portfolio, this project was definitely  >></p>
+                  <span class="hide_text">the most challenging. The briefing was a screenshot and several javascript specifications.</span>
                 </div>
                 <div class="entry">
-                  <img src="img\Treehouse\Project_2.jpg" alt="Project_2">
-                  <p class="revial_Text"><a href="#"><b>Project 2 Responsive Onepage</b></a><br>Only the 2nd Project and you got >></p>
-                  <span class="hide_text">chucked in to the deepend after learning the basics of css we had to creat an entire responsive onepage</span>
+                  <img
+                  srcset="img\Treehouse\Project_2_L.jpg 1300w,
+                          img\Treehouse\Project_2_M.jpg 900w,
+                          img\Treehouse\Project_2.jpg 500w"
+                  src="img\Treehouse\Project_2.jpg" alt="Project_2">
+                  <p class="revial_Text"><a href="DB_2nd_Preject_corrected\index.html"><b>Project 2 Responsive Onepage</b></a><br>Only the 2nd project on the course and I was >></p>
+                  <span class="hide_text">chucked in the deep end.  After learning the basics of css we had to creat an entire responsive onepage</span>
                 </div>
                 <div class="entry">
-          entryF  <img src="img\Treehouse\Project_3.jpg" alt="Project_3">
-                  <p class="revial_Text"><a href="#"><b>Project 3 Formelement</b></a><br>Getting to know all the >></p>
-                  <span class="hide_text">special rules for cearting a form</span>
+                  <img
+                  srcset="img\Treehouse\Project_3_L.jpg 1300w,
+                          img\Treehouse\Project_3_M.jpg 900w,
+                          img\Treehouse\Project_3.jpg 500w"
+                  src="img\Treehouse\Project_3.jpg" alt="Project_3">
+                  <p class="revial_Text"><a href="DB_3rd_Project\index.html"><b>Project 3 Form-Element</b></a><br>Getting to know all the >></p>
+                  <span class="hide_text">special rules for creating a form</span>
                 </div>
                 <div class="entry">
-                  <img src="img\Treehouse\Project_4.jpg" alt="Project_4">
-                  <p class="revial_Text"><a href="#"><b>Project 4 Interactive Photogallery</b></a><br>Apart from from my portfolio this project was definetly </p>
-                  <span class="hide_text">Hidden Text ::::::</span>
+                  <img
+                  srcset="img\Treehouse\Project_4_L.jpg 1300w,
+                          img\Treehouse\Project_4_M.jpg 900w,
+                          img\Treehouse\Project_4.jpg 500w"
+                  src="img\Treehouse\Project_4.jpg" alt="Project_4">
+                  <p class="revial_Text"><a href="DB_4th_Project\index.html"><b>Project 4 Interactive Photo Gallery</b></a><br> This project was all about javascript. </p>
+                  <span class="hide_text">The brief was to create an interactive photo gallery with search function and a lightbox.</span>
                 </div>
                 <div class="entry">
-                  <img src="img\Treehouse\Project_7.jpg" alt="Project_7">
-                  <p class="revial_Text"><a href="#"><b>Project 7 Interactive Video</b></a><br>Apart from from my portfolio this project was definetly </p>
-                  <span class="hide_text">Hidden Text ::::::</span>
+                  <img
+                  srcset="img\Treehouse\Project_7_L.jpg 1300w,
+                          img\Treehouse\Project_7_M.jpg 900w,
+                          img\Treehouse\Project_7.jpg 500w"
+                  src="img\Treehouse\Project_7.jpg" alt="Project_7">
+                  <p class="revial_Text"><a href="DB_7th_Project\index.html"><b>Project 7 Interactive Video</b></a><br>Another tough nut to crack.</p>
+                  <span class="hide_text">On this project we had to code two functions:
+                    1.  Transcript highlights as video plays.<br>
+                    2.  The video skips to the proper place in the video when the transcript clicked.</span>
                 </div>
               </div>
               <div class="buttons">
@@ -467,34 +506,54 @@
             <h3>
               Logo Design
             </h3>
-            <span>To express as much as you can with as littel as possible is my motto for Logo Design</span>
+            <span>My motto for logo design:  express as much as you can with as litte as possible.</span>
           </div>
           <div class="images_wrapper">
             <div class="presentation" id="logo">
               <div class="entryL active_space active">
-                <img src="img\Logos\BDV_Logo.jpg" alt="BDV">
-                <p  class="revial_Text"><b>Logo B.D.V.</b><br>This was the first time to create >></p>
-                <span class="hide_text">costum letters for a Logo. It was a very exciting and fun experience</span>
+                <img
+                srcset="img\Logos\BDV_Logo_L.jpg 1300w,
+                        img\Logos\BDV_Logo_M.jpg 900w,
+                        img\Logos\BDV_Logo.jpg 500w"
+                src="img\Logos\BDV_Logo.jpg" alt="BDV">
+                <p  class="revial_Text"><b>Logo B.D.V.</b><br>This was created for the first time. >></p>
+                <span class="hide_text">Custom letters for a Logo. It was a very exciting and fun experience.</span>
               </div>
               <div class="entryL">
-                <img src="img\Logos\Zahnkaiser_Logo.jpg" alt="Zahnkaiser">
-                <p class="revial_Text"><b>Logo Zahnkaiser</b><br>Apart from from my portfolio this project was definetly >></p>
-                <span class="hide_text">>Apart from from my portfolio this project was definetly</span>
+                <img
+                srcset="img\Logos\Zahnkaiser_Logo_L.jpg 1300w,
+                        img\Logos\Zahnkaiser_Logo_M.jpg 900w,
+                        img\Logos\Zahnkaiser_Logo.jpg 500w"
+                src="img\Logos\Zahnkaiser_Logo.jpg" alt="Zahnkaiser">
+                <p class="revial_Text"><b>Logo Zahnkaiser</b><br>I combined >></p>
+                <span class="hide_text"> a tooth and a emperor`s crown for this one</span>
               </div>
               <div class="entryL">
-                <img src="img\Logos\Hargelsberg_Logo.jpg" alt="Hargelsberg">
-                <p class="revial_Text"><b>RCU Hargelsberg</b>><br>Apart from from my portfolio this project was definetly >></p>
-                <span class="hide_text">>Apart from from my portfolio this project was definetly</span>
+                <img
+                srcset="img\Logos\Hargelsberg_Logo_L.jpg 1300w,
+                        img\Logos\Hargelsberg_Logo_M.jpg 900w,
+                        img\Logos\Hargelsberg_Logo.jpg 500w"
+                src="img\Logos\Hargelsberg_Logo.jpg" alt="Hargelsberg">
+                <p class="revial_Text"><b>RCU Hargelsberg</b>><br>I few friends of mine started this club></p>
+                <span class="hide_text">The theme for this new rugby club was a mole clawing its way through the village crest.</span>
               </div>
               <div class="entryL">
-                <img src="img\Logos\Jaguares_Logo.jpg" alt="Jaguares Logo">
-                <p class="revial_Text"><b>Jaguares</b>><br>Apart from from my portfolio this project was definetly >></p>
-                <span class="hide_text">>Apart from from my portfolio this project was definetly</span>
+                <img
+                srcset="img\Logos\Jaguares_Logo_L.jpg 1300w,
+                        img\Logos\Jaguares_Logo_M.jpg 900w,
+                        img\Logos\Jaguares_Logo.jpg 500w"
+                src="img\Logos\Jaguares_Logo.jpg" alt="Jaguares Logo">
+                <p class="revial_Text"><b>Jaguares</b>><br>A Personal Project. </p>
+                <span class="hide_text">An Argentine rugby club logo - unofficial. This was my first go at a proper sports logo.</span>
               </div>
               <div class="entryL">
-                <img src="img\Logos\Bernd_Logo.jpg" alt="Bernd Logo">
-                <p class="revial_Text"><b>Bernd Pfister</b><br>Apart from from my portfolio this project was definetly >></p>
-                <span class="hide_text">>Apart from from my portfolio this project was definetly</span>
+                <img
+                srcset="img\Logos\Bernd_Logo_L.jpg 1300w,
+                        img\Logos\Bernd_Logo_M.jpg 900w,
+                        img\Logos\Bernd_Logo.jpg 500w"
+                src="img\Logos\Bernd_Logo.jpg" alt="Bernd Logo">
+                <p class="revial_Text"><b>Bernd Pfister</b><br>I wanted to do a diffrent approach for this one.</p>
+                <span class="hide_text"> For this Logo I used a thorough grid system.</span>
               </div>
             </div>
 
@@ -526,34 +585,54 @@
             <h3>
               For Print
             </h3>
-            <span>Here are some broshures and magazines I designed</span>
+            <span>Here are some brochures and magazines I designed</span>
           </div>
           <div class="images_wrapper">
             <div class="presentation" id="print">
               <div class="entryP active_space active">
-                <img src="img\Print\Atikon_Portfolio.jpg" alt="Atikon Portfolio">
-                <p  class="revial_Text"><b>Atikon Portfolio</b><br>Designed @ Atikon anualie this 30 x 2 paged >></p>
-                <span class="hide_text">Will be send out to your costumers, it contains all the services we can provide</span>
+                <img
+                srcset="img\Print\Atikon_Portfolio_L.jpg 1300w,
+                        img\Print\Atikon_Portfolio_M.jpg 900w,
+                        img\Print\Atikon_Portfolio.jpg 500w"
+                src="img\Print\Atikon_Portfolio.jpg" alt="Atikon Portfolio">
+                <p  class="revial_Text"><b>Atikon Portfolio</b><br>Designed @ Atikon. Annually this 30 x 2 paged >></p>
+                <span class="hide_text">Will be sent out to our customers - actual and potential. Tt contains all the services we can provide.</span>
               </div>
               <div class="entryP">
-                <img src="img\Logos\Zahnkaiser_Logo.jpg" alt="Zahnkaiser">
-                <p class="revial_Text"><b>Logo Zahnkaiser</b><br>Apart from from my portfolio this project was definetly >></p>
-                <span class="hide_text">>Apart from from my portfolio this project was definetly</span>
+                <img
+                srcset="img\Print\Atikon_mag_L.jpg 1300w,
+                        img\Print\Atikon_mag_M.jpg 900w,
+                        img\Print\Atikon_mag.jpg 500w"
+                src="img\Print\Atikon_mag.jpg" alt="Atikon_mag">
+                <p class="revial_Text"><b>Atikönner</b><br>A company magazine designed @ Atikon></p>
+                <span class="hide_text">that we sent out to our customers</span>
               </div>
               <div class="entryP">
-                <img src="img\Print\Schaerdinger.jpg" alt="Schärdinger">
-                <p class="revial_Text"><b>Schärdinger</b>><br>Designed @ Vorauer.friends I put this one in out of a bit of >></p>
-                <span class="hide_text">nostaligia. One of my first bigger Projects at an advertising agency way back when.</span>
+                <img
+                srcset="img\Print\Schaerdinger_L.jpg 1300w,
+                        img\Print\Schaerdinger_M.jpg 900w,
+                        img\Print\Schaerdinger.jpg 500w"
+                src="img\Print\Schaerdinger.jpg" alt="Schärdinger">
+                <p class="revial_Text"><b>Schärdinger</b>><br>Designed @ Vorauer.friends. I put this one in out of a bit of >></p>
+                <span class="hide_text">nostaligia. One of my first bigger projects at an advertising agency way back when we still used CS3 :-).</span>
               </div>
               <div class="entryP">
-                <img src="img\Print\Hartlauer_Festschr.jpg" alt="Hartlauer_Festschr">
-                <p class="revial_Text"><b>40 years Hartlauer</b><br>... and putting them in to 200x pages, was >></p>
-                <span class="hide_text">challenging and let me learn how to structure my workflow</span>
+                <img
+                srcset="img\Print\Hartlauer_Festschr_L.jpg 1300w,
+                        img\Print\Hartlauer_Festschr_M.jpg 900w,
+                        img\Print\Hartlauer_Festschr.jpg 500w"
+                src="img\Print\Hartlauer_Festschr.jpg" alt="Hartlauer_Festschr">
+                <p class="revial_Text"><b>40 years Hartlauer</b><br>... and putting this into 200x pages, was >></p>
+                <span class="hide_text">challenging and let me learn how to structure my workflow.</span>
               </div>
               <div class="entryP">
-                <img src="img\Print\Hartlauer_cat.jpg" alt="Hartlauer_cat">
+                <img
+                srcset="img\Print\Hartlauer_cat_L.jpg 1300w,
+                        img\Print\Hartlauer_cat_M.jpg 900w,
+                        img\Print\Hartlauer_cat.jpg 500w"
+                src="img\Print\Hartlauer_cat.jpg" alt="Hartlauer_cat">
                 <p class="revial_Text"><b>Hartlauer Catalog</b><br> For 2 years I did 2 of >></p>
-                <span class="hide_text">Those every month, the got sent to every houshold in Austria. I learned allot in that time about workflow, self-organisation and last minute changes :-).</span>
+                <span class="hide_text">those every month., They were sent to every houshold in Austria. I learned a lot in that time about workflow, self-organisation and last minute changes :-).</span>
               </div>
             </div>
 
@@ -563,8 +642,8 @@
                 <img src="img\Print\Atikon_Portfolio_tn.jpg" alt="Atikon Portfolio">
               </div>
               <div class="buttonP col1">
-                <p class="btnTitle">Zahnkaiser</p>
-                <img src="img\Logos\Zahnkaiser_Logo_tn.jpg" alt="Zahnkaiser">
+                <p class="btnTitle">Atikönner</p>
+                <img src="img\Print\Atikon_mag_tn.jpg" alt="Atikönner">
               </div>
               <div class="buttonP col2">
                 <p class="btnTitle">Schädinger</p>
@@ -585,35 +664,52 @@
             <h3>
               Other Fun Projects
             </h3>
-            <span>I regualry take time to do some personal projects for fun, this keeps me thinking out of the box and keeps my love for the craft fresh.</span>
+            <span>I regularly take time to do some personal projects for fun. This keeps me thinking out of the box and keeps my love for the craft fresh.</span>
           </div>
           <div class="images_wrapper">
             <div class="presentation" id="fun">
               <div class="entryF active_space active">
-                <img src="img\Fun\Lisa.jpg" alt="Lisa Canvas">
+                <img
+                srcset="img\Fun\Lisa_M.jpg 900w,
+                        img\Fun\Lisa.jpg 500w"
+                src="img\Fun\Lisa.jpg" alt="Lisa Canvas">
                 <p  class="revial_Text"><b>Lisa Canvas</b><br>This was a present for my >></p>
-                <span class="hide_text">Wife, I took my favorite Holiday picture and vectorised it.</span>
-                </div>
+                <span class="hide_text">wife. I took my favorite holiday picture and vectorised it.</span>
               </div>
               <div class="entryF">
-                <img src="img\Fun\Rugby_AUT.jpg" alt="Rugby_AUT">
-                <p class="revial_Text"><b>>Rugby Austria Poster</b><br>as you might have noticed Rugby ...</p>
-                <span class="hide_text">is my other passion, and I love it when I can combine both passiones</span>
+                <img
+                srcset="img\Fun\Rugby_AUT_L.jpg 1300w,
+                        img\Fun\Rugby_AUT_M.jpg 900w,
+                        img\Fun\Rugby_AUT.jpg 500w"
+                src="img\Fun\Rugby_AUT.jpg" alt="Rugby_AUT">
+                <p class="revial_Text"><b>>Rugby Austria Poster</b><br>As you might have noticed, rugby and design</p>
+                <span class="hide_text">are my two major passions and I love a chance to combine them both. </span>
               </div>
               <div class="entryF">
-                <img src="img\Fun\Steelcity_2.jpg" alt="Steel City">
-                <p class="revial_Text"><b>Steel City</b>><br>I'm very proud of my Rugby Club and I wanted ....</p>
-                <span class="hide_text"> to give my mates and my self something to Represent. This was also a great oportunity to get in to Screenprinting</span>
+                <img
+                srcset="img\Fun\Steelcity_2_M.jpg 900w,
+                        img\Fun\Steelcity_2.jpg 500w"
+                src="img\Fun\Steelcity_2.jpg" alt="Steel City">
+                <p class="revial_Text"><b>Steel City</b>><br>I'm very proud of my rugby club and I wanted</p>
+                <span class="hide_text"> to give my teammates and myself a design to represent our club. This was also a great oportunity to get into screenprinting</span>
               </div>
               <div class="entryF">
-                <img src="img\Fun\egg-chaser-logo.jpg" alt="Egg Chaser Podcast">
-                <p class="revial_Text"><b>Egg Chaser Podcast</b><br>I reagularly listen to this Podcast and they put out a request>></p>
-                <span class="hide_text">to the listeners to design a rugby crest, I though my hat in the ring the design is packed with insiders and was allot of fun to make.</span>
+                <img
+                srcset="img\Fun\egg-chaser-logo_L.jpg 1300w,
+                        img\Fun\egg-chaser-logo_M.jpg 900w,
+                        img\Fun\egg-chaser-logo.jpg 500w"
+                src="img\Fun\egg-chaser-logo.jpg" alt="Egg Chaser Podcast">
+                <p class="revial_Text"><b>Egg Chaser Podcast</b><br>I reagularly listen to this podcast and they put out a request>></p>
+                <span class="hide_text">to the listeners to design a rugby crest. I threw my hat in the ring.  The design is packed with insiders and was a lot of fun to make.</span>
               </div>
               <div class="entryF">
-                <img src="img\Fun\beach_rugby.jpg" alt="Beach Rugby">
+                <img
+                srcset="img\Fun\beach_rugby_L.jpg 1300w,
+                        img\Fun\beach_rugby_M.jpg 900w,
+                        img\Fun\beach_rugby.jpg 500w"
+                src="img\Fun\beach_rugby.jpg" alt="Beach Rugby">
                 <p class="revial_Text"><b>Beach Rugby</b><br>This was a fun >></p>
-                <span class="hide_text">Design for an event that never happend but maybe some day.</span>
+                <span class="hide_text">design for an event that never happened but maybe some day....</span>
               </div>
             </div>
 
@@ -640,7 +736,7 @@
               </div>
             </div>
           </div>
-          
+
       </article>
       <article class="work_space">
         <div class="work_heading">
@@ -659,13 +755,13 @@
                 <img src="img\skills\indesign-cc.svg" alt="ind logo">
               </div>
             </div>
-            <div class="skills_psd">
+            <div class="skills_psd bar_animation">
               <p>Photoshop: PRO</p>
             </div>
-            <div class="skills_ai">
+            <div class="skills_ai bar_animation">
               <p>Illustrator: PRO</p>
             </div>
-            <div class="skills_id">
+            <div class="skills_id bar_animation">
               <p>Indesign: PRO</p>
             </div>
           </div>
@@ -681,13 +777,13 @@
                 <img src="img\skills\javascript-seeklogo.svg" alt="java logo">
               </div>
             </div>
-            <div class="skills_html">
+            <div class="skills_html bar_animation">
               <p>HTML: Intermediate</p>
             </div>
-            <div class="skills_css">
+            <div class="skills_css bar_animation">
               <p>CSS: Advanced</p>
             </div>
-            <div class="skills_js">
+            <div class="skills_js bar_animation">
               <p>Javascript: Intermediate</p>
             </div>
           </div>
@@ -712,7 +808,6 @@
     </footer>
     <script type="text/javascript"  src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script type="text/javascript" src="js\noframework.waypoints.min.js">
     </script>
     <script type="text/javascript" src="js\waypoints.debug.js">

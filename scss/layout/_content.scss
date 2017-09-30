@@ -1,4 +1,7 @@
+
+
 .main-content {
+  max-width: 1200px;
   padding-top: 13vh;
   background-color: white;
 }
@@ -9,17 +12,31 @@
   background: $dark-blue;
 
   @media #{$br-tablet}{
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 }
 
 .picture_me{
-  height: 35vh;
   width: 100%;
+  height: 21rem;
   background: gray;
+  opacity: .25;
+  background: url("../img/me_pic_L.jpg") no-repeat;
+  background-position: top;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-out;
+
+  :hover{
+    filter:none;
+  }
 
   @media #{$br-tablet}{
     width: 50%;
+    height: auto;
+  }
+
+  @media #{$br-screen}{
+    width: 35%;
   }
 }
 
@@ -40,14 +57,13 @@
       padding-bottom: 6rem;
     }
 
-    .hide_it{
-      display: none;
-    }
-
     img {
       width: inherit;
       margin: 0;
       padding: 0;
+      @media #{$br-screen }{
+        width: 75%;
+      }
     }
 
     p {
@@ -55,11 +71,29 @@
       flex-direction: column;
       color: $main-blue;
       margin: 1.5rem 1.5rem 0 1.5rem;
+
+      @media #{$br-tablet}{
+      margin: 1.5rem 1.5rem 0 4rem;
+      }
+
+      @media #{$br-screen}{
+        margin: 1.5rem 0rem 0 1.5rem;
+      }
     }
 
-    #intro_text {
-      color: white;
-    }
+
+
+    // #intro_text {
+    //   color: white;
+    //   cursor:pointer;
+    //     @media #{$br-tablet}{
+    //       margin-top: 6rem;
+    //     }
+    //     // @media #{$br-screen}{
+    //     //   margin: 7rem 7rem 0 7rem;
+    //     // }
+    //
+    // }
 
     button {
       background: none;
@@ -67,7 +101,35 @@
     }
 }
 
+#intro_text {
+  color: white;
+  cursor:pointer;
+  font-size: 2.3rem;
+  line-height: 3rem;
+    @media #{$br-tablet}{
+      margin-top: 6rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+    @media #{$br-screen}{
+      margin: 7rem 7rem 0 7rem;
+      font-size: 4.5rem;
+      line-height: 5.5rem;
+    }
+  }
 
+  #intro_text_hide{
+    color: white;
+    margin: 0;
+    @media #{$br-tablet}{
+      color: white;
+      margin: 0rem 2.5rem 4rem 2.5rem;;
+    }
+    @media #{$br-screen}{
+      color: white;
+      margin: 0rem 5.5rem 7rem 5.5rem;
+    }
+  }
 
 .show_text {
   display: flex;
@@ -75,8 +137,20 @@
 }
 
 .hide_text {
-  display: none;
+  cursor:pointer;
   margin: 0 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  // @media #{$br-screen}{
+  //   margin: 0rem 7rem 5rem 7rem;
+  // }
+  @media #{$br-tablet}{
+    margin: 0rem 1.5rem 0 4rem;
+  }
+  @media #{$br-screen}{
+    margin: 0 1.5rem;
+  }
 }
 
 .work_heading {
@@ -110,7 +184,11 @@
 
     @media #{$br-tablet}{
       font-size: 2.2rem;
-      margin: 6rem 1.5rem 0 1.5rem;
+      margin: 6rem 4rem 0 4rem;
+    }
+
+    @media #{$br-screen}{
+        margin: 6rem 6rem 0rem 6rem;
     }
 
   }
@@ -121,8 +199,14 @@
 
     @media #{$br-tablet}{
       font-size: 1.8rem;
-        margin: 1.5rem 1.5rem 6rem 1.5rem;
+        margin: 1.5rem 4rem 6rem 4rem;
     }
+
+    @media #{$br-screen}{
+        width: 50%;
+        margin: 1.5rem 6rem 6rem 6rem;
+    }
+
   }
 }
 
@@ -163,10 +247,6 @@ background: $gray;
     @media #{$br-tablet}{
         width: 25%;
         font-size: 1.8rem;
-    }
-
-    .hide_it{
-      display: none;
     }
 
     img {
@@ -212,8 +292,7 @@ background: $gray;
       }
     }
 
-.images_wrapper,
-.inactive_wrapper {
+.images_wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -222,6 +301,11 @@ background: $gray;
   a{
     color: $main-blue;
   }
+
+  @media #{$br-screen}{
+    flex-wrap: nowrap;
+  }
+
 }
 
 .skills_wrapper{
@@ -232,6 +316,10 @@ background: $gray;
   flex-wrap: wrap;
   width: 100%;
   font-family: $roboto_con;
+
+  @media #{$br-tablet}{
+  padding: 2.7rem;
+  }
 }
 
 .skills_interm{
@@ -250,6 +338,15 @@ background: $gray;
   margin-top: 2rem;
   // height: 50vh;
   // background-color: lightgray;
+
+   .bar_animation {
+     transform: scaleX(0);
+     transition: all 2000ms;
+     transform-origin: left;
+     &.active {
+       transform: scaleX(1);
+     }
+   }
 
   .skills_psd,
   .skills_ai,
@@ -273,6 +370,11 @@ background: $gray;
       font-size: 1.4rem;
       font-weight: 400;
       }
+
+      @media #{$br-tablet}{
+          font-size: 1.8rem;
+      }
+
     }
 
 
@@ -308,6 +410,7 @@ background: $gray;
       flex-wrap: nowrap;
       width: 100%;
       height: inherit;
+      z-index: 100;
 
       .psd_logo,
       .ai_logo,
@@ -344,6 +447,9 @@ background: $gray;
 
 .presentation{
   display: flex;
+  @media #{$br-screen }{
+    width: 80%;
+  }
 }
 
 .entry,
@@ -356,10 +462,13 @@ background: $gray;
 
 .active{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  @media #{$br-screen }{
+    margin-left: 9rem;
+  }
 }
 
 .buttons{
@@ -375,6 +484,12 @@ background: $gray;
     line-height: 1.7rem;
     font-weight: 300;
     transition: height 0.3s ease-out;
+
+    @media #{$br-screen}{
+        width: 20%;
+        flex-direction: column;
+        font-size: 1.8rem;
+    }
 }
 
 .button,
@@ -405,6 +520,15 @@ background: $gray;
       cursor: pointer;
       filter: grayscale(100%);
       transition: all 0.3s ease-out;
+      }
+
+      @media #{$br-tablet}{
+          width: 25%;
+          font-size: 1.8rem;
+      }
+
+      @media #{$br-screen}{
+          width: 100%;
       }
 
     }

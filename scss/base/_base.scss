@@ -24,12 +24,17 @@ $br-screen  : '(min-width: 1024px)';
 // -----------
 
 header{
+  // max-width: 1200px;
   position: fixed;
   height: 87vh;
   top: 0;
 }
 
 body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 87vh;
 }
 
@@ -37,6 +42,16 @@ h2 {
   display: flex;
   font-size: 2.3rem;
   margin: 1.5rem;
+
+  @media #{$br-tablet}{
+    font-size: 2.2rem;
+    margin: 4rem;
+  }
+
+  @media #{$br-screen}{
+      margin: 6rem;
+  }
+
 }
 
 h3 {

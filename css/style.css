@@ -4,12 +4,23 @@ header {
   top: 0; }
 
 body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 87vh; }
 
 h2 {
   display: flex;
   font-size: 2.3rem;
   margin: 1.5rem; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.2rem;
+      margin: 4rem; } }
+  @media (min-width: 1024px) {
+    h2 {
+      margin: 6rem; } }
 
 h3 {
   display: flex;
@@ -34,6 +45,7 @@ button {
   margin-right: 1rem; }
 
 .main-content {
+  max-width: 1200px;
   padding-top: 13vh;
   background-color: white; }
 
@@ -43,15 +55,26 @@ button {
   background: #08193D; }
   @media (min-width: 768px) {
     .this_is_me {
-      flex-direction: row-reverse; } }
+      flex-direction: row; } }
 
 .picture_me {
-  height: 35vh;
   width: 100%;
-  background: gray; }
+  height: 21rem;
+  background: gray;
+  opacity: .25;
+  background: url("../img/me_pic_L.jpg") no-repeat;
+  background-position: top;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-out; }
+  .picture_me :hover {
+    filter: none; }
   @media (min-width: 768px) {
     .picture_me {
-      width: 50%; } }
+      width: 50%;
+      height: auto; } }
+  @media (min-width: 1024px) {
+    .picture_me {
+      width: 35%; } }
 
 .active_space {
   width: 100%;
@@ -68,30 +91,72 @@ button {
       line-height: 2.3rem;
       padding-top: 0rem;
       padding-bottom: 6rem; } }
-  .active_space .hide_it {
-    display: none; }
   .active_space img {
     width: inherit;
     margin: 0;
     padding: 0; }
+    @media (min-width: 1024px) {
+      .active_space img {
+        width: 75%; } }
   .active_space p {
     display: flex;
     flex-direction: column;
     color: #174DBD;
     margin: 1.5rem 1.5rem 0 1.5rem; }
-  .active_space #intro_text {
-    color: white; }
+    @media (min-width: 768px) {
+      .active_space p {
+        margin: 1.5rem 1.5rem 0 4rem; } }
+    @media (min-width: 1024px) {
+      .active_space p {
+        margin: 1.5rem 0rem 0 1.5rem; } }
   .active_space button {
     background: none;
     margin: 0; }
+
+#intro_text {
+  color: white;
+  cursor: pointer;
+  font-size: 2.3rem;
+  line-height: 3rem; }
+  @media (min-width: 768px) {
+    #intro_text {
+      margin-top: 6rem;
+      font-size: 3rem;
+      line-height: 3.5rem; } }
+  @media (min-width: 1024px) {
+    #intro_text {
+      margin: 7rem 7rem 0 7rem;
+      font-size: 4.5rem;
+      line-height: 5.5rem; } }
+
+#intro_text_hide {
+  color: white;
+  margin: 0; }
+  @media (min-width: 768px) {
+    #intro_text_hide {
+      color: white;
+      margin: 0rem 2.5rem 4rem 2.5rem; } }
+  @media (min-width: 1024px) {
+    #intro_text_hide {
+      color: white;
+      margin: 0rem 5.5rem 7rem 5.5rem; } }
 
 .show_text {
   display: flex;
   margin: 0 1.5rem; }
 
 .hide_text {
-  display: none;
-  margin: 0 1.5rem; }
+  cursor: pointer;
+  margin: 0 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; }
+  @media (min-width: 768px) {
+    .hide_text {
+      margin: 0rem 1.5rem 0 4rem; } }
+  @media (min-width: 1024px) {
+    .hide_text {
+      margin: 0 1.5rem; } }
 
 .work_heading {
   display: flex;
@@ -122,14 +187,21 @@ button {
     @media (min-width: 768px) {
       .second_title h3 {
         font-size: 2.2rem;
-        margin: 6rem 1.5rem 0 1.5rem; } }
+        margin: 6rem 4rem 0 4rem; } }
+    @media (min-width: 1024px) {
+      .second_title h3 {
+        margin: 6rem 6rem 0rem 6rem; } }
   .second_title span {
     font-size: 1.4rem;
     margin: 1.5rem 1.5rem 3rem 1.5rem; }
     @media (min-width: 768px) {
       .second_title span {
         font-size: 1.8rem;
-        margin: 1.5rem 1.5rem 6rem 1.5rem; } }
+        margin: 1.5rem 4rem 6rem 4rem; } }
+    @media (min-width: 1024px) {
+      .second_title span {
+        width: 50%;
+        margin: 1.5rem 6rem 6rem 6rem; } }
 
 .col1 {
   background: #174DBD; }
@@ -161,8 +233,6 @@ button {
     .inactive_space {
       width: 25%;
       font-size: 1.8rem; } }
-  .inactive_space .hide_it {
-    display: none; }
   .inactive_space img {
     width: 100%;
     height: 100%;
@@ -191,15 +261,16 @@ button {
       width: 15%;
       line-height: 2.3rem; } }
 
-.images_wrapper,
-.inactive_wrapper {
+.images_wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .images_wrapper a,
-  .inactive_wrapper a {
+  .images_wrapper a {
     color: #174DBD; }
+  @media (min-width: 1024px) {
+    .images_wrapper {
+      flex-wrap: nowrap; } }
 
 .skills_wrapper {
   display: flex;
@@ -209,6 +280,9 @@ button {
   flex-wrap: wrap;
   width: 100%;
   font-family: "Roboto Condensed", sans-serif; }
+  @media (min-width: 768px) {
+    .skills_wrapper {
+      padding: 2.7rem; } }
 
 .skills_interm {
   margin-bottom: 2rem; }
@@ -222,6 +296,14 @@ button {
   flex-wrap: nowrap;
   width: 100%;
   margin-top: 2rem; }
+  .skills_pro .bar_animation,
+  .skills_interm .bar_animation {
+    transform: scaleX(0);
+    transition: all 2000ms;
+    transform-origin: left; }
+    .skills_pro .bar_animation.active,
+    .skills_interm .bar_animation.active {
+      transform: scaleX(1); }
   .skills_pro .skills_psd,
   .skills_pro .skills_ai,
   .skills_pro .skills_id,
@@ -259,6 +341,20 @@ button {
     .skills_interm .skills_js p {
       font-size: 1.4rem;
       font-weight: 400; }
+    @media (min-width: 768px) {
+      .skills_pro .skills_psd,
+      .skills_pro .skills_ai,
+      .skills_pro .skills_id,
+      .skills_pro .skills_html,
+      .skills_pro .skills_css,
+      .skills_pro .skills_js,
+      .skills_interm .skills_psd,
+      .skills_interm .skills_ai,
+      .skills_interm .skills_id,
+      .skills_interm .skills_html,
+      .skills_interm .skills_css,
+      .skills_interm .skills_js {
+        font-size: 1.8rem; } }
   .skills_pro .skills_ai,
   .skills_interm .skills_ai {
     background: linear-gradient(45deg, #a73f00 0%, #f37020 100%); }
@@ -286,7 +382,8 @@ button {
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
-    height: inherit; }
+    height: inherit;
+    z-index: 100; }
     .skills_pro .skills_logos .psd_logo,
     .skills_pro .skills_logos .ai_logo,
     .skills_pro .skills_logos .ind_logo,
@@ -326,6 +423,9 @@ button {
 
 .presentation {
   display: flex; }
+  @media (min-width: 1024px) {
+    .presentation {
+      width: 80%; } }
 
 .entry,
 .entryL,
@@ -336,10 +436,13 @@ button {
 
 .active {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap; }
+  @media (min-width: 1024px) {
+    .active {
+      margin-left: 9rem; } }
 
 .buttons {
   display: flex;
@@ -354,6 +457,11 @@ button {
   line-height: 1.7rem;
   font-weight: 300;
   transition: height 0.3s ease-out; }
+  @media (min-width: 1024px) {
+    .buttons {
+      width: 20%;
+      flex-direction: column;
+      font-size: 1.8rem; } }
 
 .button,
 .buttonL,
@@ -385,6 +493,19 @@ button {
     cursor: pointer;
     filter: grayscale(100%);
     transition: all 0.3s ease-out; }
+  @media (min-width: 768px) {
+    .button,
+    .buttonL,
+    .buttonP,
+    .buttonF {
+      width: 25%;
+      font-size: 1.8rem; } }
+  @media (min-width: 1024px) {
+    .button,
+    .buttonL,
+    .buttonP,
+    .buttonF {
+      width: 100%; } }
 
 .hide {
   display: none; }
@@ -397,6 +518,7 @@ footer {
   position: relative;
   background: white;
   width: 100%;
+  max-width: 1200px;
   font-family: "Roboto Condensed", sans-serif; }
 
 .contact {
@@ -407,9 +529,15 @@ footer {
   .contact h3 {
     color: white;
     margin: 3rem 0 2rem 1.5rem; }
+    @media (min-width: 768px) {
+      .contact h3 {
+        margin: 3rem 0 2rem 4rem; } }
   .contact p {
     color: #6A6D70;
     margin: 1.5rem; }
+    @media (min-width: 768px) {
+      .contact p {
+        margin: 1.5rem 1.5rem 2rem 4rem; } }
   .contact a {
     color: white; }
 
@@ -419,6 +547,9 @@ footer {
   justify-content: flex-start;
   align-items: center;
   margin: 1.5rem 1.5rem 3rem; }
+  @media (min-width: 768px) {
+    .soMe {
+      margin: 1.5rem 4rem 6rem; } }
   .soMe img {
     width: 33%;
     height: auto;
@@ -477,6 +608,10 @@ footer {
     .tinted-image {
       background: linear-gradient(140deg, #0f337d, rgba(23, 77, 189, 0.4)), url("../img/paul-gilmore-325220_med.jpg") no-repeat;
       background-position: center; } }
+  @media (min-width: 1024px) {
+    .tinted-image {
+      background: linear-gradient(140deg, #0f337d, rgba(23, 77, 189, 0.4)), url("../img/paul-gilmore-325220_L.jpg") no-repeat;
+      background-position: 95%; } }
   .tinted-image .welcome_hl {
     display: flex;
     flex-wrap: wrap;
@@ -551,6 +686,7 @@ footer {
     transform: translateY(-15px); } }
 .main-nav,
 .main-content {
+  max-width: 1200px;
   position: relative; }
 
 .main-nav-scrolled {
@@ -662,5 +798,18 @@ footer {
     margin-right: 3rem; }
     #overlay-nav img {
       width: 90%; } }
+
+.nav_size_L,
+#ul_size_L {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .nav_size_L a,
+  #ul_size_L a {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #174DBD;
+    margin: 0 2.5rem; }
 
 /*# sourceMappingURL=style.css.map */

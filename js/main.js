@@ -8,9 +8,13 @@ var overlyStart = document.getElementById("overlay-nav");
 var closeNav = document.getElementById('close_Nav');
 var navLi = document.querySelectorAll('.navLi');
 var mainNav = document.getElementById("main-nav");
+var ulLarge = document.getElementById("nav_size_L");
 
 var hideText = document.querySelectorAll('.hide_text');
 var revialText = document.querySelectorAll('.revial_Text');
+
+
+
 //
 // var treeInactive = document.querySelectorAll('.treehouse_inactive');
 // var logosInactive = document.querySelectorAll('.logos_inactive');
@@ -28,6 +32,62 @@ var revialText = document.querySelectorAll('.revial_Text');
 //    mn.removeClass("main-nav-scrolled");
 //  }
 // });
+
+
+//---------------------------------------- Nav Media query
+
+
+
+
+$(document).ready(function(){
+  if (window.matchMedia("(min-width: 1024px)").matches) {
+    console.log("test");
+      // The browser window is at least 480px wide
+        overlyStart.style.display = "none";
+  }
+  else {
+      ulLarge.style.display = "none";
+      // The browser window is less than 480px wide
+  }
+
+});
+
+
+// function (mql) {
+//     if (mediaQueryList.matches) {
+//       console.log("test");
+//         // The browser window is at least 480px wide
+//           overlyStart.style.display = "none";
+//     }
+//     else {
+//         // The browser window is less than 480px wide
+//     }
+// };
+
+
+//---------------------------------------- Nav Scroll to
+
+var navLi = document.getElementsByClassName('navLi');
+
+for (var i = 0; i < navLi.length; i++) {
+  navLi[i].addEventListener("click", function(e){
+       event.preventDefault;
+       $("html, body").animate({
+         scrollTop: $(this.getAttribute("href")).offset().top -mnh}, 1000);
+       });
+}
+
+var myLogo = document.getElementsByClassName('DB Logo');
+var carTop = document.getElementById('carousel_top');
+
+for (var i = 0; i < myLogo.length; i++) {
+  myLogo[i].addEventListener("click", function(e){
+       event.preventDefault;
+       $("html, body").animate({
+         scrollTop: $(carTop)});
+       });
+}
+
 
 
 
@@ -61,9 +121,9 @@ document.addEventListener('scroll', function() {
 //  });
 
  overlyStart.addEventListener('click', function () {
-     if (document.getElementById("myNav").style.height = "0%") {
+     if (document.getElementById("myNav").style.height == "0%") {
        document.getElementById("myNav").style.height = "100%";
-     } else if (document.getElementById("myNav").style.height = "100%") {
+     } else {
        document.getElementById("myNav").style.height = "0%";
      }
   });
@@ -93,88 +153,94 @@ for (var i = 0; i < navLi.length; i++) {
 
 //---------------------------------------- Carousel
 
+var item_length = $('.carousel > div').length - 1;
+var slider = $('.carousel');
+
 $(document).ready(function(){
   $('.carousel').slick({
     autoplay: true,
     accessibility: true,
     arrows: false,
     dots: false,
-    infinite: false,
-    autoplaySpeed: 7500,
+    autoplaySpeed: 6500,
     speed: 3000,
-    slidesToShow: 1
+    // slidesToShow: 1,
+    // infinite: false,
+    // onAfterChange: function(){
+    //     //check the length of total items in .slide container
+    //     //if that number is the same with the number of the last slider
+    //     //Then pause the slider
+    //     if( item_length == slider.slickCurrentSlide() ){
+    //       slider.slickPause();
+    //         // slider.slickSetOption("autoplay",false,false)
+    //     };
+    // }
+
     // adaptiveHeight: true
   });
+});
+
+$('.carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  $('.carousel').slick('slickPause');
 });
 
 
 
 //---------------------------------------- Multiline toggle
 
-// revialText.addEventListener('click', function() {
-//   if (thisMeHide.style.display == "none") {
-//     thisMeHide.style.display = "flex";
-//   } else {
-//       thisMeHide.style.display = "none";
-//   }
-// });
-
-// for (var i = 0; i < revialText.length; i++) {
-//   revialText[i].index = i;
-//   revialText[i].addEventListener("click", function(e){
-//     for (var i = 0; i < revialText.length; i++) {
-//       var textact = event.target;
-//       var textPar = textact.parentNode;
-//       var textSib = textPar.children;
-//       textSib[1].style.display = "flex";
-//       // if (textSib[1].style.display === "none") {
-//       //   textSib[1].style.display = "flex";
-//       //   } else {
-//       //   textSib[1].style.display = "none";
-//       //   }
-//     }
-//   });
-// }
 //
-// for (var i = 0; i < hideText.length; i++) {
-//   hideText[i].index = i;
-//   hideText[i].addEventListener("click", function(e){
-//     // for (var i = 0; i < hideText.length; i++) {
-//       var textact = event.target;
-//       // var textPar = textact.parentNode;
-//       // var textSib = textPar.children;
-//       if (textact.style.display === "flex") {
-//         textact.style.display = "none";
-//         }
-//     // }
-//   });
-// }
+
+
+var waypoint = new Waypoint({
+  element: document.getElementById('skills'),
+  handler: function(direction) {
+    var bar_animation = document.getElementsByClassName('bar_animation');
+    for (var i = 0; i < bar_animation.length; i++) {
+      bar_animation[i].classList.add("active");
+    }
+  },
+  offset: '75%'
+})
 
 for (var i = 0; i < revialText.length; i++) {
   revialText[i].index = i;
   revialText[i].addEventListener("click", function(e){
        var actText = event.target;
-       if (hideText[this.index].style.display = "none") {
-         hideText[this.index].style.display = "flex";
-       } else if (hideText[this.index].style.display = "flex") {
-         hideText[this.index].style.display = "none";
+      //  var hiddenText = hideText[this.index];
+       var panel = this.nextElementSibling;
+       if (panel.style.maxHeight){
+         panel.style.maxHeight = null;
+       } else {
+         panel.style.maxHeight = panel.scrollHeight + "px";
        }
 
      });
 }
 
-for (var i = 0; i < hideText.length; i++) {
-  hideText[i].index = i;
-  hideText[i].addEventListener("click", function(e){
-       var actText = event.target;
-       if (hideText[this.index].style.display = "flex") {
-         hideText[this.index].style.display = "none";
-       }
+// for (var i = 0; i < hideText.length; i++) {
+//   hideText[i].index = i;
+//   hideText[i].addEventListener("click", function(e){
+//        var actText = event.target;
+//        if (hideText[this.index].style.display = "flex") {
+//          hideText[this.index].style.display = "none";
+//        }
+//      });
+// }
 
-     });
-}
-
-
+// var acc = document.getElementsByClassName("accordion");
+// var i;
+//
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].onclick = function() {
+//     // this.classList.add("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.maxHeight){
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + "px";
+//     }
+//   }
+// }
 
 
 //---------------------------------------- switch Position
@@ -434,6 +500,7 @@ for (var i = 0; i < buttonF.length; i++) {
 }
 
 
+
 //-------------------------------------------------------- Charts
 //
 // Chart.defaults.global.legend.display = false;
@@ -482,22 +549,10 @@ for (var i = 0; i < buttonF.length; i++) {
 var waypoint = new Waypoint({
   element: document.getElementById('skills'),
   handler: function(direction) {
-    console.log('Scrolled to waypoint!')
-  }
+    var bar_animation = document.getElementsByClassName('bar_animation');
+    for (var i = 0; i < bar_animation.length; i++) {
+      bar_animation[i].classList.add("active");
+    }
+  },
+  offset: '75%'
 })
-
-
-//
-// $('#example').mouseover(function() {
-// $("#example").stop().animate({width: 250}, 200 );   //Bigger
-// }).mouseout(function(){
-// $("#example").stop().animate({width: 200}, 200 );   //Smaller
-// });
-
-
-// elOne.addEventListener('click', function(){
-//   elOne.parentNode.insertBefore(elOne,elOne.parentNode.firstChild);
-//   elOne.className = "active_space placeholder_sizea_main";
-//   elTwo.className = "inactive_space placeholder_size_sec";
-//     // $("#element1").before($("#element2"));
-// });

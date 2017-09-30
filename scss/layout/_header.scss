@@ -66,7 +66,12 @@
 	@media #{$br-tablet}{
       background: linear-gradient(140deg, $graid-sec-blue, $graid-main-blue), url("../img/paul-gilmore-325220_med.jpg") no-repeat;
       background-position: center;
-  }
+    }
+
+  @media #{$br-screen}{
+      background: linear-gradient(140deg, $graid-sec-blue, $graid-main-blue), url("../img/paul-gilmore-325220_L.jpg") no-repeat;
+      background-position: 95%;
+    }
 
   .welcome_hl {
       display: flex;
@@ -173,6 +178,7 @@
 
 .main-nav,
 .main-content{
+  max-width: 1200px;
     position: relative;
 }
 
@@ -312,5 +318,20 @@
      }
    }
 
+}
 
+
+.nav_size_L,
+#ul_size_L {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: $main-blue;
+    margin: 0 2.5rem;
+  }
 }

@@ -1,11 +1,9 @@
 Todo:
 
 
-Menu close by second click on icon
-transition
-header is playing up
-text toggle
-when clicked scroll to active div
-Atikönner pics
+
+text toggle acordion
+statt style.display mit classes
+Performance
 
 srcset="img\Treehouse\Project_9.jpg 320w, img\Treehouse\Project_9_L.jpg 768w"
