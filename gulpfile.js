@@ -18,10 +18,10 @@ gulp.task('process-css', function() {
   var plugins = [
     autoprefixer({
       browsers: ['last 3 version']
-    })
-  //   postcssZindex({startIndex: 1})
-  // ];
-  return gulp.src('./css/*.css')
+    }),
+    postcssZindex({startIndex: 1})
+  ];
+  return gulp.src('css/*.css')
     .pipe(postcss(plugins))
     .pipe(cleanCSS({
       level: {
