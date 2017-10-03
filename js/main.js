@@ -95,9 +95,6 @@ closeNav.addEventListener('click', function () {
     document.getElementById("myNav").classList.remove("active_text");
 });
 
-// workNav.addEventListener('click', function () {
-//     document.getElementById("myNav").style.height = "0%";
-// });
 
 for (var i = 0; i < navLi.length; i++) {
   navLi[i].index = i;
@@ -164,202 +161,7 @@ for (var i = 0; i < hideText.length; i++) {
      });
 }
 
-// for (var i = 0; i < revialText.length; i++) {
-//   revialText[i].index = i;
-//   revialText[i].addEventListener("click", function(e){
-//        var actText = event.target;
-//       //  var hiddenText = hideText[this.index];
-//        var panel = this.nextElementSibling;
-//        if (panel.style.maxHeight){
-//          panel.style.maxHeight = null;
-//        } else {
-//          panel.style.maxHeight = panel.scrollHeight + "px";
-//        }
-//
-//      });
-// }
 
-
-
-// var acc = document.getElementsByClassName("accordion");
-// var i;
-//
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].onclick = function() {
-//     // this.classList.add("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.maxHeight){
-//       panel.style.maxHeight = null;
-//     } else {
-//       panel.style.maxHeight = panel.scrollHeight + "px";
-//     }
-//   }
-// }
-
-
-//---------------------------------------- switch Position
-
-
-
-//------------------------------------------------- switch Position Treehouse
-//
-// var actSP = document.getElementById('test_sp');
-// var actSpCh = actSP.children;
-//
-// for (var i = 0; i < treeInactive.length; i++) {
-//   treeInactive[i].index = i;
-//   treeInactive[i].addEventListener("click", function(e){
-//     var activate = event.target;
-//     var activatePar = activate.parentNode;
-//     var siblingsMe = activatePar.children;
-//      for (var i = 0; i < treeInactive.length; i++) {
-//         // var allChildren = activatePar.parentNode.children;
-//         var treeChildren = treeInactive[i].children;
-//         var number = i+1;
-//         var indexString = number.toString();
-//         activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
-//         treeInactive[i].setAttribute("class", ["inactive_space treehouse_inactive col"]+[indexString]);
-//         activatePar.parentNode.firstChild.className = "active_space";
-//         treeChildren[0].style.display = "flex";
-//         treeChildren[1].style.display = "flex";
-//         treeChildren[2].style.display = "none";
-//         treeChildren[3].style.display = "none";
-//         // treeChildren[4].style.display = "none";
-//      }
-//
-//     //  actSpCh[0].style.display = "flex";
-//     //  actSpCh[1].style.display = "none";
-//     //  actSpCh[2].style.display = "none";
-//     //  actSpCh[3].style.display = "none";
-//
-//      for(var r=0; r<siblingsMe.length; r++) {
-//       siblingsMe[r].style.display = "flex";
-//       }
-//       activate.style.display = "none";
-//       siblingsMe[0].style.display = "none";
-//       siblingsMe[4].style.display = "none";
-//   });
-// }
-//
-//
-//
-//
-//
-// //---------------------------------------------------- switch Position Logos
-//
-// for (var i = 0; i < logosInactive.length; i++) {
-//   logosInactive[i].index = i;
-//   logosInactive[i].addEventListener("click", function(e){
-//     var activate = event.target;
-//     var activatePar = activate.parentNode;
-//     var siblingsMe = activatePar.children;
-//      for (var i = 0; i < logosInactive.length; i++) {
-//         // var allChildren = activatePar.parentNode.children;
-//         var logoChildren = logosInactive[i].children;
-//         var number = i+1;
-//         var indexString = number.toString();
-//         activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
-//         logosInactive[i].setAttribute("class", ["inactive_space logo_inactive col"]+[indexString]);
-//         activatePar.parentNode.firstChild.className = "active_space";
-//         logoChildren[0].style.display = "flex";
-//         logoChildren[1].style.display = "flex";
-//         logoChildren[2].style.display = "none";
-//         logoChildren[3].style.display = "none";
-//         // treeChildren[4].style.display = "none";
-//      }
-//
-//     //  actSpCh[0].style.display = "flex";
-//     //  actSpCh[1].style.display = "none";
-//     //  actSpCh[2].style.display = "none";
-//     //  actSpCh[3].style.display = "none";
-//
-//      for(var r=0; r<siblingsMe.length; r++) {
-//       siblingsMe[r].style.display = "flex";
-//       }
-//       activate.style.display = "none";
-//       siblingsMe[0].style.display = "none";
-//       siblingsMe[4].style.display = "none";
-//   });
-// }
-//
-//
-//
-//
-//
-// //--------------------------------------------------- switch Position Print
-//
-// for (var i = 0; i < printInactive.length; i++) {
-//   printInactive[i].index = i;
-//   printInactive[i].addEventListener("click", function(e){
-//     var activate = event.target;
-//     var activatePar = activate.parentNode;
-//     var siblingsMe = activatePar.children;
-//      for (var i = 0; i < printInactive.length; i++) {
-//         // var allChildren = activatePar.parentNode.children;
-//         var printChildren = printInactive[i].children;
-//         var number = i+1;
-//         var indexString = number.toString();
-//         activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
-//         printInactive[i].setAttribute("class", ["inactive_space print_inactive col"]+[indexString]);
-//         activatePar.parentNode.firstChild.className = "active_space";
-//         printChildren[0].style.display = "flex";
-//         printChildren[1].style.display = "flex";
-//         printChildren[2].style.display = "none";
-//         printChildren[3].style.display = "none";
-//         // treeChildren[4].style.display = "none";
-//      }
-//
-//     //  actSpCh[0].style.display = "flex";
-//     //  actSpCh[1].style.display = "none";
-//     //  actSpCh[2].style.display = "none";
-//     //  actSpCh[3].style.display = "none";
-//
-//      for(var r=0; r<siblingsMe.length; r++) {
-//       siblingsMe[r].style.display = "flex";
-//       }
-//       activate.style.display = "none";
-//       siblingsMe[0].style.display = "none";
-//       siblingsMe[4].style.display = "none";
-//   });
-// }
-//
-// //-------------------------------------------------------- switch Position Fun
-//
-// for (var i = 0; i < funInactive.length; i++) {
-//   funInactive[i].index = i;
-//   funInactive[i].addEventListener("click", function(e){
-//     var activate = event.target;
-//     var activatePar = activate.parentNode;
-//     var siblingsMe = activatePar.children;
-//      for (var i = 0; i < funInactive.length; i++) {
-//         // var allChildren = activatePar.parentNode.children;
-//         var funChildren = funInactive[i].children;
-//         var number = i+1;
-//         var indexString = number.toString();
-//         activatePar.parentNode.insertBefore(activatePar,activatePar.parentNode.firstChild);
-//         funInactive[i].setAttribute("class", ["inactive_space fun_inactive col"]+[indexString]);
-//         activatePar.parentNode.firstChild.className = "active_space";
-//         funChildren[0].style.display = "flex";
-//         funChildren[1].style.display = "flex";
-//         funChildren[2].style.display = "none";
-//         funChildren[3].style.display = "none";
-//         // treeChildren[4].style.display = "none";
-//      }
-//
-//     //  actSpCh[0].style.display = "flex";
-//     //  actSpCh[1].style.display = "none";
-//     //  actSpCh[2].style.display = "none";
-//     //  actSpCh[3].style.display = "none";
-//
-//      for(var r=0; r<siblingsMe.length; r++) {
-//       siblingsMe[r].style.display = "flex";
-//       }
-//       activate.style.display = "none";
-//       siblingsMe[0].style.display = "none";
-//       siblingsMe[4].style.display = "none";
-//   });
-// }
-//
 
 var entry = document.getElementsByClassName('entry');
 
@@ -455,48 +257,6 @@ for (var i = 0; i < buttonF.length; i++) {
 
 
 
-//-------------------------------------------------------- Charts
-//
-// Chart.defaults.global.legend.display = false;
-
-// var ctx = document.getElementById("myChart").getContext('2d');
-// var myChart = new Chart(ctx, {
-//     type: 'horizontalBar',
-//     data: {
-//         labels: ["Red", "Blue", "Yellow"],
-//         datasets: [{
-//             data: [12, 19, 3],
-//             backgroundColor: [
-//                 'rgba(255, 99, 132, 0.2)',
-//                 'rgba(54, 162, 235, 0.2)',
-//                 'rgba(255, 206, 86, 0.2)'
-//             ],
-//             borderColor: [
-//                 'rgba(255,99,132,1)',
-//                 'rgba(54, 162, 235, 1)',
-//                 'rgba(255, 206, 86, 1)'
-//             ],
-//             borderWidth: 0
-//
-//         }]
-//     },
-//     options: {
-//       scales: {
-//           xAxes: [{
-//               gridLines: {
-//                   display: false
-//               }
-//           }],
-//           yAxes: [{
-//               gridLines: {
-//                   display: false
-//               }
-//           }]
-//       }
-//     }
-// });
-
-
 //---------------------------- Charts
 
 
@@ -509,4 +269,4 @@ var waypoint = new Waypoint({
     }
   },
   offset: '75%'
-})
+});
