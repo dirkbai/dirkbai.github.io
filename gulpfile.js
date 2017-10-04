@@ -42,7 +42,6 @@ gulp.task("concatScripts", function(){
             'js/slick.min.js',
             'js/noframework.waypoints.min.js',
             'js/waypoints.debug.js',
-            'js/lazyload.min.js',
             'js/main.js'])
       .pipe(concat("app.js"))
       .pipe(gulp.dest("js"));
