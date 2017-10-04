@@ -433,11 +433,13 @@
           <div class="images_wrapper">
             <div class="presentation" id="tree">
                 <div class="entry active_space active">
-                  <img
-                  srcset="img/Treehouse/Project_9_L.jpg 1300w,
+                  <img class="lazyload"
+                  src="img/Treehouse/Project_9.jpg"
+                  data-src="img/Treehouse/Project_9.jpg"
+                  data-srcset="img/Treehouse/Project_9_L.jpg 1300w,
                           img/Treehouse/Project_9_M.jpg 900w,
                           img/Treehouse/Project_9.jpg 500w"
-                  src="img/Treehouse/Project_9.jpg" alt="Project_9">
+                  alt="Project_9">
                   <p  class="revial_Text"><a href="DB_9th_Project_web_app_dashboard/index.html"><b>Project 9 Web App Dashborad</b></a><br>Apart from from my portfolio, this project was definitely <span class="arrow_text">>></span></p>
                   <span class="hide_text showMe">the most challenging. The briefing was a screenshot and several javascript specifications.^</span>
                 </div>
@@ -807,12 +809,15 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript"  src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript"  src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/noframework.waypoints.min.js">
     </script>
     <script type="text/javascript" src="js/waypoints.debug.js">
+    </script> -->
+    <script type="text/javascript" src="js/app.min.js"></script>
+    <script type="text/javascript">
+      lazyload();
     </script>
-    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
