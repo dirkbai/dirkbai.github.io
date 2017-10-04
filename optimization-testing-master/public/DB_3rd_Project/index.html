@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Code Review</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+      <h1 class="title"> the code review </h1>
+      <div class="sign_up">
+          <h2>Sign up for our newsletter</h2>
+          <p>Get the latest news your how your code is doing right in your inbox</p>
+      </div>
+      <form action="index.html" method="post">
+
+        <fieldset class="Contact_Information">
+            <legend>Contact Information</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="user_name" required placeholder="Required">
+
+
+            <label for="email">Email Adress</label>
+            <input type="email" id="email" name="user_email" required placeholder="Required">
+            <div class="requirements_email">Must be a valid email address.</div>
+
+            <label for="phone">Phone number</label>
+            <input type="tel" pattern="[0-9\s._/()%+-]*" id="phone" name="phone_number" placeholder="Not required">
+
+            <label for="street">Street Adress</label>
+            <input type="text" id="street" name="street" placeholder="Street + Nr.">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Vienna">
+
+            <label for=State>State</label>
+            <select id="State" name="state">
+                <optgroup label="Austria">
+                <option value="upper_austria">Upper Austria (my Home)</option>
+                <option value="lower_austria">Lower Austria</option>
+                <option value="vienna">Vienna</option>
+                <option value="burgenland">Burgenland</option>
+                <option value="styria">Styria(Arnis Home ;-)</option>
+                <option value="carinthia">Carinthia (beautiful south)</option>
+                <option value="Tirol">Tirol</option>
+                <option value="Vorarlberg">Vorarlberg</option>
+              </optgroup>
+              <optgroup label="Australia">
+                <option value="Northern Territory">Northern Territory</option>
+                <option value="Queensland">Queensland</option>
+                <option value="New South Wales">New South Wales</option>
+                <option value="Canberra">Canberra</option>
+                <option value="Victoria">Victoria</option>
+                <option value="Western Australia">Western Australia</option>
+                <option value="Tasman">Tasman</option>
+              </optgroup>
+            </select>
+
+            <label for="zipcode">Zip Code</label>
+            <input type="text" id="zipcode" name="zipcode" placeholder="44559">
+        </fieldset>
+        <div id="Border_Newsletter"></div>
+        <fieldset class="Newsletter_Set">
+          <legend class="Newsletter_Title">Newsletter</legend>
+          <span>Select the newsletter you would like to recive</span>
+              <input type="checkbox" id="html_news" value="newsletter_html" name="newsletter_html"><label class="light" for="html_news">HTML News</label><br>
+              <input type="checkbox" id="css_news" value="newsletter_css" name="newsletter_css"><label class="light" for="css_news">CSS News</label><br>
+              <input type="checkbox" id="javascript_news" value="newsletter_javascript" name="newsletter_javascript"><label class="light" for="javascript_news">Javascript News</label><br>
+
+              <label class="labelmargin">Newsletter fromat</label>
+              <input type="radio" id="format_html" value="html_format" name="format_html"><label for="format_html" class="light">HTML</label>
+              <br>
+              <input type="radio" id="format_text" value="text_format" name="format_html"><label for="format_text" class="light">Plain text</label>
+
+
+                <label for="other_topics" class="labelmargin">Other topics you would like to hear about</label>
+                <textarea id="other_topics" name="other_topics" placeholder="Sports maybe ;-)"></textarea>
+        </fieldset>
+
+        <button type="submit">Sign Up</button>
+
+        <p>Copyright The Code Review</p>
+
+      </form>
+
+    </body>
+</html>
