@@ -19,5 +19,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "postcss-zindex": "^2.2.0"
+  },
+  "dependencies": {
+    "vanilla-lazyload": "^10.3.1"
   }
 }

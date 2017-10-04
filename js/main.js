@@ -120,7 +120,7 @@ $(document).ready(function(){
     accessibility: true,
     arrows: false,
     dots: false,
-    autoplaySpeed: 6500,
+    autoplaySpeed: 5000,
     speed: 3000,
   });
 });
