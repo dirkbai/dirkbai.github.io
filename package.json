@@ -21,6 +21,7 @@
     "postcss-zindex": "^2.2.0"
   },
   "dependencies": {
+    "postcss-zindex": "^2.2.0",
     "vanilla-lazyload": "^10.3.1"
   }
 }

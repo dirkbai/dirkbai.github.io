@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 
 for (var i = 0; i < navLi.length; i++) {
-  navLi[i].addEventListener("click", function(e){
+  navLi[i].addEventListener("click", function(event){
        event.preventDefault;
        $("html, body").animate({
          scrollTop: $(this.getAttribute("href")).offset().top -mnh}, 1000);
@@ -50,7 +50,7 @@ var myLogo = document.getElementsByClassName('DB Logo');
 var carTop = document.getElementById('carousel_top');
 
 for (var i = 0; i < myLogo.length; i++) {
-  myLogo[i].addEventListener("click", function(e){
+  myLogo[i].addEventListener("click", function(event){
        event.preventDefault;
        $("html, body").animate({
          scrollTop: $(carTop)});
@@ -98,7 +98,7 @@ closeNav.addEventListener('click', function () {
 
 for (var i = 0; i < navLi.length; i++) {
   navLi[i].index = i;
-  navLi[i].addEventListener("click", function(e){
+  navLi[i].addEventListener("click", function(event){
     var activate = event.target;
      for (var i = 0; i < navLi.length; i++) {
            document.getElementById("myNav").classList.remove("active_text");
@@ -138,8 +138,7 @@ var arrowText = document.querySelectorAll('.arrow_text');
 
 for (var i = 0; i < revialText.length; i++) {
   revialText[i].index = i;
-  revialText[i].addEventListener("click", function(e){
-       var actText = event.target;
+  revialText[i].addEventListener("click", function(event){
       //  var hiddenText = hideText[this.index];
        var panel = this.nextElementSibling;
        if (panel.className === "hide_text showMe"){
@@ -154,7 +153,7 @@ for (var i = 0; i < revialText.length; i++) {
 
 for (var i = 0; i < hideText.length; i++) {
   hideText[i].index = i;
-  hideText[i].addEventListener("click", function(e){
+  hideText[i].addEventListener("click", function(event){
 
        hideText[this.index].classList.remove("active_text");
        arrowText[this.index].classList.remove("hide");
@@ -169,7 +168,7 @@ var button = document.getElementsByClassName('button');
 
 for (var i = 0; i < button.length; i++) {
   button[i].index = i;
-  button[i].addEventListener("click", function(e){
+  button[i].addEventListener("click", function(event){
        var actButton = event.target;
        $("html, body").animate({
          scrollTop: $("#tree").offset().top -mnh}, 1000);
@@ -192,7 +191,7 @@ var buttonL = document.getElementsByClassName('buttonL');
 
 for (var i = 0; i < buttonL.length; i++) {
   buttonL[i].index = i;
-  buttonL[i].addEventListener("click", function(e){
+  buttonL[i].addEventListener("click", function(event){
        var actButton = event.target;
        $("html, body").animate({
          scrollTop: $("#logo").offset().top -mnh}, 1000);
@@ -214,7 +213,7 @@ var buttonP = document.getElementsByClassName('buttonP');
 
 for (var i = 0; i < buttonP.length; i++) {
   buttonP[i].index = i;
-  buttonP[i].addEventListener("click", function(e){
+  buttonP[i].addEventListener("click", function(event){
        var actButton = event.target;
        $("html, body").animate({
          scrollTop: $("#print").offset().top -mnh}, 1000);
