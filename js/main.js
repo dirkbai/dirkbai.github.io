@@ -240,7 +240,7 @@ var buttonF = document.getElementsByClassName('buttonF');
 
 for (var i = 0; i < buttonF.length; i++) {
   buttonF[i].index = i;
-  buttonF[i].addEventListener("click", function(e){
+  buttonF[i].addEventListener("click", function(event){
        var actButton = event.target;
        $("html, body").animate({
          scrollTop: $("#fun").offset().top -mnh}, 1000);
