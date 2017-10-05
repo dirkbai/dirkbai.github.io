@@ -121,6 +121,8 @@ $(document).ready(function(){
     arrows: false,
     dots: false,
     pauseOnHover: false,
+    pauseOnFocus: false,
+    draggable: false,
     autoplaySpeed: 5000,
     speed: 3000,
   });
