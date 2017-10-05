@@ -360,7 +360,6 @@ background: $gray;
 .skills_interm {
   display: flex;
   justify-content: center;
-  align-items: start;
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
@@ -385,7 +384,6 @@ background: $gray;
   .skills_js  {
     display: flex;
     justify-content: center;
-    align-items: start;
     flex-direction: column;
     flex-wrap: nowrap;
     padding-left: 5.5rem;
@@ -502,7 +500,7 @@ background: $gray;
 
 .buttons{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
@@ -527,7 +525,7 @@ background: $gray;
 .buttonF {
     display: flex;
     position: relative;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 50%;
