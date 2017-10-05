@@ -299,9 +299,9 @@ background: $gray;
       justify-content: space-evenly;
       align-items: center;
       position: absolute;
-      width: 100%;
+      width: 80%;
       height: auto;
-      padding: 1rem 0;
+        padding: 0rem;
       margin: 0;
       top: 50%;
       transform: translateY(-50%);
@@ -310,10 +310,15 @@ background: $gray;
       cursor:pointer;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 
+      span{
+        padding: 1rem;
+      }
+
       @media #{$br-tablet}{
-        width: 15%;
+        width: 80%;
         line-height: 2.3rem;
       }
+
     }
 
 .images_wrapper {
