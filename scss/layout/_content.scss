@@ -296,12 +296,12 @@ background: $gray;
 
 .btnTitle{
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       position: absolute;
       width: 80%;
       height: auto;
-        padding: 0rem;
+      padding: 0rem;
       margin: 0;
       top: 50%;
       transform: translateY(-50%);

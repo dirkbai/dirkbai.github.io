@@ -120,6 +120,7 @@ $(document).ready(function(){
     accessibility: true,
     arrows: false,
     dots: false,
+    pauseOnHover: false,
     autoplaySpeed: 5000,
     speed: 3000,
   });
