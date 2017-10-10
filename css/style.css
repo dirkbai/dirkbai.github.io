@@ -264,7 +264,7 @@ button {
   width: 80%;
   height: auto;
   padding: 0rem;
-  margin: 0;
+  margin: 0 auto;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
@@ -825,15 +825,23 @@ footer {
     #overlay-nav img {
       width: 90%; } }
 
+@media (min-width: 1024px) {
+  #overlay-nav {
+    display: none; } }
+
 .nav_size_L,
 #ul_size_L {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .nav_size_L a,
-  #ul_size_L a {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: #174DBD;
-    margin: 0 2.5rem; }
+  display: none; }
+  @media (min-width: 1024px) {
+    .nav_size_L,
+    #ul_size_L {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      display: flex; }
+      .nav_size_L a,
+      #ul_size_L a {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: #174DBD;
+        margin: 0 2.5rem; } }

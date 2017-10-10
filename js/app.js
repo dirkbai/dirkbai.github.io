@@ -77,7 +77,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 var mn = $(".main-nav");
     mnh = $(".main-nav").height();
     mns = "main-nav-scrolled";
-    hdr = $('header').height();
+    // hdr = $('header').height();
 
 var myNav = document.getElementById("myNav");
 var overlyStart = document.getElementById("overlay-nav");
@@ -97,17 +97,17 @@ var revialText = document.querySelectorAll('.revial_Text');
 
 
 
-$(document).ready(function(){
-  if (window.matchMedia("(min-width: 1024px)").matches) {
-      // The browser window is at least 480px wide
-        $(overlyStart).addClass( "hide" );
-  }
-  else {
-      $(ulLarge).addClass( "hide" );
-      // The browser window is less than 480px wide
-  }
-
-});
+// $(document).ready(function(){
+//   if (window.matchMedia("(min-width: 1024px)").matches) {
+//       // The browser window is at least 480px wide
+//         $(overlyStart).addClass( "hide" );
+//   }
+//   else {
+//       $(ulLarge).addClass( "hide" );
+//       // The browser window is less than 480px wide
+//   }
+//
+// });
 
 
 
@@ -139,15 +139,19 @@ for (var i = 0; i < myLogo.length; i++) {
 
 //---------------------------------------- Sticky Nav
 
-document.addEventListener('scroll', function() {
- if( $(this).scrollTop() > hdr ) {
-   mn.addClass(mns);
-  myNav.className = "overlay showMe nav_height_top";
- } else {
-   mn.removeClass(mns);
-   myNav.className = "overlay showMe";
- }
-});
+
+function header_sticky() {
+   if( $(this).scrollTop() >  $('header').height() ) {
+     mn.addClass(mns);
+    myNav.className = "overlay showMe nav_height_top";
+   } else {
+     mn.removeClass(mns);
+     myNav.className = "overlay showMe";
+   }
+}
+ document.addEventListener('scroll', header_sticky);
+ window.addEventListener("resize", header_sticky);
+
 
 
 //---------------------------------------- Nav Overlay
