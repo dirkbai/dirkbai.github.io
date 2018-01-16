@@ -62,4 +62,4 @@ gulp.task('watchFiles', function(){
 
 gulp.task('serve', ['watchFiles']);
 
-gulp.task('default',['compileSass','process-css','minifyScripts']);
+gulp.task('default',['compileSass','minifyScripts']);

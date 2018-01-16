@@ -110,34 +110,6 @@ for (var i = 0; i < navLi.length; i++) {
   });
 }
 
-
-
-
-//---------------------------------------- Carousel
-
-var item_length = $('.carousel > div').length - 1;
-var slider = $('.carousel');
-
-$(document).ready(function(){
-  $('.carousel').slick({
-    autoplay: true,
-    accessibility: true,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    draggable: false,
-    autoplaySpeed: 5000,
-    speed: 3000,
-  });
-});
-
-$('.carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
-  $('.carousel').slick('slickPause');
-});
-
-
-
 //---------------------------------------- Multiline toggle
 
 
@@ -276,3 +248,31 @@ var waypoint = new Waypoint({
   },
   offset: '75%'
 });
+
+
+//---------------------------------------- Lightbox
+
+$('.entry').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300,
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+
+	});
