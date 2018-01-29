@@ -252,14 +252,14 @@ var waypoint = new Waypoint({
 
 //---------------------------------------- Lightbox
 
-$('.entry').magnificPopup({
+$('.light_it').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		closeOnContentClick: false,
 		closeBtnInside: false,
 		mainClass: 'mfp-img-mobile',
 		image: {
-			verticalFit: true,
+			verticalFit: false,
 			titleSrc: function(item) {
 				return item.el.attr('title');
 			}

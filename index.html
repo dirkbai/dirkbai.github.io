@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/> -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
@@ -165,7 +166,14 @@
         <nav id="nav_size_L">
           <ul id="ul_size_L">
             <li><a href="#me" class="navLi">Me</a></li>
-            <li><a href="#work" class="navLi">Work</a></li>
+            <li><a href="#work" class="navLi">Work</a>
+              <ul class="hide">
+                <li><a href="#for_web">Web</a></li>
+                <li><a href="#logo_design">Logo</a></li>
+                <li><a href="#for_print">Print</a></li>
+                <li><a href="#for_fun">Fun</a></li>
+              </ul>
+            </li>
             <li><a href="#skills" class="navLi">Skills</a></li>
             <li><a href="#contact" class="navLi">Contact</a></li>
           </ul>
@@ -199,45 +207,62 @@
           <h2 id="work">WORK</h2>
         </div>
 
-          <div class="second_title">
+          <div class="second_title" id="for_web">
             <h3>
-              Team Treehouse
+              For Web
             </h3>
-            <span>Here you can view my favorite projects from the "Front End Web Development" course</span>
+            <span>Here you can view my favorite projects from the "Treehouse Front End" course and some Ui design</span>
           </div>
           <div class="images_wrapper">
             <div class="presentation" id="tree">
                 <div class="entry active_space active">
-                  <a href="img/Treehouse/Project_9.jpg" title="Project 9"></a>
                   <img class="lazyload"
                   src="#" data-src="img/Treehouse/Project_9.jpg"
                   data-srcset="img/Treehouse/Project_9_L.jpg 1300w,
                           img/Treehouse/Project_9_M.jpg 900w,
                           img/Treehouse/Project_9.jpg 500w"
                   alt="Project_9">
-                  <p  class="revial_Text"><a href="DB_9th_Project_web_app_dashboard/index.html"><b>Project 9 Web App Dashboard</b></a><br>Apart from from my portfolio, this project was definitely <span class="arrow_text">>></span></p>
+                  <p  class="revial_Text">
+                    <a href="img/Treehouse/Project_9.jpg" class="proj_btn"><b>Project 9 Web App Dashboard</b>
+                    </a>
+                    <br>Apart from from my portfolio, this project was definitely <span class="arrow_text">>></span></p>
                   <span class="hide_text showMe">the most challenging. The briefing was a screenshot and several javascript specifications.^</span>
                 </div>
                 <div class="entry">
                   <img class="lazyload"
-                  src="#" data-src="img/Treehouse/Project_2.jpg"
-                  data-srcset="img/Treehouse/Project_2_L.jpg 1300w,
-                          img/Treehouse/Project_2_M.jpg 900w,
-                          img/Treehouse/Project_2.jpg 500w"
-                          alt="Project_2">
-                  <p class="revial_Text"><a href="DB_2nd_Preject_corrected/index.html"><b>Project 2 Responsive Onepage</b></a><br>Only the 2nd project on the course and I was <span class="arrow_text">>></span></p>
-                  <span class="hide_text showMe">chucked in the deep end.  After learning the basics of css we had to create an entire responsive onepage ^</span>
+                  src="#" data-src="img/Treehouse/Project_Trost.jpg"
+                  data-srcset="img/Treehouse/Project_Trost_L.jpg 1300w,
+                          img/Treehouse/Project_Trost_M.jpg 900w,
+                          img/Treehouse/Project_Trost.jpg 500w"
+                          alt="Project_Trost">
+                  <div class="light_it">
+                      <a href="img/Treehouse/Trost_sh_screen.jpg">Ui Design Trost
+                        <a href="img/Treehouse/Trost_sh_tablet.jpg" class="hide"></a>
+                        <a href="img/Treehouse/Trost_sh_phone.jpg" class="hide"></a>
+                      </a>
+                  </div>
+                  <p class="revial_Text">
+                    <br>Designed @ Atikon. With this design I worked with squares and grids
+                    <span class="arrow_text">>></span>
+                  </p>
+                  <span class="hide_text showMe">the company has a very modern building wich inspired me for the logo and the UI design ^</span>
                 </div>
                 <div class="entry">
                   <img class="lazyload"
                   src="#"
-                  data-src="img/Treehouse/Project_3.jpg"
-                  data-srcset="img/Treehouse/Project_3_L.jpg 1300w,
-                          img/Treehouse/Project_3_M.jpg 900w,
-                          img/Treehouse/Project_3.jpg 500w"
-                  alt="Project_3">
-                  <p class="revial_Text"><a href="DB_3rd_Project/index.html"><b>Project 3 Form-Element</b></a><br>Getting to know all the <span class="arrow_text">>></span></p>
-                  <span class="hide_text showMe">special rules for creating a form with HTML and CSS^</span>
+                  data-src="img/Treehouse/Project_Koppert.jpg"
+                  data-srcset="img/Treehouse/Project_Koppert_L.jpg 1300w,
+                          img/Treehouse/Project_Koppert_M.jpg 900w,
+                          img/Treehouse/Project_Koppert.jpg 500w"
+                  alt="Projekt_Koppert">
+                  <div class="light_it">
+                      <a href="img/Treehouse/Koppert_sh_screen.jpg">Ui Design Koppert
+                        <a href="img/Treehouse/Koppert_sh_tablet.jpg" class="hide"></a>
+                        <a href="img/Treehouse/Koppert_sh_phone.jpg" class="hide"></a>
+                      </a>
+                  </div>
+                  <p class="revial_Text"><br>Designed @ Atikon. Gradient<span class="arrow_text">>></span></p>
+                  <span class="hide_text showMe">was the theme here^</span>
                 </div>
                 <div class="entry">
                   <img class="lazyload"
@@ -247,7 +272,7 @@
                           img/Treehouse/Project_4_M.jpg 900w,
                           img/Treehouse/Project_4.jpg 500w"
                   alt="Project_4">
-                  <p class="revial_Text"><a href="DB_4th_Project/index.html"><b>Project 4 Interactive Photo Gallery</b></a><br> This project was all about javascript.  <span class="arrow_text">>></span></p>
+                  <p class="revial_Text"><a href="DB_4th_Project/index.html" class="proj_btn">Project 4 Interactive Photo Gallery</a><br> This project was all about javascript.  <span class="arrow_text">>></span></p>
                   <span class="hide_text showMe">The brief was to create an interactive photo gallery with search function and a lightbox. ^</span>
                 </div>
                 <div class="entry">
@@ -257,7 +282,7 @@
                           img/Treehouse/Project_7_M.jpg 900w,
                           img/Treehouse/Project_7.jpg 500w"
                   alt="Project_7">
-                  <p class="revial_Text"><a href="DB_7th_Project/index.html"><b>Project 7 Interactive Video</b></a><br>Another tough nut to crack. <span class="arrow_text">>></span></p>
+                  <p class="revial_Text"><a href="DB_7th_Project/index.html" class="proj_btn"><b>Project 7 Interactive Video</b></a><br>Another tough nut to crack. <span class="arrow_text">>></span></p>
                   <span class="hide_text showMe">On this project we had to code two functions:
                     1.  Transcript highlights as video plays.<br>
                     2.  The video skips to the proper place in the video when the transcript clicked.</span>
@@ -269,12 +294,12 @@
                   <img src="img/Treehouse/Project_9_tn.jpg" alt="Project_9">
                 </div>
                 <div class="button col1">
-                  <p class="btnTitle"><span>Project 2</span></p>
-                  <img src="img/Treehouse/Project_2_tn.jpg" alt="Project_2">
+                  <p class="btnTitle"><span>Trost Ui</span></p>
+                  <img src="img/Treehouse/Project_Trost_tn.jpg" alt="Project_2">
                 </div>
                 <div class="button col2">
-                  <p class="btnTitle"><span>Project 3</span></p>
-                  <img src="img/Treehouse/Project_3_tn.jpg" alt="Project_3">
+                  <p class="btnTitle"><span>Koppert Ui</span></p>
+                  <img src="img/Treehouse/Project_Koppert_tn_L.jpg" alt="Project_3">
                 </div>
                 <div class="button col3">
                   <p class="btnTitle"><span>Project 4</span></p>
@@ -287,7 +312,7 @@
               </div>
           </div>
 
-          <div class="second_title">
+          <div class="second_title" id="logo_design">
             <h3>
               Logo Design
             </h3>
@@ -371,7 +396,7 @@
             </div>
           </div>
 
-          <div class="second_title">
+          <div class="second_title" id="for_print">
             <h3>
               For Print
             </h3>
@@ -455,7 +480,7 @@
             </div>
           </div>
 
-          <div class="second_title">
+          <div class="second_title" id="for_fun">
             <h3>
               Other Fun Projects
             </h3>

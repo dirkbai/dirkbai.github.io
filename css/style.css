@@ -111,6 +111,35 @@ button {
     @media (min-width: 1024px) {
       .active_space p {
         margin: 1.5rem 0rem 0 1.5rem; } }
+  .active_space .light_it {
+    width: 80%;
+    margin: 1.5rem 1.5rem 0 1.5rem; }
+    @media (min-width: 768px) {
+      .active_space .light_it {
+        margin: 1.5rem 1.5rem 0 4rem; } }
+    @media (min-width: 1024px) {
+      .active_space .light_it {
+        margin: 1.5rem 0rem 0 1.5rem; } }
+    .active_space .light_it a {
+      padding: 1.5rem;
+      color: white;
+      background-color: #08193D;
+      text-decoration: none;
+      font-weight: 400; }
+  .active_space .proj_btn {
+    padding: 1.5rem;
+    color: white;
+    background-color: #08193D;
+    text-decoration: none;
+    font-weight: 400;
+    width: 80%;
+    margin: 1.5rem 1.5rem 0 1.5rem; }
+    @media (min-width: 768px) {
+      .active_space .proj_btn {
+        margin: 1.5rem 1.5rem 0 4rem; } }
+    @media (min-width: 1024px) {
+      .active_space .proj_btn {
+        margin: 1.5rem 0rem 0 1.5rem; } }
   .active_space button {
     background: none;
     margin: 0; }
@@ -153,7 +182,9 @@ button {
     transition: max-height 0.5s ease-in; }
 
 .arrow_text {
-  display: inline; }
+  display: inline;
+  text-decoration: underline;
+  font-weight: bold; }
   .arrow_text .hide {
     display: none; }
 
