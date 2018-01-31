@@ -302,6 +302,7 @@
   font-family: $roboto_con;
   z-index: 150;
   box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4);
+  position: relative;
 
   ul {
     display: flex;
@@ -309,15 +310,29 @@
     justify-content: space-around;
   }
 
-  li {
-    margin: 0 1rem;
+  #hide_ul {
+      display: none;
+      list-style: none;
+      background-color: white;
+      padding: 2.5rem 0;
+      position: absolute;
+      z-index: -1;
   }
 
-  a{
-    color: $dark-gray;
-    text-decoration: none;
-    font-size: 1.5rem;
 
+  #work_menu:hover #hide_ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  li {
+    padding: 0 1rem;
+
+    :hover {
+      background-color: $main-blue;
+      color: white;
+    }
   }
 
 }
@@ -442,8 +457,12 @@
       font-size: 2.2rem;
       font-weight: 400;
       color: $main-blue;
-      margin: 0 2.5rem;
+      padding: 0 2.5rem;
+      text-decoration: none;
+    }
 
+    a:hover {
+      color: white;
     }
   }
 }

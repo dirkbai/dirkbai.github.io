@@ -103,41 +103,12 @@
       }
     }
 
-    .proj_btn{
-      padding: 1.5rem;
-      color: white;
-      background-color: $dark-blue;
-      text-decoration: none;
-      font-weight: 400;
-      width: 80%;
-      margin: 1.5rem 1.5rem 0 1.5rem;
-
-      @media #{$br-tablet}{
-      margin: 1.5rem 1.5rem 0 4rem;
-      }
-
-      @media #{$br-screen}{
-        margin: 1.5rem 0rem 0 1.5rem;
-      }
-    }
-
-    // #intro_text {
-    //   color: white;
-    //   cursor:pointer;
-    //     @media #{$br-tablet}{
-    //       margin-top: 6rem;
-    //     }
-    //     // @media #{$br-screen}{
-    //     //   margin: 7rem 7rem 0 7rem;
-    //     // }
-    //
-    // }
-
     button {
       background: none;
       margin: 0;
     }
 }
+
 
 #intro_text {
   display: inline-block;
@@ -195,6 +166,25 @@
 .revial_Text{
   display: inline;
 
+  .proj_btn{
+    padding: 1rem;
+    color: white;
+    background-color: $main-blue;
+    text-decoration: none;
+    font-weight: 400;
+    width: auto;
+    margin: 0 auto 0 0;
+
+    @media #{$br-tablet}{
+      margin: 0 auto 0 0;
+      padding: 1.5rem;
+    }
+
+    @media #{$br-screen}{
+      margin: 0 auto 0 0;
+      padding: 1.5rem;
+    }
+  }
 }
 
 .hide_text {

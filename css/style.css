@@ -126,20 +126,6 @@ button {
       background-color: #08193D;
       text-decoration: none;
       font-weight: 400; }
-  .active_space .proj_btn {
-    padding: 1.5rem;
-    color: white;
-    background-color: #08193D;
-    text-decoration: none;
-    font-weight: 400;
-    width: 80%;
-    margin: 1.5rem 1.5rem 0 1.5rem; }
-    @media (min-width: 768px) {
-      .active_space .proj_btn {
-        margin: 1.5rem 1.5rem 0 4rem; } }
-    @media (min-width: 1024px) {
-      .active_space .proj_btn {
-        margin: 1.5rem 0rem 0 1.5rem; } }
   .active_space button {
     background: none;
     margin: 0; }
@@ -190,6 +176,22 @@ button {
 
 .revial_Text {
   display: inline; }
+  .revial_Text .proj_btn {
+    padding: 1rem;
+    color: white;
+    background-color: #174DBD;
+    text-decoration: none;
+    font-weight: 400;
+    width: auto;
+    margin: 0 auto 0 0; }
+    @media (min-width: 768px) {
+      .revial_Text .proj_btn {
+        margin: 0 auto 0 0;
+        padding: 1.5rem; } }
+    @media (min-width: 1024px) {
+      .revial_Text .proj_btn {
+        margin: 0 auto 0 0;
+        padding: 1.5rem; } }
 
 .hide_text {
   cursor: pointer;
@@ -854,17 +856,28 @@ footer {
   background-color: white;
   font-family: "Roboto Condensed", sans-serif;
   z-index: 150;
-  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4); }
+  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4);
+  position: relative; }
   .main-nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
+  .main-nav #hide_ul {
+    display: none;
+    list-style: none;
+    background-color: white;
+    padding: 2.5rem 0;
+    position: absolute;
+    z-index: -1; }
+  .main-nav #work_menu:hover #hide_ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
   .main-nav li {
-    margin: 0 1rem; }
-  .main-nav a {
-    color: #363740;
-    text-decoration: none;
-    font-size: 1.5rem; }
+    padding: 0 1rem; }
+    .main-nav li :hover {
+      background-color: #174DBD;
+      color: white; }
 
 .overlay {
   height: 100%;
@@ -967,4 +980,8 @@ footer {
         font-size: 2.2rem;
         font-weight: 400;
         color: #174DBD;
-        margin: 0 2.5rem; } }
+        padding: 0 2.5rem;
+        text-decoration: none; }
+      .nav_size_L a:hover,
+      #ul_size_L a:hover {
+        color: white; } }
