@@ -560,6 +560,82 @@ button {
 .hide {
   display: none; }
 
+.timeline ul li {
+  color: #174DBD;
+  font-family: "Roboto Condensed", sans-serif;
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  padding-top: 50px;
+  background: #174DBD; }
+  @media (min-width: 768px) {
+    .timeline ul li {
+      margin: 0 3.7rem; } }
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit; }
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69; }
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid; }
+
+.timeline ul li div {
+  left: 45px; }
+
+.timeline ul li div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent; }
+
+.timeline ul li::after {
+  background: #fff;
+  transition: background .5s ease-in-out; }
+
+.timeline ul li.in-view::after {
+  background: #F45B69; }
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out; }
+
+.timeline ul li div {
+  transform: translate3d(200px, 0, 0); }
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1; }
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px; } }
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px; }
+  .timeline ul li div {
+    width: calc(100vw - 91px); } }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -856,23 +932,25 @@ footer {
   background-color: white;
   font-family: "Roboto Condensed", sans-serif;
   z-index: 150;
-  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4);
-  position: relative; }
+  box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4); }
   .main-nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
+  .main-nav #work_menu {
+    position: relative; }
   .main-nav #hide_ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     list-style: none;
     background-color: white;
     padding: 2.5rem 0;
     position: absolute;
-    z-index: -1; }
+    z-index: -1;
+    visibility: hidden; }
   .main-nav #work_menu:hover #hide_ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
+    visibility: visible; }
   .main-nav li {
     padding: 0 1rem; }
     .main-nav li :hover {

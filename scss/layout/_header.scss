@@ -302,7 +302,6 @@
   font-family: $roboto_con;
   z-index: 150;
   box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4);
-  position: relative;
 
   ul {
     display: flex;
@@ -310,20 +309,25 @@
     justify-content: space-around;
   }
 
+  #work_menu {
+    position: relative;
+  }
+
   #hide_ul {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       list-style: none;
       background-color: white;
       padding: 2.5rem 0;
       position: absolute;
       z-index: -1;
+      visibility: hidden;
   }
 
 
   #work_menu:hover #hide_ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+      visibility: visible;
   }
 
   li {
