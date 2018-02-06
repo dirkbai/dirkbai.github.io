@@ -598,14 +598,23 @@ background: $gray;
 
 // Timeline---------------------------------------------
 
+.timeline ul {
+  margin: 0;
+}
+
 .timeline ul li {
-  color: $main-blue;
+  color: $dark-gray;
   font-family: $roboto_con;
+  font-size: 1.4rem;
   list-style-type: none;
   position: relative;
   width: 6px;
   padding-top: 50px;
-  background: $main-blue;
+  background: $dark-gray;
+
+  time{
+    color: $main-blue;
+  }
 
   @media #{$br-tablet}{
   margin: 0 3.7rem;
@@ -621,7 +630,8 @@ background: $gray;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: inherit;
+  background: $main-blue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .timeline ul li div {
@@ -629,7 +639,8 @@ background: $gray;
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #F45B69;
+  background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .timeline ul li div::before {
@@ -647,8 +658,8 @@ background: $gray;
 
 .timeline ul li div::before {
   left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent #F45B69 transparent transparent;
+  border-width: 8px 15px 8px 0;
+  border-color: transparent $main-blue transparent transparent;
 }
 
 .timeline ul li::after {
@@ -657,7 +668,7 @@ background: $gray;
 }
 
 .timeline ul li.in-view::after {
-  background: #F45B69;
+  background: $main-blue;
 }
 
 .timeline ul li div {
