@@ -309,36 +309,9 @@
     justify-content: space-around;
   }
 
-  #work_menu {
-    position: relative;
-  }
-
-  #hide_ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      list-style: none;
-      background-color: white;
-      padding: 2.5rem 0;
-      position: absolute;
-      z-index: -1;
-      visibility: hidden;
-  }
-
-
-  #work_menu:hover #hide_ul {
-      visibility: visible;
-  }
-
-  li {
-    padding: 0 1rem;
-
-    :hover {
-      background-color: $main-blue;
-      color: white;
-    }
-  }
-
+  // #work_menu {
+  //   position: relative;
+  // }
 }
 
 .overlay {
@@ -361,13 +334,16 @@
     margin-top: 30px;
 }
 
-.overlay a {
+.overlay a, .overlay button {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: white;
     display: block;
     transition: 0.3s;
+    background: none;
+    margin: 0;
+    font-family: $roboto_con;
 
    @media #{$br-tablet}{
           font-size: 4rem;
@@ -377,6 +353,23 @@
 
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
+}
+
+#hide_ul_overlay {
+    display: none;
+}
+
+#work_menu_overlay:focus #hide_ul_overlay,
+#work_menu_overlay:hover #hide_ul_overlay,
+#work_menu_overlay:focus #hide_ul_overlay {
+    display: block;
+    margin: 1rem 0 1rem 5rem;
+}
+
+#work_menu_overlay {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .overlay .closebtn {
@@ -450,23 +443,81 @@
 .nav_size_L,
 #ul_size_L {
   display: none;
+  position: relative;
+
   @media #{$br-screen}{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     display: flex;
     list-style-type: none;
+    margin: 0;
+    height: 100%;
 
     a {
       font-size: 2.2rem;
       font-weight: 400;
       color: $main-blue;
-      padding: 0 2.5rem;
+      padding: 2.5rem;
       text-decoration: none;
     }
 
-    a:hover {
+    li {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    li:hover {
+      background-color: $main-blue;
+    }
+
+    li:hover .li_one {
+        color: white;
+    }
+
+  }
+}
+
+#nav_size_L{
+  height: 100%;
+
+      li {
+        padding: 0 1rem;
+        height: 100%;
+      }
+}
+
+#hide_ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: white;
+    padding: 2.5rem 0;
+    position: absolute;
+    top: 13vh;
+    z-index: -1;
+    visibility: hidden;
+
+    li {
+      display: block;
+      padding: .5rem 1rem;
+    }
+
+    li a {
+      color: $main-blue;
+      padding: 0 2.5rem;
+    }
+
+    li:hover a{
+      background-color: $main-blue;
       color: white;
     }
-  }
+}
+
+
+#work_menu:hover #hide_ul {
+    visibility: visible;
 }

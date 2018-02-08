@@ -155,7 +155,14 @@
           <a href="javascript:void(0)" class="closebtn" id="close_Nav">&times;</a>   <!-- Button to close the overlay navigation -->
         <ul class="overlay-content">   <!-- Overlay content -->
           <li><a href="#me" class="navLi">Me</a></li>
-          <li><a href="#work" class="navLi">Work</a></li>
+          <li id="work_menu_overlay"><a href="" id="prevent_def">Work</a>
+            <ul id="hide_ul_overlay">
+              <li><a href="#for_web" class="navLi">Web</a></li>
+              <li><a href="#logo_design" class="navLi">Logo</a></li>
+              <li><a href="#for_print" class="navLi">Print</a></li>
+              <li><a href="#for_fun" class="navLi">Fun</a></li>
+            </ul>
+          </li>
           <li><a href="#skills" class="navLi">CV & Skills</a></li>
           <li><a href="#contact" class="navLi">Contact</a></li>
         </ul>
@@ -165,17 +172,17 @@
         </div>
         <nav id="nav_size_L">
           <ul id="ul_size_L">
-            <li><a href="#me" class="navLi">Me</a></li>
-            <li id="work_menu"><a href="#work" class="navLi">Work</a>
+            <li><a href="#me" class="navLi li_one">Me</a></li>
+            <li id="work_menu"><a href="#work" class="navLi li_one">Work</a>
               <ul id="hide_ul">
-                <li class="navLi"><a href="#for_web">Web</a></li>
-                <li class="navLi"><a href="#logo_design">Logo</a></li>
-                <li class="navLi"><a href="#for_print">Print</a></li>
-                <li class="navLi"><a href="#for_fun">Fun</a></li>
+                <li><a href="#for_web" class="navLi">Web</a></li>
+                <li><a href="#logo_design" class="navLi">Logo</a></li>
+                <li><a href="#for_print" class="navLi">Print</a></li>
+                <li><a href="#for_fun" class="navLi">Fun</a></li>
               </ul>
             </li>
-            <li><a href="#skills" class="navLi">CV & Skills</a></li>
-            <li><a href="#contact" class="navLi">Contact</a></li>
+            <li><a href="#skills" class="navLi li_one">CV & Skills</a></li>
+            <li><a href="#contact" class="navLi li_one">Contact</a></li>
           </ul>
         </nav>
         <button  id="overlay-nav" type="button" name="button">  <img src="img/menu_icon.svg" alt="menu_icon"></button> <!-- Use any element to open/show the overlay navigation menu -->
@@ -568,7 +575,7 @@
       </article>
       <article class="work_space">
         <div class="work_heading">
-          <h2 id="skills">CV & SKILLS</h2>
+          <h2>CV & SKILLS</h2>
         </div>
         <div class="second_title">
           <h3>
@@ -666,7 +673,7 @@
           </ul>
         </section>
         <div class="second_title">
-          <h3>
+          <h3 id="skills">
             Skills
           </h3>
           <span>My skills are</span>

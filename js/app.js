@@ -142,6 +142,10 @@ function header_sticky() {
 
 //---------------------------------------- Nav Overlay
 
+document.getElementById('prevent_def').addEventListener('click', function (){
+    event.preventDefault();
+});
+
 
  overlyStart.addEventListener('click', function () {
      if (document.getElementById("myNav").className == "overlay showMe") {

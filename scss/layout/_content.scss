@@ -598,6 +598,14 @@ background: $gray;
 
 // Timeline---------------------------------------------
 
+.timeline {
+  margin-bottom: 3rem;
+
+  @media #{$br-tablet}{
+  margin-bottom: 5rem;
+  }
+}
+
 .timeline ul {
   margin: 0;
 }
