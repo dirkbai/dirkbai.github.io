@@ -497,7 +497,6 @@
     background-color: white;
     padding: 2.5rem 0;
     position: absolute;
-    top: 13vh;
     z-index: -1;
     visibility: hidden;
 
@@ -515,6 +514,14 @@
       background-color: $main-blue;
       color: white;
     }
+}
+
+.under_nav {
+    top: 13vh;
+}
+
+.over_nav {
+    top: -42vh;
 }
 
 

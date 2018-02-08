@@ -1102,7 +1102,6 @@ footer {
   background-color: white;
   padding: 2.5rem 0;
   position: absolute;
-  top: 13vh;
   z-index: -1;
   visibility: hidden; }
   #hide_ul li {
@@ -1114,6 +1113,12 @@ footer {
   #hide_ul li:hover a {
     background-color: #174DBD;
     color: white; }
+
+.under_nav {
+  top: 13vh; }
+
+.over_nav {
+  top: -42vh; }
 
 #work_menu:hover #hide_ul {
   visibility: visible; }

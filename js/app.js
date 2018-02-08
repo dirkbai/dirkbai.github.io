@@ -75,25 +75,10 @@ var navLi = document.getElementsByClassName('navLi');
 
 var hideText = document.querySelectorAll('.hide_text');
 var revialText = document.querySelectorAll('.revial_Text');
+var hide_ul = document.getElementById('hide_ul');
+var work_menu = document.getElementById('work_menu');
 
 
-
-//---------------------------------------- Nav Media query
-
-
-
-
-// $(document).ready(function(){
-//   if (window.matchMedia("(min-width: 1024px)").matches) {
-//       // The browser window is at least 480px wide
-//         $(overlyStart).addClass( "hide" );
-//   }
-//   else {
-//       $(ulLarge).addClass( "hide" );
-//       // The browser window is less than 480px wide
-//   }
-//
-// });
 
 
 
@@ -137,6 +122,14 @@ function header_sticky() {
 }
  document.addEventListener('scroll', header_sticky);
  window.addEventListener("resize", header_sticky);
+
+work_menu.addEventListener('mouseover', function (){
+  if (myNav.className === "overlay showMe nav_height_top") {
+    hide_ul.className = "under_nav";
+  } else {
+    hide_ul.className = "over_nav";
+  }
+});
 
 
 
