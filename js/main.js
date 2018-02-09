@@ -61,13 +61,13 @@ function header_sticky() {
  document.addEventListener('scroll', header_sticky);
  window.addEventListener("resize", header_sticky);
 
-// work_menu.addEventListener('mouseover', function (){
-//   if (myNav.className === "overlay showMe nav_height_top") {
-//     hide_ul.className = "under_nav";
-//   } else {
-//     hide_ul.className = "over_nav";
-//   }
-// });
+work_menu.addEventListener('mouseover', function (){
+  if (myNav.className === "overlay showMe nav_height_top") {
+    hide_ul.className = "under_nav";
+  } else {
+    hide_ul.className = "over_nav";
+  }
+});
 
 
 

@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  height: 540px;
+  height: 500px;
   top: 0;
   left: 0;
   right: 0;
@@ -17,7 +17,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 540px;
+  padding-top: 500px;
   margin: 0;
   width: 100%; }
   @media (min-width: 768px) {
@@ -1013,6 +1013,8 @@ footer {
 
 #hide_ul_overlay {
   display: none; }
+  #hide_ul_overlay a {
+    font-size: 1.5rem; }
 
 #work_menu_overlay:focus #hide_ul_overlay,
 #work_menu_overlay:hover #hide_ul_overlay,
@@ -1147,7 +1149,7 @@ footer {
   top: 130px; }
 
 .over_nav {
-  top: -130px; }
+  top: -312px; }
 
 #work_menu:hover #hide_ul {
   visibility: visible; }
