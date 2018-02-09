@@ -1,10 +1,4 @@
 
-.carousel{
-  width: 100vw;
-  height: 87vh;
-}
-
-
 // SVG LOGO ICON ANIMATION --------------------------------------------------
 
 #white_circle{
@@ -148,7 +142,7 @@
 
 .tinted-image {
   width: 100%;
-  height: 100vh;
+  height: 540px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -159,16 +153,23 @@
   background-position: center;
   background-size: cover;
 
+
 	@media #{$br-tablet}{
       background: linear-gradient(140deg, $graid-sec-blue, $graid-main-blue), url("../img/paul-gilmore-325220_med.jpg") no-repeat;
       background-position: center;
       background-size: cover;
+      height: 900px;
     }
 
   @media #{$br-screen}{
       background: linear-gradient(140deg, $graid-sec-blue, $graid-main-blue), url("../img/paul-gilmore-325220_L.jpg") no-repeat;
-      background-position: 95%;
+      background-position: center;
       background-size: cover;
+      height: 1000px;
+    }
+
+  @media (min-width: 2000px) {
+      height: 2500px;
     }
 
     .my_new_logo {
@@ -287,7 +288,7 @@
 .main-nav-scrolled{
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .main-nav {
@@ -295,13 +296,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: $nav_small;
   margin-bottom: -$nav_small;
   background-color: white;
   font-family: $roboto_con;
   z-index: 150;
   box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4);
+
+  @media #{$br-tablet} {
+    height: $nav_medium;
+    margin-bottom: -$nav_medium;
+  }
+
+  @media #{$br-screen} {
+    height: $nav_large;
+    margin-bottom: -$nav_large;
+  }
 
   ul {
     display: flex;
@@ -316,7 +327,7 @@
 
 .overlay {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -332,6 +343,7 @@
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    padding: 0;
 }
 
 .overlay a, .overlay button {
@@ -394,7 +406,7 @@
 }
 
 .logo{
-  height: 75%;
+  height: 70px;
   display: flex;
   align-items: center;
 
@@ -402,9 +414,16 @@
     display: flex;
   }
   img {
-      height: 12.5vh;
-      margin-top: .5vh;
+      height: 70px;
       margin-left: 1rem;
+
+      @media #{$br-tablet} {
+        height: 95px;
+      }
+
+      @media #{$br-screen} {
+        height: 110px;
+      }
   }
 }
 
@@ -424,8 +443,8 @@
 #overlay-nav{
 
    @media #{$br-tablet}{
-     width: 8vh;
-     height: 8vh;
+     width: 50px;
+     height: auto;
      margin-right: 3rem;
 
      img {
@@ -517,11 +536,11 @@
 }
 
 .under_nav {
-    top: 13vh;
+    top: $nav_large;
 }
 
 .over_nav {
-    top: -42vh;
+    top: -$nav_large;
 }
 
 

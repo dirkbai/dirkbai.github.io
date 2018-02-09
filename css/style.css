@@ -1,15 +1,31 @@
 header {
   position: fixed;
-  height: 87vh;
-  top: 0; }
+  height: 540px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  @media (min-width: 768px) {
+    header {
+      height: 600px; } }
+  @media (min-width: 2000px) {
+    header {
+      height: 1000px; } }
 
 body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 87vh;
-  margin: 0; }
+  padding-top: 540px;
+  margin: 0;
+  width: 100%; }
+  @media (min-width: 768px) {
+    body {
+      padding-top: 600px; } }
+  @media (min-width: 2000px) {
+    body {
+      padding-top: 1000px; } }
 
 h2 {
   display: flex;
@@ -19,7 +35,7 @@ h2 {
     h2 {
       font-size: 2.2rem;
       margin: 4rem; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     h2 {
       margin: 6rem; } }
 
@@ -32,12 +48,6 @@ h3 {
     h3 {
       font-size: 2.2rem; } }
 
-.placeholder_size_main {
-  height: 40vh; }
-
-.placeholder_size_sec {
-  height: 20vh; }
-
 button {
   display: flex;
   background: white;
@@ -47,8 +57,14 @@ button {
 
 .main-content {
   max-width: 1200px;
-  padding-top: 13vh;
+  padding-top: 85px;
   background-color: white; }
+  @media (min-width: 768px) {
+    .main-content {
+      padding-top: 120px; } }
+  @media (min-width: 1100px) {
+    .main-content {
+      padding-top: 130px; } }
 
 .this_is_me {
   display: flex;
@@ -73,7 +89,7 @@ button {
     .picture_me {
       width: 50%;
       height: auto; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     .picture_me {
       width: 35%; } }
 
@@ -96,7 +112,7 @@ button {
     width: inherit;
     margin: 0;
     padding: 0; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1100px) {
       .active_space img {
         width: 75%; } }
   .active_space p {
@@ -108,7 +124,7 @@ button {
     @media (min-width: 768px) {
       .active_space p {
         margin: 1.5rem 1.5rem 0 4rem; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1100px) {
       .active_space p {
         margin: 1.5rem 0rem 0 1.5rem; } }
   .active_space .light_it {
@@ -117,7 +133,7 @@ button {
     @media (min-width: 768px) {
       .active_space .light_it {
         margin: 1.5rem 1.5rem 0 4rem; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1100px) {
       .active_space .light_it {
         margin: 1.5rem 0rem 0 1.5rem; } }
     .active_space .light_it a {
@@ -141,7 +157,7 @@ button {
       margin: 6rem 5rem 2rem 6rem;
       font-size: 3rem;
       line-height: 3.5rem; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     #intro_text {
       margin: 7rem 7rem 0 7rem;
       font-size: 4.5rem;
@@ -154,7 +170,7 @@ button {
     #intro_text_hide {
       color: white;
       margin: 0rem 2.5rem 4rem 2.5rem; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     #intro_text_hide {
       color: white;
       margin: 0rem 5.5rem 7rem 5.5rem; } }
@@ -188,7 +204,7 @@ button {
       .revial_Text .proj_btn {
         margin: 0 auto 0 0;
         padding: 1.5rem; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1100px) {
       .revial_Text .proj_btn {
         margin: 0 auto 0 0;
         padding: 1.5rem; } }
@@ -202,7 +218,7 @@ button {
   @media (min-width: 768px) {
     .hide_text {
       margin: 0rem 1.5rem 0 4rem; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     .hide_text {
       margin: 0 1.5rem; } }
 
@@ -235,7 +251,7 @@ button {
       .second_title h3 {
         font-size: 2.2rem;
         margin: 6rem 4rem 0 4rem; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1100px) {
       .second_title h3 {
         margin: 6rem 6rem 0rem 6rem; } }
   .second_title span {
@@ -245,7 +261,7 @@ button {
       .second_title span {
         font-size: 1.8rem;
         margin: 1.5rem 4rem 6rem 4rem; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1100px) {
       .second_title span {
         width: 50%;
         margin: 1.5rem 6rem 6rem 6rem; } }
@@ -319,7 +335,7 @@ button {
   justify-content: space-between; }
   .images_wrapper a {
     color: #174DBD; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     .images_wrapper {
       flex-wrap: nowrap; } }
 
@@ -329,7 +345,6 @@ button {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
   font-family: "Roboto Condensed", sans-serif; }
   @media (min-width: 768px) {
     .skills_wrapper {
@@ -430,7 +445,6 @@ button {
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 100%;
     height: inherit;
     z-index: 100; }
     .skills_pro .skills_logos .psd_logo,
@@ -472,7 +486,7 @@ button {
 
 .presentation {
   display: flex; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     .presentation {
       width: 80%; } }
 
@@ -489,7 +503,7 @@ button {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     .active {
       margin-left: 9rem; } }
 
@@ -506,7 +520,7 @@ button {
   line-height: 1.7rem;
   font-weight: 300;
   transition: height 0.3s ease-out; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     .buttons {
       width: 20%;
       flex-direction: column;
@@ -550,7 +564,7 @@ button {
     .buttonF {
       width: 25%;
       font-size: 1.8rem; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     .button,
     .buttonL,
     .buttonP,
@@ -633,7 +647,7 @@ button {
   transition: all .5s ease-in-out; }
 
 .timeline ul li div {
-  transform: translate3d(200px, 0, 0); }
+  transform: translate3d(20px, 0, 0); }
 
 .timeline ul li.in-view div {
   transform: none;
@@ -648,7 +662,7 @@ button {
   .timeline ul li {
     margin-left: 20px; }
   .timeline ul li div {
-    width: calc(100vw - 91px); } }
+    width: 55vw; } }
 
 footer {
   display: flex;
@@ -702,10 +716,6 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3); }
   .soMe #behance {
     margin-right: 2rem; }
-
-.carousel {
-  width: 100vw;
-  height: 87vh; }
 
 #white_circle {
   fill-opacity: 0;
@@ -824,7 +834,7 @@ footer {
 
 .tinted-image {
   width: 100%;
-  height: 100vh;
+  height: 540px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -838,12 +848,17 @@ footer {
     .tinted-image {
       background: linear-gradient(140deg, #0f337d, rgba(23, 77, 189, 0.4)), url("../img/paul-gilmore-325220_med.jpg") no-repeat;
       background-position: center;
-      background-size: cover; } }
-  @media (min-width: 1024px) {
+      background-size: cover;
+      height: 900px; } }
+  @media (min-width: 1100px) {
     .tinted-image {
       background: linear-gradient(140deg, #0f337d, rgba(23, 77, 189, 0.4)), url("../img/paul-gilmore-325220_L.jpg") no-repeat;
-      background-position: 95%;
-      background-size: cover; } }
+      background-position: center;
+      background-size: cover;
+      height: 1000px; } }
+  @media (min-width: 2000px) {
+    .tinted-image {
+      height: 2500px; } }
   .tinted-image .my_new_logo {
     width: 55%;
     height: auto; }
@@ -853,7 +868,7 @@ footer {
     @media (min-width: 768px) {
       .tinted-image .my_new_logo {
         width: 30%; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1100px) {
       .tinted-image .my_new_logo {
         width: 20%; } }
   .tinted-image .welcome_hl {
@@ -933,20 +948,28 @@ footer {
 .main-nav-scrolled {
   position: fixed;
   top: 0;
-  width: 100vw; }
+  width: 100%; }
 
 .main-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 13vh;
-  margin-bottom: -13vh;
+  width: 100%;
+  height: 85px;
+  margin-bottom: -85px;
   background-color: white;
   font-family: "Roboto Condensed", sans-serif;
   z-index: 150;
   box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.4); }
+  @media (min-width: 768px) {
+    .main-nav {
+      height: 120px;
+      margin-bottom: -120px; } }
+  @media (min-width: 1100px) {
+    .main-nav {
+      height: 130px;
+      margin-bottom: -130px; } }
   .main-nav ul {
     display: flex;
     flex-direction: column;
@@ -954,7 +977,7 @@ footer {
 
 .overlay {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -968,7 +991,8 @@ footer {
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding: 0; }
 
 .overlay a, .overlay button {
   padding: 8px;
@@ -1018,18 +1042,23 @@ footer {
     right: 35px; } }
 
 .nav_height_top {
-  margin-top: 13vh; }
+  margin-top: 85px; }
 
 .logo {
-  height: 75%;
+  height: 70px;
   display: flex;
   align-items: center; }
   .logo a {
     display: flex; }
   .logo img {
-    height: 12.5vh;
-    margin-top: .5vh;
+    height: 70px;
     margin-left: 1rem; }
+    @media (min-width: 768px) {
+      .logo img {
+        height: 95px; } }
+    @media (min-width: 1100px) {
+      .logo img {
+        height: 110px; } }
 
 .logo_kopf {
   height: 75%;
@@ -1044,13 +1073,13 @@ footer {
 
 @media (min-width: 768px) {
   #overlay-nav {
-    width: 8vh;
-    height: 8vh;
+    width: 50px;
+    height: auto;
     margin-right: 3rem; }
     #overlay-nav img {
       width: 90%; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   #overlay-nav {
     display: none; } }
 
@@ -1058,7 +1087,7 @@ footer {
 #ul_size_L {
   display: none;
   position: relative; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1100px) {
     .nav_size_L,
     #ul_size_L {
       flex-direction: row;
@@ -1115,10 +1144,10 @@ footer {
     color: white; }
 
 .under_nav {
-  top: 13vh; }
+  top: 130px; }
 
 .over_nav {
-  top: -42vh; }
+  top: -130px; }
 
 #work_menu:hover #hide_ul {
   visibility: visible; }

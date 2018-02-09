@@ -2,8 +2,16 @@
 
 .main-content {
   max-width: 1200px;
-  padding-top: 13vh;
+  padding-top: $nav_small;
   background-color: white;
+
+  @media #{$br-tablet}{
+  padding-top: $nav_medium;
+  }
+
+  @media #{$br-screen}{
+  padding-top: $nav_large;
+  }
 }
 
 .this_is_me{
@@ -371,7 +379,7 @@ background: $gray;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  // width: 100%;
   font-family: $roboto_con;
 
   @media #{$br-tablet}{
@@ -392,8 +400,6 @@ background: $gray;
   flex-wrap: nowrap;
   width: 100%;
   margin-top: 2rem;
-  // height: 50vh;
-  // background-color: lightgray;
 
    .bar_animation {
      transform: scaleX(0);
@@ -463,7 +469,7 @@ background: $gray;
       align-items: flex-start;
       flex-direction: column;
       flex-wrap: nowrap;
-      width: 100%;
+      // width: 100%;
       height: inherit;
       z-index: 100;
 
@@ -648,7 +654,7 @@ background: $gray;
   width: 400px;
   padding: 15px;
   background: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .timeline ul li div::before {
@@ -686,7 +692,7 @@ background: $gray;
 }
 
 .timeline ul li div {
-  transform: translate3d(200px,0,0);
+  transform: translate3d(20px,0,0);
 }
 
 
@@ -708,6 +714,6 @@ background: $gray;
   }
 
   .timeline ul li div {
-    width: calc(100vw - 91px);
+    width: 55vw;
   }
 }
