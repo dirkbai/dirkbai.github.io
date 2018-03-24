@@ -307,6 +307,8 @@ button {
     transition: all 0.3s ease-out; }
 
 .btnTitle {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #08193D;
   display: flex;
   justify-content: center;
   align-items: center;
