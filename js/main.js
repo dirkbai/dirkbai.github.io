@@ -97,15 +97,15 @@ closeNav.addEventListener('click', function () {
 });
 
 
-for (var i = 0; i < navLi.length; i++) {
-  navLi[i].index = i;
-  navLi[i].addEventListener("click", function(event){
-    var activate = event.target;
-     for (var i = 0; i < navLi.length; i++) {
-           document.getElementById("myNav").classList.remove("active_text");
-     }
-  });
-}
+// for (var i = 0; i < navLi.length; i++) {
+//   navLi[i].index = i;
+//   navLi[i].addEventListener("click", function(event){
+//     var activate = event.target;
+//      for (var i = 0; i < navLi.length; i++) {
+//            document.getElementById("myNav").classList.remove("active_text");
+//      }
+//   });
+// }
 
 //---------------------------------------- Multiline toggle
 

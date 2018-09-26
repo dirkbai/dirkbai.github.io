@@ -375,7 +375,7 @@
 }
 
 #work_menu_overlay:focus #hide_ul_overlay,
-// #work_menu_overlay:hover #hide_ul_overlay,
+#work_menu_overlay:hover #hide_ul_overlay,
 #work_menu_overlay:focus #hide_ul_overlay {
     display: block;
     margin: auto;
