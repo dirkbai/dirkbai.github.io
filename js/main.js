@@ -52,10 +52,10 @@ for (var i = 0; i < myLogo.length; i++) {
 function header_sticky() {
    if( $(this).scrollTop() >  $('header').height() ) {
      mn.addClass(mns);
-    myNav.className = "overlay showMe nav_height_top";
+    myNav.classList.add("nav_height_top");
    } else {
      mn.removeClass(mns);
-     myNav.className = "overlay showMe";
+     myNav.classList.remove("nav_height_top");
    }
 }
  document.addEventListener('scroll', header_sticky);
