@@ -316,9 +316,9 @@ button {
   width: 80%;
   height: auto;
   padding: 0rem;
-  margin: auto 10%;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: auto;
+  left: 0;
+  right: 0;
   text-align: center;
   font-weight: 400;
   cursor: pointer;
