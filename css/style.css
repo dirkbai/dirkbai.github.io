@@ -317,6 +317,8 @@ button {
   height: auto;
   padding: 0rem;
   margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   text-align: center;
