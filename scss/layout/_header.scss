@@ -378,7 +378,9 @@
 #work_menu_overlay:hover #hide_ul_overlay,
 #work_menu_overlay:focus #hide_ul_overlay {
     display: block;
-    margin: 1rem 0 1rem 5rem;
+    margin: auto;
+    width: 100%;
+    padding: 1em 0;
 }
 
 #work_menu_overlay {
