@@ -316,7 +316,7 @@ button {
   width: 80%;
   height: auto;
   padding: 0rem;
-  margin: 0 auto;
+  margin: auto;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
@@ -991,10 +991,9 @@ footer {
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
   padding: 0; }
 
 .overlay a, .overlay button {
